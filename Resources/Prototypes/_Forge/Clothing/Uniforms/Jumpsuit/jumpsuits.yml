@@ -19,3 +19,14 @@
       sprite: Forge/Clothing/Uniforms/Jumpskirts/schoolskirt.rsi
     - type: Clothing
       sprite: Forge/Clothing/Uniforms/Jumpskirts/schoolskirt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitRaider
+  name: Scrap Tech jumpsuit
+  description: Old and dirty orange salvage jumpsuit bandaged with yellow duct tape.
+  components:
+    - type: Sprite
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapraider.rsi
+    - type: Clothing
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapraider.rsi

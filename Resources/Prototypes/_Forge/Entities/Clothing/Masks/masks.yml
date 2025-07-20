@@ -1,0 +1,12 @@
+- type: entity
+  parent: [ BaseC2ContrabandUnredeemable, ClothingMaskGas ]
+  id: ClothingMaskGasScrap
+  name: Scrap Tech raider respirator
+  description: Basic scarf-like cloth with goggles, just like you need for looting and raiding
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Masks/scrapmask.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Masks/scrapmask.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
