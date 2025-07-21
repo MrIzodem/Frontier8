@@ -81,3 +81,5 @@ ent-ClothingMaskBlushingClown = маска смущённого клоуна
   .desc = Маска для смущённого клоуна.
 ent-ClothingMaskBlushingMime = маска смущённого мима
   .desc = Маска для смущённого мима.
+ent-ClothingMaskGasScrap = респиратор рейдера Scrap Tech
+  .desc = Очки и толстая вуаль поверх респиратора, идеальный вариант для мародёрства и конспирации

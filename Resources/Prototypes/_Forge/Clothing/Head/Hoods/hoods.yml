@@ -1,0 +1,16 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatHoodScrapCloak
+  name: raider ghillie cloak hood
+  description: Old camouflage hood in desert camo color and attached leaves.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Head/Hoods/scrap.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Head/Hoods/scrap.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair
