@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingMaskGas
+  parent: [ ClothingMaskGas, BaseC1Contraband  ]
   id: ClothingMaskGasScrap
   name: Scrap Tech raider respirator
   description: Goggles with dense veil and respirator under she, just what you need for privacy and looting.

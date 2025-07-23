@@ -1,13 +1,13 @@
 - type: entity
-  parent: ClothingNeckBase
+  parent: [ ClothingNeckBase, BaseC1Contraband ]
   id: ClothingNeckScrapGhillie
-  name: Scrap Tech raider cloak
+  name: Scrap Tech ghillie mantle
   description: A camouflage mantle in desert camo color and with attached leaves, looking noticeably worn.
   components:
   - type: Sprite
     sprite: Forge/Clothing/Neck/Cloaks/scrapghillie.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatHoodScrapCloak
+    clothingPrototype: ClothingHeadHatHoodScrapGhillie
     requiredSlot:
     - neck
     slot: head
