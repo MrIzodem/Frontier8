@@ -1,0 +1,14 @@
+- type: explosion
+  id: Aircraftbullet
+  damagePerIntensity:
+    types:
+      Heat: 0.5
+      Blunt: 0.5
+      Piercing: 0.5
+      Structural: 15
+  tileBreakChance: [ 0, 0.6, 1 ]
+  tileBreakIntensity: [ 2, 10, 15 ]
+  tileBreakRerollReduction: 15
+  lightColor: Yellow
+  texturePath: /Textures/Effects/fire.rsi
+  fireStates: 3

@@ -1,0 +1,40 @@
+- type: entity
+  id: WeaponScrapSniperMirage
+  parent: [ BaseWeaponSniper,  BaseGunWieldable, BaseC2ContrabandUnredeemable ]
+  name: AS-2 Mirage
+  description: A heavy anti-shuttle rifle used by ST raiders to kill shuttles in ambushes. Uses .80 caliber anti-aircraft rounds.
+  components:
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Snipers/mirage.rsi
+  - type: GunRequiresWield
+  - type: Gun
+    projectileSpeed: 100
+    fireRate: 0.2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+      params:
+        volume: 10
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeAircraft
+    capacity: 4
+    proto: CartridgeMirage
+  - type: ClothingSpeedModifier
+    walkModifier: 0.90
+    sprintModifier: 0.80
+  - type: HeldSpeedModifier
+    walkModifier: 0.80
+    sprintModifier: 0.70
+  - type: CursorOffsetRequiresWield
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.15
+    sprintModifier: 0.10
+  - type: EyeCursorOffset
+    maxOffset: 40
+    pvsIncrease: 2.5
+  - type: Item
+    size: Ginormous

@@ -1,0 +1,20 @@
+- type: entity
+  parent: [ BaseCartridge, BaseC2ContrabandUnredeemable ]
+  id: CartridgeMirage
+  name: cartridge (.80 A-Aircraft)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgeAircraft
+  - type: CartridgeAmmo
+    proto: BulletMirage
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Casings/aaircraft_casing.rsi 
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 1000
