@@ -16,7 +16,7 @@
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
       params:
-        volume: 10
+        volume: 20
   - type: BallisticAmmoProvider
     whitelist:
       tags:
