@@ -6,6 +6,8 @@
   components:
   - type: Sprite
     sprite: Forge/Objects/Weapons/Guns/Snipers/mirage.rsi
+  - type: Clothing
+    sprite: Forge/Objects/Weapons/Guns/Snipers/mirage.rsi
   - type: GunRequiresWield
   - type: Gun
     projectileSpeed: 100
