@@ -27932,7 +27932,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -28.971397,5.8144093
       parent: 1
-- proto: ClothingUniformJumpsuitRaider
+- proto: ClothingUniformJumpsuitST
   entities:
   - uid: 6352
     components:
