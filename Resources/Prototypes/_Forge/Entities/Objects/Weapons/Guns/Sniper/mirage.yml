@@ -1,6 +1,6 @@
 - type: entity
   id: WeaponScrapSniperMirage
-  parent: [ BaseWeaponSniper,  BaseGunWieldable, BaseC2ContrabandUnredeemable ]
+  parent: [ BaseWeaponSniper,  BaseGunWieldable, BaseC3Contraband ]
   name: AS-2 Mirage
   description: A heavy anti-shuttle rifle used by ST raiders to kill shuttles in ambushes. Uses .80 caliber anti-aircraft rounds.
   components:

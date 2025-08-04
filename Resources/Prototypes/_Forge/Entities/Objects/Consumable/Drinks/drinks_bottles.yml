@@ -1,0 +1,15 @@
+- type: entity
+  parent: [DrinkBottleVisualsAll, DrinkBottleGlassBaseFull]
+  id: DrinkLiwerBottleFull
+  name: Liwer bottle
+  description: A unique hybrid of mead and soda, the drink contains a ton of sugar and even a little alcohol. "And remember, sugar is not bad for your health".
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        reagents:
+        - ReagentId: Liwer
+          Quantity: 50
+  - type: Sprite
+    sprite: Forge/Objects/Consumable/Drinks/liwerbottle.rsi
+  - type: Sealable
