@@ -7,3 +7,13 @@
     - type: Sprite
       sprite: Forge/Structures/Wallmounts/posters.rsi
       state: cf_poster1_contraband
+
+- type: entity
+  parent: PosterBase
+  id: PosterSTsun
+  name: Солнце 91-го сектора
+  description: "Под футуристичным солнцем и закатным небом выведена надпись-Солнце Соларма никогда не заходит, по какой-то причине рядом имеется логотип Scrap Tech."
+  components:
+    - type: Sprite
+      sprite: Forge/Structures/Wallmounts/posters.rsi
+      state: poster_stsun

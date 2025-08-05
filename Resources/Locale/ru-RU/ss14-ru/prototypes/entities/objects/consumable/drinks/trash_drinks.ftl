@@ -56,3 +56,5 @@ ent-DrinkCartonSoyMilk = упаковка от соевого молока
     .desc = { ent-DrinkCartonBaseLargeEmpty.desc }
 ent-DrinkCartonOatMilk = упаковка от овсяного молока
     .desc = { ent-DrinkCartonBaseLargeEmpty.desc }
+ent-DrinkBottleLiwerEmpty = бутылка от ливера
+    .desc = { ent-DrinkBottleBaseEmpty.desc }

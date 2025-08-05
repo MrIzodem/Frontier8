@@ -1,0 +1,15 @@
+- type: entity
+  parent: DrinkGlass
+  id: DrinkLiwerGlass
+  suffix: liwer
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Liwer
+          Quantity: 30
+  - type: Icon
+    sprite: Forge/Objects/Consumable/Drinks/liwerglass.rsi
+    state: icon

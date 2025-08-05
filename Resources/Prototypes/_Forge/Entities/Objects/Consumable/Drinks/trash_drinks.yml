@@ -1,0 +1,7 @@
+- type: entity
+  name: Liwer bottle
+  parent: DrinkBottleBaseSmallEmpty
+  id: DrinkBottleLiwerEmpty
+  components:
+  - type: Sprite
+    sprite: Forge/Objects/Consumable/TrashDrinks/liwerbottle_empty.rsi

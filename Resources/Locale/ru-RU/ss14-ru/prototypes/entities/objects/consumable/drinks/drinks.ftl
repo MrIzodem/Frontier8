@@ -426,3 +426,6 @@ ent-DrinkHellRamen = говяжий доширак
 ent-DrinkBloodGlass = { ent-DrinkGlass }
     .suffix = Кровь
     .desc = { ent-DrinkGlass.desc }
+ent-DrinkLiwerGlass = { ent-DrinkGlass }
+    .suffix = Ливер
+    .desc = { ent-DrinkGlass.desc }

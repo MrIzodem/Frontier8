@@ -15,7 +15,7 @@
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
-          min: 150
+          min: 200
         damage:
           types:
             Poison: 4
@@ -34,8 +34,8 @@
     Food:
       effects:
       - !type:AdjustReagent
-        reagent: Sugar
-        amount: 0.1
+        reagent: Liwer
+        amount: 0.5
   recognizable: true
   metamorphicSprite:
     sprite: Forge/Objects/Consumable/Drinks/liwerglass.rsi

@@ -1,0 +1,13 @@
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingWarmglasses
+  name: warm sunglasses
+  description: Special sunglasses with warm orange-colored holographic lenses and a raspberry metal frame.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Eyes/Glasses/warm_glasses.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Eyes/Glasses/warm_glasses.rsi
+  - type: FlashImmunity
+  - type: StaticPrice
+    price: 50
