@@ -17,3 +17,23 @@
     - type: Sprite
       sprite: Forge/Structures/Wallmounts/posters.rsi
       state: poster_stsun
+
+- type: entity
+  parent: PosterBase
+  id: PosterSTRay
+  name: «Liwer» значит «Live»
+  description: "Рекламный плакат LfF с изображением их маскота-антропоморфного солнца по имени Рей, он одет в фиолетовый мешковатый пиджак с малиновым полосатым жилетом, его глаза закрывают очки с круглыми, оранжевыми линзами. В руке Рей держит открытую бутылку ливера."
+  components:
+    - type: Sprite
+      sprite: Forge/Structures/Wallmounts/posters.rsi
+      state: poster_stliwer
+
+- type: entity
+  parent: PosterBase
+  id: PosterSTmake91free
+  name: «Свободу 91-ому сектору!»
+  description: "Очень старый, покрытый пылью плакат неизвестного происхождения, призывающий вступить в ополчение и освободить 91-ый сектор...? Что за 91-ый сектор?"
+  components:
+    - type: Sprite
+      sprite: Forge/Structures/Wallmounts/posters.rsi
+      state: poster_stfree
