@@ -11,8 +11,8 @@
 - type: entity
   parent: PosterBase
   id: PosterSTsun
-  name: Солнце 91-го сектора
-  description: "Под футуристичным солнцем и закатным небом выведена надпись-Солнце Соларма никогда не заходит, по какой-то причине рядом имеется логотип Scrap Tech."
+  name: Sun of the 91-st sector
+  description: "Under the futuristic sun and sunset sky is the inscription «Sun of Solarm Never Sets», and next to it, for some reason, there also a Scrap Tech logo."
   components:
     - type: Sprite
       sprite: Forge/Structures/Wallmounts/posters.rsi
@@ -21,8 +21,8 @@
 - type: entity
   parent: PosterBase
   id: PosterSTRay
-  name: «Liwer» значит «Live»
-  description: "Рекламный плакат LfF с изображением их маскота-антропоморфного солнца по имени Рей, он одет в фиолетовый мешковатый пиджак с малиновым полосатым жилетом, его глаза закрывают очки с круглыми, оранжевыми линзами. В руке Рей держит открытую бутылку ливера."
+  name: «Liwer» means «Live»
+  description: "An LF promotional poster featuring their anthropomorphic sun mascot, Ray. He,s wearing a baggy purple jacket with a crimson striped waistcoat, his eyes covered by glasses with round, orange glasses. In hand, Ray holds an open bottle of liver."
   components:
     - type: Sprite
       sprite: Forge/Structures/Wallmounts/posters.rsi
@@ -31,8 +31,8 @@
 - type: entity
   parent: PosterBase
   id: PosterSTmake91free
-  name: «Свободу 91-ому сектору!»
-  description: "Очень старый, покрытый пылью плакат неизвестного происхождения, призывающий вступить в ополчение и освободить 91-ый сектор...? Что за 91-ый сектор?"
+  name: «Make 91-st sector free!»
+  description: "A very old, dusty poster of unknown origin calling for people to join the militia and liberate Sector 91...? What,s a Sector 91?"
   components:
     - type: Sprite
       sprite: Forge/Structures/Wallmounts/posters.rsi
