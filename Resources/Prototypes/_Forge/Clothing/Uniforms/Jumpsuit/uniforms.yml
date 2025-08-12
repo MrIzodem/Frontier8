@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformrobeST
+  name: Scrap desert robe
+  description: A beige linen robe for protection from the scorching sun of the distant sector...
+  components:
+    - type: Sprite
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
+    - type: Clothing
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
