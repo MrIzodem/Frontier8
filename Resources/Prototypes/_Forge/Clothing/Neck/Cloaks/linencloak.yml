@@ -1,0 +1,19 @@
+- type: entity
+  parent: [ ClothingNeckBase, BaseC1Contraband ]
+  id: ClothingNeckScrapCloak
+  name: Linen cloak
+  description: Old, light cloak from linen for protect u shoulders and neck from sand, dust, and sun.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodScrapCloak
+    requiredSlot:
+    - neck
+    slot: head
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot {}
+  - type: Construction
+    graph: ClothingNeckLinencloakGraph
+    node: ClothingNeckLinenCloak

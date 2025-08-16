@@ -1,0 +1,136 @@
+- type: entity
+  name: M.A.R.O.O.N Diesel portable generator
+  description: |-
+    A rusty generator capable of powering kinda old transport-during operation it emits exhaust gas - prepare scrubbers!
+    Runs off diesel fuel and is rated for up to 60 kW. 
+  parent: [ PortableGeneratorBase, BaseC1Contraband ]
+  id: PortableGeneratorMaroon
+  suffix: Diesel, 35 kW
+  components:
+    - type: AmbientSound
+      range: 4
+      volume: -8
+
+    - type: Fixtures
+      fixtures:
+        fix1:
+          shape:
+            !type:PhysShapeAabb
+            bounds: "-0.30,-0.30,0.30,0.30"
+          density: 80
+          mask:
+            - MachineMask
+          layer:
+            - MachineLayer
+
+    - type: Sprite
+      sprite: Forge/Structures/Power/Generation/portable_generator.rsi
+      layers:
+        - state: portgen6
+          map: [ "enum.GeneratorVisualLayers.Body" ]
+        - state: portgen6_on_unlit
+          map: [ "enum.GeneratorVisualLayers.Unlit" ]
+          shader: unshaded
+          visible: false
+    - type: GenericVisualizer
+      visuals:
+        enum.GeneratorVisuals.Running:
+          enum.GeneratorVisualLayers.Body:
+            True: { state: portgen6on }
+            False: { state: portgen6 }
+          enum.GeneratorVisualLayers.Unlit:
+            True: { visible: true }
+            False: { visible: false }
+
+    - type: Machine
+      board: PortableGeneratorJrPacmanMachineCircuitboard
+    - type: FuelGenerator
+      minTargetPower: 5000
+      maxTargetPower: 60000
+      targetPower: 35000
+      optimalPower: 35000
+      # 50 минут работы
+      optimalBurnRate: 0.1
+      fuelEfficiencyConstant: 0.90
+    - type: ChemicalFuelGeneratorAdapter
+      solution: tank
+      reagents:
+        WeldingFuel: 1
+    - type: SolutionContainerManager
+      solutions:
+        tank:
+          maxVol: 300
+    - type: RefillableSolution
+      solution: tank
+    - type: PortableGenerator
+      startChance: 0.7
+    - type: UpgradePowerSupplier
+      powerSupplyMultiplier: 1.40
+      scaling: Exponential
+    - type: PowerMonitoringDevice
+      group: Generator
+      loadNodes:
+        - output_hv
+    - type: NodeContainer
+      examinable: true
+      nodes:
+        output_hv:
+          !type:CableDeviceNode
+          nodeGroupID: HVPower
+          enabled: false
+      sprite: Forge/Structures/Power/Generation/portable_generator.rsi
+      state: portgen6
+    - type: PowerSupplier
+      supplyRampRate: 7500
+      supplyRampTolerance: 2500
+    - type: GeneratorExhaustGas
+      gasType: Exhaust
+      moleRatio: 2.5
+    - type: Explosive
+      explosionType: Default
+      tileBreakScale: 0.5
+    - type: Destructible
+      thresholds:
+        - trigger:
+            !type:DamageTrigger
+            damage: 230
+          behaviors:
+            - !type:DoActsBehavior
+              acts: [ "Destruction" ]
+        - trigger:
+            !type:DamageTrigger
+            damage: 160
+          behaviors:
+            - !type:SpillBehavior
+              solution: tank
+            - !type:PlaySoundBehavior
+              sound:
+                collection: MetalBreak
+            - !type:ChangeConstructionNodeBehavior
+              node: machineFrame
+            - !type:DoActsBehavior
+              acts: ["Destruction"]
+        - trigger:
+            !type:DamageTypeTrigger
+            damageType: Piercing
+            damage: 130
+          behaviors:
+            - !type:SolutionExplosionBehavior
+              solution: tank
+    - type: BindToStation # Frontier
+      enabled: false # Frontier
+
+- type: entity
+  parent:
+  - BaseGeneratorShuttle
+  - PortableGeneratorMaroon
+  id: PortableGeneratorMaroonShuttle
+  suffix: Diesel, 35 kW, Ship
+  components:
+    - type: SolutionContainerManager
+      solutions:
+        tank:
+          maxVol: 300
+          reagents:
+          - ReagentId: WeldingFuel
+            Quantity: 150

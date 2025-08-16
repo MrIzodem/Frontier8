@@ -16,6 +16,7 @@
       NitrousOxide: stationNO
       Frezon: danger
       Respiron: ignore # Frontier
+      Exhaust: stationCO2 # Forge
 
 - type: entity
   parent: [AirSensorVoxBase, AirSensor]

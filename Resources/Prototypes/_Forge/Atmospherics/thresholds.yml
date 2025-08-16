@@ -1,0 +1,8 @@
+# Threshold prototypes for AtmosMonitors
+
+- type: alarmThreshold
+  id: stationExhaust
+  upperBound: !type:AlarmThresholdSetting
+    threshold: 0.006
+  upperWarnAround: !type:AlarmThresholdSetting
+    threshold: 0.5 # minor gasping and airloss at 0.3%

@@ -1,0 +1,238 @@
+# Base
+- type: entity
+  name: ST infantry
+  abstract: true
+  parent:
+  - NFMobNoEquipmentOnGib
+  - MobMovementSpeedModifierMelee
+  - MobStaminaFodder
+  - BaseC3MobHuman
+  - MobNonHumanHostileBase
+  - MobHumanoidInvetorySimplified
+  - MobHumanoidHostileAISimpleRanged
+  id: MobScrapTechBase
+  description: ...
+  components:
+  - type: RandomHumanoidAppearance
+    randomizeName: true
+  - type: Damageable
+    damageModifierSet: MobMercenaryDamageModifierSet
+  - type: NpcFactionMember
+    factions:
+    - MercenariesExpeditionNF
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Critical
+      100: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      48: 0.7
+      64: 0.5
+  - type: DamageStateVisuals
+  - type: RotationVisuals
+    defaultRotation: 90
+    horizontalRotation: 90
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatRotten
+      amount: 2
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 2
+    rechargeSound:
+      path: /Audio/_NF/Effects/silence.ogg
+  - type: Speech #CorvaxFrontier
+    speechSounds: Alto
+  - type: MeleeWeapon
+    attackRate: 1.0
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Slash: 12
+        Structural: 20
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+      params:
+        variation: 0.125
+  - type: Advertise
+    pack: mercenaryhumanoidchatter
+    minimumWait: 30
+    maximumWait: 120
+    nextAdvertisementTime: 10
+  - type: AutoWakeUp
+
+
+# "Dust" troopers
+
+# Tier 1
+
+- type: entity
+  name: scrap tech infantry
+  parent: MobScrapTechBase
+  id: MobScrapTechDT1Repeater
+  description: Basic "dust" trooper, grabbed from civilians of 91-st sector.
+# categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedRT1
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#f0af79" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
+      state: equipped-NECK
+    - sprite: Forge/Clothing/Head/Hoods/scrapcloak.rsi
+      state: equipped-HELMET
+  - type: BasicEntityAmmoProvider
+    proto: NFCartridgeRifle20Overpressure
+    capacity: 10
+    count: 10
+  - type: Gun
+    showExamineText: false
+    fireRate: 1.2
+    minAngle: 8
+    maxAngle: 20
+    angleIncrease: 3
+    angleDecay: 3
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+
+- type: entity
+  name: scrap tech infantry
+  parent: MobScrapTechBase
+  id: MobScrapTechDT1SVS
+  description: Basic "dust" trooper, grabbed from civilians of 91-st sector.
+# categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedST1
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#f0af79" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
+      state: equipped-NECK
+    - sprite: Forge/Clothing/Head/Hoods/scrapcloak.rsi
+      state: equipped-HELMET
+  - type: BasicEntityAmmoProvider
+    proto: NFCartridgeRifle30
+    capacity: 15
+    count: 15
+  - type: Gun
+    showExamineText: false
+    fireRate: 1.9
+    minAngle: 10
+    maxAngle: 20
+    angleIncrease: 3
+    angleDecay: 3
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+
+- type: entity
+  name: scrap tech infantry
+  parent: MobScrapTechBase
+  id: MobScrapTechDT1Machete
+  description: Basic "dust" trooper, grabbed from civilians of 91-st sector.
+# categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearMeleeST1
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#f0af79" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
+      state: equipped-NECK
+    - sprite: Forge/Clothing/Head/Hoods/scrapcloak.rsi
+      state: equipped-HELMET
+  - type: MeleeWeapon
+    attackRate: 1.0
+    altDisarm: false
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Slash: 10
+        Piercing: 5
+        Structural: 20
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+
+# Special T1 troopers
+
+- type: entity
+  name: scrap tech infantry
+  parent: MobScrapTechDT1Repeater
+  id: MobScrapTechDLiwT1Repeater
+  suffix: AI, Hostile, Liwer
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedRLiwT1
+
+# Tier 2
+
+- type: entity
+  name: scrap tech infantry
+  parent: MobScrapTechBase
+  id: MobScrapTechDT2Typewriter
+  description: Basic "dust" trooper, grabbed from civilians of 91-st sector.
+# categories: [ HideSpawnMenu ]
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedTT2
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      130: Critical
+      170: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      64: 0.7
+      98: 0.5
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#f0af79" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
+      state: equipped-INNERCLOTHING
+  - type: BasicEntityAmmoProvider
+    proto: NFCartridgePistol35
+    capacity: 30
+    count: 30
+  - type: Gun
+    showExamineText: false
+    fireRate: 3
+    minAngle: 10
+    maxAngle: 30
+    angleIncrease: 3
+    angleDecay: 3
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg

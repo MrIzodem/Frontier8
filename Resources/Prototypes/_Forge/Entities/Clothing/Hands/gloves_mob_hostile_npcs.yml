@@ -1,0 +1,77 @@
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsRepeater
+  name: Repeater
+  suffix: repeater
+  description: ...
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Rifles/repeater.rsi
+    layers:
+    - state: base
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: _NF/Objects/Weapons/Guns/Rifles/repeater.rsi
+        state: wielded-inhand-left
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsSVS42
+  name: SVS42
+  suffix: SVS42
+  description: SVS42
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Rifles/svs42.rsi
+    layers:
+    - state: base
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: _NF/Objects/Weapons/Guns/Rifles/svs42.rsi
+        state: wielded-inhand-left
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsMachete
+  name: Machete
+  suffix: Machete
+  description: Machete
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/machete.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Objects/Weapons/Melee/machete.rsi
+        state: inhand-right
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsTypewriter
+  name: Machete
+  suffix: Machete
+  description: Machete
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: _DV/Objects/Weapons/Guns/SMGs/typewriter.rsi
+    layers:
+    - state: base
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/mercbattle.rsi
+        state: equipped-HAND
+      - sprite: _DV/Objects/Weapons/Guns/SMGs/typewriter.rsi
+        state: inhand-right

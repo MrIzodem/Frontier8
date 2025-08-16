@@ -1,0 +1,44 @@
+# "Dust" troopers
+
+# Tier 1
+
+- type: startingGear
+  id: MobHumanoidDScrapGearRangedRT1
+  equipment:
+    shoes: ClothingShoesLinenwrap
+    gloves: ClothingHandsRepeater
+    pocket2: DrinkMREFlask
+
+- type: startingGear
+  id: MobHumanoidDScrapGearRangedST1
+  equipment:
+    shoes: ClothingShoesLinenwrap
+    gloves: ClothingHandsSVS42
+    pocket2: DrinkMREFlask
+
+- type: startingGear
+  id: MobHumanoidDScrapGearMeleeST1
+  equipment:
+    shoes: ClothingShoesLinenwrap
+    gloves: ClothingHandsMachete
+    pocket2: DrinkMREFlask
+
+# Special T1
+
+- type: startingGear
+  id: MobHumanoidDScrapGearRangedRLiwT1
+  equipment:
+    shoes: ClothingShoesLinenwrap
+    gloves: ClothingHandsRepeater
+    pocket2: DrinkLiwerBottleFull
+
+# Tier 2
+
+- type: startingGear
+  id: MobHumanoidDScrapGearRangedTT2
+  equipment:
+    shoes: ClothingShoesBootsCowboyBrown
+    gloves: ClothingHandsTypewriter
+
+
+

@@ -14,3 +14,20 @@
   - type: HideLayerClothing
     slots:
     - Hair
+
+- type: entity
+  parent: [ ClothingHeadBase, BaseC1Contraband ]
+  id: ClothingHeadHatHoodScrapCloak
+  name: linen cloak hood
+  description: Linen hood, can help you in desert storm.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Head/Hoods/scrapcloak.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Head/Hoods/scrapcloak.rsi
+  - type: Tag
+    tags:
+    - WhitelistChameleon
+  - type: HideLayerClothing
+    slots:
+    - Hair

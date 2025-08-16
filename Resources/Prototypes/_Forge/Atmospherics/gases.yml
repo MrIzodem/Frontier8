@@ -1,0 +1,11 @@
+- type: gas
+  id: 10
+  name: gases-exhaust
+  specificHeat: 30
+  heatCapacityRatio: 1.3
+  molarMass: 35
+  gasOverlaySprite: /Textures/Effects/atmospherics.rsi
+  gasOverlayState: water_vapor
+  color: 2F4F4F	
+  reagent: CarbonDioxide
+  pricePerMole: 0.1

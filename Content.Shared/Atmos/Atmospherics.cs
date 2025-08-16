@@ -178,6 +178,7 @@ namespace Content.Shared.Atmos
             [Gas.Tritium] = Loc.GetString("gas-tritium-abbreviation"),
             [Gas.WaterVapor] = Loc.GetString("gas-water-vapor-abbreviation"),
             [Gas.Respiron] = Loc.GetString("gas-respiron-abbreviation"), // Frontier
+			[Gas.Exhaust] = Loc.GetString("gas-exhaust-abbreviation"), // Forge
         };
 
         #region Excited Groups
@@ -376,6 +377,7 @@ namespace Content.Shared.Atmos
         Ammonia = 6,
         NitrousOxide = 7,
         Frezon = 8,
-        Respiron = 9 // Frontier
+        Respiron = 9, // Frontier
+		Exhaust = 10 // Forge
     }
 }

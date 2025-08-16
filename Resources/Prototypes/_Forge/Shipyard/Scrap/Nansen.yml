@@ -22,9 +22,9 @@
   guidebookPage: Null
   class:
   - Scrapyard
-  - Expedition
   - Salvage
   - Cargo
+  - Capital
   engine:
   - Uranium
 

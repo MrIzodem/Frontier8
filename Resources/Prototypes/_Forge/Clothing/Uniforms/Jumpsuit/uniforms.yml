@@ -8,3 +8,14 @@
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
     - type: Clothing
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformberezkaST
+  name: old sand uniform
+  description: Light, sand-camo colored uniform.
+  components:
+    - type: Sprite
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
+    - type: Clothing
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
