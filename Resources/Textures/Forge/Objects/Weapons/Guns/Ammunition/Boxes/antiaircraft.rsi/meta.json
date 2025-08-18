@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "All sprites by MrIzo",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "base"
+    },
+    {
+      "name": "mag-80-0"
+    },
+    {
+      "name": "mag-80-1"
+    },
+    {
+      "name": "mag-80-2"
+    },
+    {
+      "name": "mag-80-3"
+    },
+    {
+      "name": "mag-80-4"
+    },
+    {
+      "name": "decal-calibre-80"
+    },
+    {
+      "name": "mag-80-5"
+    },
+    {
+      "name": "inhand-left",
+      "directions": 4
+    },
+    {
+      "name": "inhand-right",
+      "directions": 4
+    }
+  ]
+}

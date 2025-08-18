@@ -221,6 +221,8 @@
       color: "#f0af79" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
       state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/Head/Misc/sandbalaclava.rsi
+      state: equipped-HELMET
   - type: BasicEntityAmmoProvider
     proto: NFCartridgePistol35
     capacity: 30

@@ -1,0 +1,30 @@
+- type: entity
+  id: BaseAmmunitionBoxAircraft80
+  parent: NFBaseAmmunitionBox
+  name: ammunition box (.80 anti-aircraft)
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeAircraft
+    capacity: 8
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Boxes/antiaircraft.rsi
+  - type: MagazineVisuals
+    magState: mag-80
+
+- type: entity
+  id: AmmunitionBoxAircraft80
+  parent: BaseAmmunitionBoxAircraft80
+  name: ammunition box (.80 anti-aircraft)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMirage
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: decal-calibre-80
+    - state: mag-80-1
+      map: ["enum.GunVisualLayers.Mag"]
