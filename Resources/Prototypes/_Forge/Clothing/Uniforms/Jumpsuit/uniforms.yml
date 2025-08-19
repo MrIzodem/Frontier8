@@ -12,8 +12,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformberezkaST
-  name: old sand uniform
-  description: Light, sand-camo colored uniform.
+  name: operator sand uniform
+  description: Light, sand-camo colored uniform, worn by elite dust troopers.
   components:
     - type: Sprite
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
@@ -22,11 +22,22 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformBarvikhaST
+  id: ClothingUniformButanST
   name: elite sand airborn uniform
   description: Unique, dark-sand colored camo suit with telnyashka under it, used by the most elite airborn troopers from ST.
   components:
     - type: Sprite
-      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapraideruniform.rsi
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapairbornuniform.rsi
     - type: Clothing
-      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapraideruniform.rsi
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapairbornuniform.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformM288ST
+  name: M288 infantry sand uniform
+  description: Old, dusty sand-colored uniform with pockets, worn by dust troopers infantry.
+  components:
+    - type: Sprite
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformb.rsi
+    - type: Clothing
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformb.rsi

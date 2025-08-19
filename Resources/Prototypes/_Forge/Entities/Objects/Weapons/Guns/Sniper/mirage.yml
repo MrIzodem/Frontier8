@@ -10,7 +10,7 @@
     sprite: Forge/Objects/Weapons/Guns/Snipers/mirage.rsi
   - type: GunRequiresWield
   - type: Gun
-    projectileSpeed: 100
+    projectileSpeed: 85
     fireRate: 0.2
     selectedMode: SemiAuto
     availableModes:
