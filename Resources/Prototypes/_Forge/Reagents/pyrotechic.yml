@@ -1,0 +1,37 @@
+- type: reagent
+  id: DieselFuel
+  name: reagent-name-diesel-fuel
+  parent: BasePyrotechnic
+  desc: reagent-desc-diesel-fuel
+  physicalDesc: reagent-physical-desc-diesel
+  slipData:
+    requiredSlipSpeed: 4
+  flavor: butter
+  flavorMinimum: 0.01
+  color: "#400000"
+  recognizable: true
+  boilingPoint: -88.7
+  meltingPoint: -84.7
+  friction: 0.4
+  tileReactions:
+  - !type:FlammableTileReaction {}
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateThirst
+        factor: 0.5
+        conditions:
+        - !type:OrganType
+          type: Vox
+    Poison:
+      effects:
+      - !type:HealthChange
+        conditions:
+        - !type:OrganType
+          type: Vox
+          shouldHave: false
+        damage:
+          types:
+            Poison: 4
+      - !type:FlammableReaction
+        multiplier: 0.8
