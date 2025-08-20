@@ -132,5 +132,5 @@
         tank:
           maxVol: 300
           reagents:
-          - ReagentId: WeldingFuel
+          - ReagentId: DieselFuel
             Quantity: 150
