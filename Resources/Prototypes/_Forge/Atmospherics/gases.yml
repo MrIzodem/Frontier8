@@ -6,6 +6,6 @@
   molarMass: 35
   gasOverlaySprite: /Textures/Effects/atmospherics.rsi
   gasOverlayState: water_vapor
-  color: 2F4F4F	
+  color: 2F4F4F
   reagent: CarbonDioxide
   pricePerMole: 0.1

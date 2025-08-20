@@ -1,7 +1,7 @@
 - type: entity
   parent: [ ClothingHeadBase, BaseC1Contraband ]
   id: ClothingHeadHatHoodScrapGhillie
-  name: raider ghillie hood
+  name: sand ghillie hood
   description: Old camouflage hood in desert camo color and attached leaves.
   components:
   - type: Sprite

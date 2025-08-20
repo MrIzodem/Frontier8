@@ -2,7 +2,7 @@
   name: M.A.R.O.O.N Diesel portable generator
   description: |-
     A rusty generator capable of powering kinda old transport-during operation it emits exhaust gas - prepare scrubbers!
-    Runs off diesel fuel and is rated for up to 60 kW. 
+    Runs off diesel fuel and is rated for up to 75 kW. 
   parent: [ PortableGeneratorBase, BaseC1Contraband ]
   id: PortableGeneratorMaroon
   suffix: Diesel, 35 kW
@@ -43,19 +43,19 @@
             False: { visible: false }
 
     - type: Machine
-      board: PortableGeneratorJrPacmanMachineCircuitboard
+      board: PortableGeneratorMaroonMachineCircuitboard
     - type: FuelGenerator
       minTargetPower: 5000
-      maxTargetPower: 60000
+      maxTargetPower: 75000
       targetPower: 35000
       optimalPower: 35000
-      # 50 минут работы
+      # 50 минут работы/полный бак
       optimalBurnRate: 0.1
       fuelEfficiencyConstant: 0.90
     - type: ChemicalFuelGeneratorAdapter
       solution: tank
       reagents:
-        WeldingFuel: 1
+        DieselFuel: 1
     - type: SolutionContainerManager
       solutions:
         tank:
@@ -132,5 +132,5 @@
         tank:
           maxVol: 300
           reagents:
-          - ReagentId: WeldingFuel
+          - ReagentId: DieselFuel
             Quantity: 150
