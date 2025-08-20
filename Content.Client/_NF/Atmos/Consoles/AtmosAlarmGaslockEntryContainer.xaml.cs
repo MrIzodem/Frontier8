@@ -44,6 +44,7 @@ public sealed partial class AtmosAlarmGaslockEntryContainer : BoxContainer
         [Gas.Tritium] = "T",
         [Gas.WaterVapor] = "H₂O",
         [Gas.Respiron] = "R", // Frontier
+		[Gas.Exhaust] = "CO₂", // Forge
     };
 
     public AtmosAlarmGaslockEntryContainer(NetEntity uid, EntityCoordinates? coordinates)

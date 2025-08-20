@@ -149,3 +149,27 @@
       Bluespace: 8
   - type: Item
     size: Normal
+
+- type: entity
+  id: PortableGeneratorMaroonMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: M.A.R.O.O.N portable generator machine board
+  components:
+    - type: Sprite
+      state: engineering
+    - type: MachineBoard
+      prototype: PortableGeneratorMaroon
+      requirements:
+        Capacitor: 2
+      stackRequirements:
+        Steel: 5
+        CableHV: 5
+    - type: PhysicalComposition
+      materialComposition:
+        Glass: 200
+      chemicalComposition:
+        Silicon: 20
+    - type: StaticPrice
+      price: 400
+    - type: BindToStation
+      enabled: false

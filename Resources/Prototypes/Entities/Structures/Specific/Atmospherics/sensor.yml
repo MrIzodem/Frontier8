@@ -26,7 +26,7 @@
       NitrousOxide: stationNO
       Frezon: danger
       Respiron: ignore # Frontier
-      Exhaust: stationCO2 # Forge
+      Exhaust: stationExhaust # Forge
   - type: Tag
     tags:
       - AirSensor
