@@ -1,0 +1,125 @@
+- type: entity
+  parent: [ BaseCartridge, BaseC2ContrabandUnredeemable ]
+  id: CartridgePacked
+  name: cartridge (.22,5 packed)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgePacked
+  - type: CartridgeAmmo
+    proto: BulletPacked
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Casings/packed_casing.rsi 
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 2
+
+- type: entity
+  parent: [ BaseCartridge, BaseC2ContrabandUnredeemable ]
+  id: CartridgePackedShotgun
+  name: cartridge (.22,5 packed, shotgun)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgePacked
+  - type: CartridgeAmmo
+    proto: BulletPackedShotgun
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Casings/packed_casing.rsi 
+    layers:
+    - state: shotgun
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 2
+
+- type: entity
+  parent: [ BaseCartridge, BaseC2ContrabandUnredeemable ]
+  id: CartridgePackedExplosive
+  name: cartridge (.22,5 packed, explosive)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgePacked
+  - type: CartridgeAmmo
+    proto: BulletPackedExplosive
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Casings/packed_casing.rsi 
+    layers:
+    - state: explosive
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 3
+
+- type: entity
+  parent: [ BaseCartridge, BaseC2ContrabandUnredeemable ]
+  id: CartridgePackedKinetic
+  name: cartridge (.22,5 packed, proto-kinetic)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgePacked
+  - type: CartridgeAmmo
+    proto: BulletPackedProtokinetic
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Casings/packed_casing.rsi 
+    layers:
+    - state: kinetic
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 3
+
+- type: entity
+  parent: [ BaseCartridge, BaseC2ContrabandUnredeemable ]
+  id: CartridgePackedUranium
+  name: cartridge (.22,5 packed, uranium)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgePacked
+  - type: CartridgeAmmo
+    proto: BulletPackedUranium
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Casings/packed_casing.rsi 
+    layers:
+    - state: uranium
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 2
+
+- type: entity
+  parent: [ BaseCartridge, BaseC2ContrabandUnredeemable ]
+  id: CartridgePackedIncendiary
+  name: cartridge (.22,5 packed, incendiary)
+  components:
+  - type: Tag
+    tags:
+    - Cartridge
+    - CartridgePacked
+  - type: CartridgeAmmo
+    proto: BulletPackedIncendiary
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Casings/packed_casing.rsi 
+    layers:
+    - state: incendiary
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+  - type: StaticPrice
+    price: 2

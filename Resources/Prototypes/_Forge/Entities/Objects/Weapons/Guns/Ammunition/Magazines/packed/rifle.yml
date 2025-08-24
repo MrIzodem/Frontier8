@@ -1,0 +1,108 @@
+- type: entity
+  id: MagazinePackedRifle
+  name: rifle magazine (.22,5 packed)
+  parent: [ BaseItem, BaseC2ContrabandUnredeemable, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - MagazinePackedRifle
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgePacked
+    capacity: 32
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Magazine/Packed/packed_rifle_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazinePackedRifleEmpty
+  name: rifle magazine (.22,5 packed)
+  suffix: empty
+  parent: MagazinePackedRifle
+  description: 32-round single-stack magazine for rifles.
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      right:
+      - state: inhand-right-mag
+
+- type: entity
+  id: MagazinePackedRiflefilled
+  name: rifle magazine (.22,5 packed)
+  parent: MagazinePackedRifle
+  description: 32-round single-stack magazine for pistols. Intended to hold .22,5 packed ammo.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePacked
+
+- type: entity
+  id: MagazinePackedRifleShotgun
+  name: rifle magazine (.22,5 packed, shotgun)
+  parent: MagazinePackedRifle
+  description: 32-round single-stack magazine for pistols. Intended to hold special .22,5 ammo with shotgun-pellets instead of bullet.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedShotgun
+
+- type: entity
+  id: MagazinePackedRifleExplosive
+  name: rifle magazine (.22,5 packed, explosive)
+  parent: MagazinePackedRifle
+  description: 32-round single-stack magazine for pistols. Intended to hold special anti-structure (and frightening) explosive .22,5 ammo.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedExplosive
+
+- type: entity
+  id: MagazinePackedRiflelUranium
+  name: rifle magazine (.22,5 packed, uranium)
+  parent: MagazinePackedRifle
+  description: 32-round single-stack magazine for pistols. Intended to hold radioacrive, deplect uranium .22,5 ammo.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedUranium
+
+- type: entity
+  id: MagazinePackedRifleProtokinetic
+  name: rifle magazine (.22,5 packed, proto-kinetic)
+  parent: MagazinePackedRifle
+  description: 32-round single-stack magazine for pistols. Intended to hold special proto-kinetic .22,5 ammo... How this thing even work?
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedKinetic
+
+- type: entity
+  id: MagazinePackedRifleIncendiary
+  name: rifle magazine (.22,5 packed, incendiary)
+  parent: MagazinePackedRifle
+  description: 32-round single-stack magazine for pistols. Intended to hold self-igniting incendiary ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedIncendiary

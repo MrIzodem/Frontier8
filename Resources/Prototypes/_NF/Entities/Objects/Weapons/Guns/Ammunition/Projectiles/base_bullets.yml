@@ -32,8 +32,6 @@
     layers:
     - state: pellet
       shader: unshaded
-    - state: pellet-trace
-      shader: unshaded
 
 #region Bullets
 - type: entity

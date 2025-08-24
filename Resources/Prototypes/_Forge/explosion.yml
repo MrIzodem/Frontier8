@@ -10,6 +10,21 @@
   tileBreakIntensity: [ 2, 10, 15 ]
   tileBreakRerollReduction: 15
   lightColor: Yellow
+  fireColor: Orange
+  texturePath: /Textures/Effects/fire.rsi
+  fireStates: 3
+
+- type: explosion
+  id: Packedexplosive
+  damagePerIntensity:
+    types:
+      Heat: 0.5
+      Blunt: 0.1
+      Structural: 0.5
+  tileBreakChance: [ 0, 0.1 ]
+  tileBreakIntensity: [ 2, 10, 15 ]
+  tileBreakRerollReduction: 1
+  lightColor: Yellow
   texturePath: /Textures/Effects/fire.rsi
   fireStates: 3
 

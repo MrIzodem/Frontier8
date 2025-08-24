@@ -1,4 +1,4 @@
-#region Pellets
+#region Pellets Forge-change remove bullet-trace state, color, and tracer
 - type: entity
   categories: [ HideSpawnMenu ]
   id: NFPelletShotgun
@@ -65,11 +65,6 @@
   - type: Sprite
     layers:
     - state: pellet
-      color: "#00aeffc8"
-      shader: unshaded
-    - state: pellet-trace
-      color: "#aaaaaaBB"
-      shader: unshaded
   - type: Projectile
     damage:
       types:
@@ -206,17 +201,9 @@
   components:
   - type: Sprite
     noRot: false
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Projectiles/bullets.rsi
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Projectiles/bullets.rsi # Forge-Change
     layers:
     - state: pellet
-      color: "#ff0000FF"
-      shader: unshaded
-    - state: pellet-trace
-      color: "#FF8080BB"
-      shader: unshaded
-  - type: Tracer
-    color: "#ff0000FF"
-    length: 2
 
 - type: entity
   categories: [ HideSpawnMenu ]
@@ -227,11 +214,6 @@
   - type: Sprite
     layers:
     - state: pellet
-      color: "#00ffffFF"
-      shader: unshaded
-    - state: pellet-trace
-      color: "#00ffffBB"
-      shader: unshaded
   - type: Projectile
     damage:
       types:

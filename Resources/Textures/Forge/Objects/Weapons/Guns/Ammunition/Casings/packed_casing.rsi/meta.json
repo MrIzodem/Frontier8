@@ -1,0 +1,47 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "license": "CC-BY-SA-3.0",
+    "copyright": "All sprites by MrIzo",
+    "states": [
+        {
+            "name": "base"
+        },
+        {
+            "name": "base-spent"
+        },
+        {
+            "name": "shotgun"
+        },
+        {
+            "name": "shotgun-spent"
+        },
+        {
+            "name": "explosive"
+        },
+        {
+            "name": "explosive-spent"
+        },
+        {
+            "name": "kinetic"
+        },
+        {
+            "name": "kinetic-spent"
+        },
+        {
+            "name": "uranium"
+        },
+        {
+            "name": "uranium-spent"
+        },
+        {
+            "name": "incendiary"
+        },
+        {
+            "name": "incendiary-spent"
+        }
+    ]
+}

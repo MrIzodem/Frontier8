@@ -40,3 +40,5 @@
     pvsIncrease: 2.5
   - type: Item
     size: Ginormous
+  - type: StaticPrice
+    price: 25000

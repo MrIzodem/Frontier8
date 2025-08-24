@@ -1,0 +1,11 @@
+- type: localizedDataset
+  id: scraptechshumanoidchatter
+  values:
+    prefix: advertisement-scraptechshumanoid-
+    count: 21
+
+- type: localizedDataset
+  id: scrapagenthumanoidchatter
+  values:
+    prefix: advertisement-scrapagenthumanoid-
+    count: 15

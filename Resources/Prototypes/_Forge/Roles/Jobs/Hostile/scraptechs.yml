@@ -23,6 +23,20 @@
     gloves: ClothingHandsMachete
     pocket2: DrinkMREFlask
 
+- type: startingGear
+  id: MobHumanoidDScrapGearRangedShilovPistolT1
+  equipment:
+    shoes: ClothingShoesBootsCowboyBrown
+    gloves: ClothingHandsShilov
+    pocket2: DrinkMREFlask
+
+- type: startingGear
+  id: MobHumanoidDScrapGearRangedM44UT1
+  equipment:
+    shoes: ClothingShoesBootsCowboyBrown
+    gloves: ClothingHandsM44U
+    pocket2: DrinkMREFlask
+
 # Special T1
 
 - type: startingGear
@@ -31,6 +45,20 @@
     shoes: ClothingShoesLinenwrap
     gloves: ClothingHandsRepeater
     pocket2: DrinkLiwerBottleFull
+
+- type: startingGear
+  id: MobHumanoidDScrapGearRangedSLiwT1
+  equipment:
+    shoes: ClothingShoesLinenwrap
+    gloves: ClothingHandsSVS42
+    pocket2: DrinkLiwerBottleFull
+
+- type: startingGear
+  id: MobHumanoidDScrapGearRangedM44PUT1
+  equipment:
+    shoes: ClothingShoesBootsCowboyBrown
+    gloves: ClothingHandsM44PU
+    pocket2: DrinkMREFlask
 
 # Tier 2
 

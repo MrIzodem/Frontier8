@@ -75,3 +75,66 @@
         state: equipped-HAND
       - sprite: _DV/Objects/Weapons/Guns/SMGs/typewriter.rsi
         state: inhand-right
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsM44PU
+  name: Machete
+  suffix: Machete
+  description: Machete
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Snipers/m44pu.rsi
+    layers:
+    - state: base
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/combat.rsi
+        state: equipped-HAND
+      - sprite: Forge/Objects/Weapons/Guns/Snipers/m44pu.rsi
+        state: wielded-inhand-left
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsShilov
+  name: Machete
+  suffix: Machete
+  description: Machete
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Pistols/scrapshilov.rsi
+    layers:
+    - state: base
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/combat.rsi
+        state: equipped-HAND
+      - sprite: Forge/Objects/Weapons/Guns/Pistols/scrapshilov.rsi
+        state: inhand-right
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsM44U
+  name: Machete
+  suffix: Machete
+  description: Machete
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Rifles/m44u.rsi
+    layers:
+    - state: base
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/combat.rsi
+        state: equipped-HAND
+      - sprite: Forge/Objects/Weapons/Guns/Rifles/m44u.rsi
+        state: wielded-inhand-right

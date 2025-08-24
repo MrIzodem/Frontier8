@@ -78,3 +78,5 @@ ent-ClothingOuterCoatSpaceAsshole = куртка космического муд
     .desc = And there he was...
 ent-ClothingOuterCoatExpensive = дорогая шуба
     .desc = Очень пушистая розовая шуба, сделанная из очень дорогого меха (очевидно).
+ent-ClothingOuterCoatScrapBomber = бомбер "Свободного 91-го сектора"
+    .desc = Очень старый бомбер, имеющий несколько оранжевых полос и числа "91" на спине... Вы понятия не имеете, откуда он у вас.

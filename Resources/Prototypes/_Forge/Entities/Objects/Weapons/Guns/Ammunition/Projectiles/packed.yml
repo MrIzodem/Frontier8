@@ -1,0 +1,124 @@
+# .22,5 обжатый (5.45х39 мм)
+- type: entity
+  id: BulletPacked
+  name: bullet (.22,5 packed)
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 10
+        Blunt: 5
+        Structural: 5
+
+- type: entity
+  parent: BaseBulletTrigger
+  id: BulletPackedExplosive
+  name: bullet (.22,5 packed, explosive)
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 1
+        Structural: 20
+  - type: TimedDespawn
+    lifetime: 7
+  - type: ExplodeOnTrigger
+  - type: Explosive
+    explosionType: Packedexplosive
+    maxIntensity: 5
+    intensitySlope: 2
+    totalIntensity: 10
+    maxTileBreak: 1
+  - type: PointLight
+    radius: 2
+    color: yellow
+    energy: 0.1
+
+- type: entity
+  id: BulletPackedPellet
+  name: bullet (.22,5 packed, shotgun)
+  parent: NFBasePellet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 2
+        Blunt: 1.5
+        Structural: 3
+
+- type: entity
+  id: BulletPackedShotgun
+  name: bullet (.22,5 packed, shotgun)
+  parent: NFBasePellet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 2
+        Blunt: 1.5
+        Structural: 3
+  - type: ProjectileSpread
+    proto: BulletPackedPellet
+    count: 3
+    spread: 8
+
+- type: entity
+  id: BulletPackedProtokinetic
+  name: bullet (.22,5 packed, proto-kinetic)
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    noRot: false
+    sprite: Forge/Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    layers:
+    - state: packedkinetic
+      shader: unshaded
+  - type: Projectile
+    impactEffect: BulletImpactEffectKinetic
+    damage:
+      types:
+        Blunt: 5
+        Structural: 20
+  - type: Ammo
+    muzzleFlash: HitscanEffect
+  - type: TimedDespawn
+    lifetime: 0.2
+  - type: PointLight
+    radius: 4
+    color: yellow
+    energy: 0.2
+  - type: GatheringProjectile
+  - type: MiningGatheringSoft
+
+- type: entity
+  id: BulletPackedIncendiary
+  name: bullet (.22,5 packed, incendiary)
+  parent: NFBaseBulletIncendiary
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 3
+        Heat: 6
+        Structural: 3
+
+- type: entity
+  id: BulletPackedUranium
+  name: bullet (.22,5 packed, uranium)
+  parent: NFBaseBulletUranium
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 3
+        Radiation: 14.4
+        Structural: 3
+

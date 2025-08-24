@@ -12,10 +12,7 @@
       "delays": [[ 0.05, 0.05 ]]
     },
     {
-      "name": "pellet"
-    },
-    {
-      "name": "pellet-trace",
+      "name": "pellet",
       "delays": [[ 0.05, 0.05 ]]
     }
   ]

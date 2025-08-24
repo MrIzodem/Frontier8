@@ -1,0 +1,41 @@
+- type: entity
+  name: M44-PU carbine
+  parent: [BaseWeaponSniper, BaseGunWieldable, BaseC2ContrabandUnredeemable]
+  id: WeaponSniperM44PU
+  description: Reconstructed version of M44-U carbine on marksman-like rifle, usualy using by Dust Infantry sniper. Use .22,5 packed ammo.
+  components:
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Snipers/m44pu.rsi
+  - type: Gun
+    fireRate: 0.9
+    projectileSpeed: 45
+    minAngle: 25
+    maxAngle: 50
+  - type: GunWieldBonus
+    minAngle: -24
+    maxAngle: -46
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,6,1
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgePacked
+    capacity: 5
+    proto: CartridgePacked
+  - type: StaticPrice
+    price: 2000
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.95
+  - type: HeldSpeedModifier
+    walkModifier: 0.95
+    sprintModifier: 0.90
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.15
+    sprintModifier: 0.10
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 15
+    pvsIncrease: 1.1

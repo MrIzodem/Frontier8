@@ -1,0 +1,53 @@
+- type: entity
+  id: WeaponRifleAssaultAS55
+  parent: [NFBaseWeaponRifleAssaultChamber20, BaseGunWieldable, BaseC2ContrabandUnredeemable, NFBaseWeaponFrameRifleAssaultNanotrasen]
+  name: AS-55 automatic rifle
+  description: An old, but classic automatic rifle for Dust Troopers.
+  components:
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Rifles/as-55_icon_40x.rsi
+  - type: Clothing
+    sprite: Forge/Objects/Weapons/Guns/Rifles/as-55.rsi
+  - type: Item
+    sprite: Forge/Objects/Weapons/Guns/Rifles/as-55.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Gun
+    fireRate: 3.5
+    projectileSpeed: 25
+    minAngle: 20
+    maxAngle: 26
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    - SemiAuto
+  - type: GunWieldBonus
+    minAngle: -15
+    maxAngle: -20
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePackedRiflefilled
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePackedRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePacked
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePacked
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: StaticPrice
+    price: 1200

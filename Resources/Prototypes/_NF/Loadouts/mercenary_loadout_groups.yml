@@ -50,6 +50,7 @@
   - MercenaryClothingOuterArmorPunkRed # Punkish (Static visuals)
   - MercenaryClothingOuterArmorPunkRandomized # Punkish (Randomized visuals)
   - MercenaryClothingOuterArmorCaptainCarapace
+  - MercenaryClothingOuterCoatScrapBomber
   subgroups:
   - PilotOuterClothing
   - ContractorOuterClothing

@@ -42,8 +42,8 @@
     rechargeCooldown: 2
     rechargeSound:
       path: /Audio/_NF/Effects/silence.ogg
-  - type: Speech #CorvaxFrontier
-    speechSounds: Alto
+  - type: Speech
+    speechSounds: Bass
   - type: MeleeWeapon
     attackRate: 1.0
     altDisarm: false
@@ -58,7 +58,7 @@
       params:
         variation: 0.125
   - type: Advertise
-    pack: mercenaryhumanoidchatter
+    pack: scraptechshumanoidchatter
     minimumWait: 30
     maximumWait: 120
     nextAdvertisementTime: 10
@@ -70,11 +70,11 @@
 # Tier 1
 
 - type: entity
-  name: scrap tech infantry
+  name: scrap tech vagabound
   parent: MobScrapTechBase
   id: MobScrapTechDT1Repeater
-  description: Basic "dust" trooper, grabbed from civilians of 91-st sector.
-# categories: [ HideSpawnMenu ]
+  suffix: AI, Hostile, Common, T1
+  description: Basic "dust trooper", grabbed from civilians of 91-st sector.
   components:
   - type: Loadout
     prototypes:
@@ -84,7 +84,7 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#f0af79" 
+      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
       state: equipped-INNERCLOTHING
     - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
@@ -108,11 +108,11 @@
     soundGunshot: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
 
 - type: entity
-  name: scrap tech infantry
+  name: scrap tech vagabound
   parent: MobScrapTechBase
   id: MobScrapTechDT1SVS
-  description: Basic "dust" trooper, grabbed from civilians of 91-st sector.
-# categories: [ HideSpawnMenu ]
+  suffix: AI, Hostile, Common, T1
+  description: Basic "dust trooper", grabbed from civilians of 91-st sector.
   components:
   - type: Loadout
     prototypes:
@@ -122,7 +122,7 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#f0af79" 
+      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
       state: equipped-INNERCLOTHING
     - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
@@ -146,11 +146,11 @@
     soundGunshot: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
 
 - type: entity
-  name: scrap tech infantry
+  name: scrap tech vagabound
   parent: MobScrapTechBase
   id: MobScrapTechDT1Machete
-  description: Basic "dust" trooper, grabbed from civilians of 91-st sector.
-# categories: [ HideSpawnMenu ]
+  suffix: AI, Hostile, Common, T1
+  description: Basic "dust trooper", grabbed from civilians of 91-st sector.
   components:
   - type: Loadout
     prototypes:
@@ -160,7 +160,7 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#f0af79" 
+      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
       state: equipped-INNERCLOTHING
     - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
@@ -180,25 +180,153 @@
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
 
+- type: entity
+  name: dust troopers infantry
+  parent: MobScrapTechBase
+  id: MobScrapTechDT1Shilov
+  suffix: AI, Hostile, Common, T1
+  description: Basic "dust trooper" from of 91-st sector.
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedShilovPistolT1
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#b7865d" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformb.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Clothing/Head/Bandanas/black.rsi
+      state: equipped-HELMET
+  - type: BasicEntityAmmoProvider
+    proto: CartridgePacked
+    capacity: 12
+    count: 12
+  - type: Gun
+    showExamineText: false
+    fireRate: 2.4
+    minAngle: 20
+    maxAngle: 40
+    angleIncrease: 4
+    angleDecay: 4
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+
+- type: entity
+  name: dust troopers infantry
+  parent: MobScrapTechBase
+  id: MobScrapTechDT1M44U
+  suffix: AI, Hostile, Common, T1
+  description: Basic "dust trooper" from of 91-st sector.
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedM44UT1
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#b7865d" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformb.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Clothing/Head/Bandanas/black.rsi
+      state: equipped-HELMET
+  - type: BasicEntityAmmoProvider
+    proto: CartridgePacked
+    capacity: 7
+    count: 7
+  - type: Gun
+    showExamineText: false
+    fireRate: 1.1
+    minAngle: 10
+    maxAngle: 18
+    angleIncrease: 3
+    angleDecay: 3
+    projectileSpeed: 35
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+
 # Special T1 troopers
 
 - type: entity
-  name: scrap tech infantry
+  name: scrap tech vagabound
   parent: MobScrapTechDT1Repeater
   id: MobScrapTechDLiwT1Repeater
-  suffix: AI, Hostile, Liwer
+  suffix: AI, Hostile, Liwer, Uncommon, T1
   components:
   - type: Loadout
     prototypes:
     - MobHumanoidDScrapGearRangedRLiwT1
 
+- type: entity
+  name: scrap tech vagabound
+  parent: MobScrapTechDT1SVS
+  id: MobScrapTechDLiwT1SVS
+  suffix: AI, Hostile, Liwer, Uncommon, T1
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedSLiwT1
+
+- type: entity
+  name: dust marksman
+  parent: MobScrapTechBase
+  id: MobScrapTechDT1M44PU
+  suffix: AI, Hostile, Rare, T1
+  description: Special marksman soldier, wear ghillie cloak and custom M44 carbine.
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedM44PUT1
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#b7865d" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformb.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/Neck/Cloaks/scrapghillie.rsi
+      state: equipped-NECK
+    - sprite: Forge/Clothing/Head/Hoods/scrap.rsi
+      state: equipped-HELMET
+  - type: BasicEntityAmmoProvider
+    proto: CartridgePacked
+    capacity: 5
+    count: 5
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      110: Critical
+      140: Dead
+  - type: Gun
+    showExamineText: false
+    fireRate: 0.8
+    minAngle: 1
+    maxAngle: 3
+    angleIncrease: 3
+    angleDecay: 3
+    projectileSpeed: 45
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+
 # Tier 2
 
 - type: entity
-  name: scrap tech infantry
+  name: dust troopers operator
   parent: MobScrapTechBase
   id: MobScrapTechDT2Typewriter
-  description: Basic "dust" trooper, grabbed from civilians of 91-st sector.
+  suffix: AI, Hostile, Common, T2
+  description: Dust operators-elite soldiers, using for storms, ambushing, and other violence operations in 91-st sector.
 # categories: [ HideSpawnMenu ]
   components:
   - type: Loadout
@@ -218,10 +346,10 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#f0af79" 
+      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
       state: equipped-INNERCLOTHING
-    - sprite: Forge/Clothing/Head/Misc/sandbalaclava.rsi
+    - sprite: _NF/Clothing/Head/Hats/pilot.rsi
       state: equipped-HELMET
   - type: BasicEntityAmmoProvider
     proto: NFCartridgePistol35

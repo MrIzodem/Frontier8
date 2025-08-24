@@ -1,0 +1,285 @@
+- type: entity
+  name: dust trooper spawner
+  id: SpawnMobScrapTechCommonT1
+  parent: MarkerBase
+  suffix: AI, Hostile, T1-Common
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#b7865d" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/Shoes/Mics/linenwrap.rsi
+      state: equipped-FEET
+    - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
+      state: equipped-NECK
+    - sprite: Forge/Clothing/Head/Hoods/scrapcloak.rsi
+      state: equipped-HELMET
+  - type: RandomSpawner
+    prototypes:
+    - MobScrapTechDT1Repeater
+    - MobScrapTechDT1SVS
+    - MobScrapTechDT1Machete
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  name: dust trooper spawner
+  id: SpawnMobScrapTechUncommonT1
+  parent: MarkerBase
+  suffix: AI, Hostile, T1-Uncommon
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#b7865d" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformb.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Clothing/Shoes/Boots/cowboybootsbrown.rsi
+      state: equipped-FEET
+    - sprite: Clothing/Head/Bandanas/black.rsi
+      state: equipped-HELMET
+  - type: RandomSpawner
+    prototypes:
+    - MobScrapTechDT1SVS
+    - MobScrapTechDT1Machete
+    - MobScrapTechDT1Shilov
+    - MobScrapTechDT1M44U
+    chance: 1
+    offset: 0.0
+    rarePrototypes:
+    - MobScrapTechDLiwT1Repeater
+    - MobScrapTechDLiwT1SVS
+    rareChance: 0.3
+
+- type: entity
+  name: dust trooper spawner
+  id: SpawnMobScrapTechRareT1
+  parent: MarkerBase
+  suffix: AI, Hostile, T1-Rare
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#b7865d" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformb.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Clothing/Shoes/Boots/cowboybootsbrown.rsi
+      state: equipped-FEET
+    - sprite: Forge/Clothing/Neck/Cloaks/scrapghillie.rsi
+      state: equipped-NECK
+    - sprite: Forge/Clothing/Head/Hoods/scrap.rsi
+      state: equipped-HELMET
+  - type: RandomSpawner
+    prototypes:
+    - MobScrapTechDT1Shilov
+    - MobScrapTechDT1M44U
+    chance: 1
+    offset: 0.0
+    rarePrototypes:
+    - MobScrapTechDLiwT1SVS
+    - MobScrapTechDT1M44PU
+    rareChance: 0.2
+
+- type: entity
+  name: dust trooper spawner
+  id: SpawnMobMScrapTechCommonT2
+  parent: MarkerBase
+  suffix: AI, Hostile, T2-Common
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
+      color: "#3d5c87"
+    - sprite: Clothing/Shoes/Boots/combatboots.rsi
+      state: equipped-FEET
+    - sprite: Clothing/Hands/Gloves/fingerless.rsi
+      state: equipped-HAND
+    - sprite: Clothing/OuterClothing/Armor/security_slim.rsi
+      state: equipped-OUTERCLOTHING
+    - sprite: Clothing/Mask/gas.rsi
+      state: equipped-MASK
+    - sprite: Clothing/Head/Helmets/security.rsi
+      state: equipped-HELMET
+    - sprite: Objects/Weapons/Guns/Shotguns/db_shotgun_inhands_64x.rsi
+      state: wielded-inhand-right
+  - type: RandomSpawner
+    prototypes:
+    - MobMercenaryBreacherShotgun
+    - MobMercenarySoldierRevolver
+    - MobMercenaryBreacherMachete
+    chance: 1
+    offset: 0.0
+    rarePrototypes:
+    - SpawnMobMercenaryT3
+    rareChance: 0.1
+
+- type: entity
+  name: dust trooper spawner
+  id: SpawnMobMScrapTechUncommonT2
+  parent: MarkerBase
+  suffix: AI, Hostile, T2-Uncommon
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
+      color: "#2e687a"
+    - sprite: Clothing/Shoes/Boots/combatboots.rsi
+      state: equipped-FEET
+    - sprite: Clothing/Hands/Gloves/fingerless.rsi
+      state: equipped-HAND
+    - sprite: Clothing/OuterClothing/Armor/security_slim.rsi
+      state: equipped-OUTERCLOTHING
+    - sprite: Clothing/Mask/medicalsecurity.rsi
+      state: equipped-MASK
+    - sprite: Clothing/Head/Helmets/light_riot.rsi
+      state: equipped-HELMET
+    - sprite: Objects/Specific/Medical/Surgery/saw.rsi
+      state: electric-inhand-right
+    - sprite: Objects/Weapons/Guns/Battery/laser_retro.rsi
+      state: inhand-right-3
+  - type: RandomSpawner
+    prototypes:
+    - MobMercenarySpecialistMedic
+    - MobMercenarySpecialistAssault
+    chance: 1
+    offset: 0.0
+    rarePrototypes:
+    - MobMercenarySpecialistMedic
+    - MobMercenarySpecialistAssault
+    rareChance: 0.2
+
+- type: entity
+  name: dust trooper spawner
+  id: SpawnMobMScrapTechRareT2
+  parent: MarkerBase
+  suffix: AI, Hostile, T2-Rare
+  components:
+  - type: RandomSpawner
+    prototypes:
+    - MobMercenarySoldierEVAKnife
+    - MobMercenarySoldierEVAPistol
+    - MobMercenarySoldierEVANovalite
+    chance: 1
+    offset: 0.0
+    rarePrototypes:
+    - SpawnMobMercenaryEVAT2
+    rareChance: 0.05
+
+- type: entity
+  name: dust trooper boss spawner
+  id: SpawnMobMScrapTechRandomT3
+  parent: MarkerBase
+  suffix: AI, Hostile, T3-Random boss
+  components:
+  - type: RandomSpawner
+    prototypes:
+    - MobMercenaryBreacherEVAMachete
+    - MobMercenaryBreacherEVARevolver
+    - MobMercenaryBreacherEVAShotgun
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  name: dust trooper boss spawner
+  id: SpawnMobMScrapTechAgentT3
+  parent: MarkerBase
+  suffix: AI, Hostile, T3-Radio Agent
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - MobMercenarySpecialistEVAMedic
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  name: dust trooper boss spawner
+  id: SpawnMobMScrapTechMaroonT3
+  parent: MarkerBase
+  suffix: AI, Hostile, T3-Maroon Operator
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - MobMercenarySpecialistEVAMedic
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  name: dust trooper boss spawner
+  id: SpawnMobMScrapTechRaideraltT3
+  parent: MarkerBase
+  suffix: AI, Hostile, T3-Dust Raider
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - MobMercenarySpecialistEVAMedic
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  name: dust trooper boss spawner
+  id: SpawnMobMScrapTechRaiderT3
+  parent: MarkerBase
+  suffix: AI, Hostile, T3-Dust Raider (Deserter)
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - MobMercenarySpecialistEVAMedic
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  name: dust trooper boss spawner
+  id: SpawnMobMScrapTechAirbornT3
+  parent: MarkerBase
+  suffix: AI, Hostile, T3-Airborn captain
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - MobMercenarySpecialistEVAMedic
+    chance: 1
+    offset: 0.0
+
+- type: entity
+  name: dust trooper boss spawner
+  id: SpawnMobMScrapTechAirbornrandomT3
+  parent: MarkerBase
+  suffix: AI, Hostile, T3-Airborn captain 50%
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - MobMercenarySpecialistEVAMedic
+    chance: 0.5
+    offset: 0.0
+
+- type: entity
+  name: dust trooper boss spawner
+  id: SpawnMobMScrapTechAddictedT3
+  parent: MarkerBase
+  suffix: AI, Hostile, T3-Liwer addicted
+  components:
+  - type: ConditionalSpawner
+    prototypes:
+    - MobMercenarySpecialistEVAMedic
+    chance: 1
+    offset: 0.0

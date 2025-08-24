@@ -1,0 +1,63 @@
+- type: entity
+  name: ASSP
+  parent: [BaseWeaponSubMachineGun, BaseC2ContrabandUnredeemable]
+  id: WeaponSubMachineGunScrapASSP
+  description: Unique pocket-size automatic rifle, worn by Scrap Techs Dust Troopers radio-agents. Use .22,5 packed ammo.
+  components:
+  - type: Appearance
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,2,0
+    - 0,1,0,1
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/SMGs/assp.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Clothing
+    sprite: Forge/Objects/Weapons/Guns/SMGs/assp.rsi
+    slots:
+    - Belt
+  - type: Gun
+    minAngle: 4
+    maxAngle: 5
+    angleDecay: 6
+    fireRate: 5.5
+    selectedMode: FullAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/smg.ogg
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePackedHighPistolfilled
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePackedHighPistol
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePacked
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePacked
+  - type: StaticPrice
+    price: 10000

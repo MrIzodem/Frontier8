@@ -1,0 +1,53 @@
+- type: entity
+  name: Shilov,s pistol
+  parent: [BaseWeaponPistol, BaseC2ContrabandUnredeemable]
+  id: WeaponPistolScrapShilov
+  description: The good old Shilov pistol comes from the distant, deserted 91-st sector. Use .22,5 packed ammo.
+  components:
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Pistols/scrapshilov.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Forge/Objects/Weapons/Guns/Pistols/scrapshilov.rsi
+    slots:
+    - Belt
+  - type: Gun
+    minAngle: 3
+    maxAngle: 15
+    angleIncrease: 10
+    angleDecay: 11
+    fireRate: 4
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/pistol.ogg
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePackedPistolfilled
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePackedPistol
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePacked
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePacked
+  - type: StaticPrice
+    price: 700
