@@ -1,6 +1,6 @@
 - type: entity
   id: BaseAmmunitionBoxAircraft80
-  parent: NFBaseAmmunitionBox
+  parent: [ NFBaseAmmunitionBox, BaseC2ContrabandUnredeemable ]
   name: ammunition box (.80 anti-aircraft)
   abstract: true
   components:

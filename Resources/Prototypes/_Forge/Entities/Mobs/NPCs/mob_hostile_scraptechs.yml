@@ -135,7 +135,7 @@
     count: 15
   - type: Gun
     showExamineText: false
-    fireRate: 1.9
+    fireRate: 1.5
     minAngle: 10
     maxAngle: 20
     angleIncrease: 3
@@ -206,7 +206,7 @@
     count: 12
   - type: Gun
     showExamineText: false
-    fireRate: 2.4
+    fireRate: 2.0
     minAngle: 20
     maxAngle: 40
     angleIncrease: 4
@@ -242,7 +242,7 @@
     count: 7
   - type: Gun
     showExamineText: false
-    fireRate: 1.1
+    fireRate: 1
     minAngle: 10
     maxAngle: 18
     angleIncrease: 3
@@ -256,7 +256,7 @@
 # Special T1 troopers
 
 - type: entity
-  name: scrap tech vagabound
+  name: dust troopers vagabound
   parent: MobScrapTechDT1Repeater
   id: MobScrapTechDLiwT1Repeater
   suffix: AI, Hostile, Liwer, Uncommon, T1
@@ -266,7 +266,7 @@
     - MobHumanoidDScrapGearRangedRLiwT1
 
 - type: entity
-  name: scrap tech vagabound
+  name: dust troopers vagabound
   parent: MobScrapTechDT1SVS
   id: MobScrapTechDLiwT1SVS
   suffix: AI, Hostile, Liwer, Uncommon, T1
@@ -327,7 +327,6 @@
   id: MobScrapTechDT2Typewriter
   suffix: AI, Hostile, Common, T2
   description: Dust operators-elite soldiers, using for storms, ambushing, and other violence operations in 91-st sector.
-# categories: [ HideSpawnMenu ]
   components:
   - type: Loadout
     prototypes:
@@ -335,8 +334,8 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      130: Critical
-      170: Dead
+      120: Critical
+      140: Dead
   - type: SlowOnDamage
     speedModifierThresholds:
       64: 0.7
@@ -357,11 +356,151 @@
     count: 30
   - type: Gun
     showExamineText: false
-    fireRate: 3
+    fireRate: 2.5
     minAngle: 10
     maxAngle: 30
     angleIncrease: 3
     angleDecay: 3
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+
+- type: entity
+  name: dust troopers operator
+  parent: MobScrapTechBase
+  id: MobScrapTechDT2AS55U
+  suffix: AI, Hostile, Common, T2
+  description: Dust operators-elite soldiers, using for storms, ambushing, and other violence operations in 91-st sector.
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedASUT2
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      120: Critical
+      140: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      64: 0.7
+      98: 0.5
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#b7865d" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
+      state: equipped-NECK
+    - sprite: Forge/Clothing/Head/Hoods/scrapcloak.rsi
+      state: equipped-HELMET
+  - type: BasicEntityAmmoProvider
+    proto: CartridgePacked
+    capacity: 32
+    count: 32
+  - type: Gun
+    showExamineText: false
+    fireRate: 3.5
+    minAngle: 15
+    maxAngle: 35
+    angleIncrease: 4
+    angleDecay: 4
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+
+- type: entity
+  name: dust troopers operator
+  parent: MobScrapTechBase
+  id: MobScrapTechDT2M44U
+  suffix: AI, Hostile, Common, T2
+  description: Dust operators-elite soldiers, using for storms, ambushing, and other violence operations in 91-st sector.
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedM44UT1
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      130: Critical
+      150: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      64: 0.7
+      98: 0.5
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#b7865d" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
+      state: equipped-NECK
+    - sprite: Forge/Clothing/Head/Hoods/scrapcloak.rsi
+      state: equipped-HELMET
+  - type: BasicEntityAmmoProvider
+    proto: CartridgePackedShotgun
+    capacity: 7
+    count: 7
+  - type: Gun
+    showExamineText: false
+    fireRate: 1
+    minAngle: 15
+    maxAngle: 35
+    angleIncrease: 4
+    angleDecay: 4
+    selectedMode: SemiAuto
+    availableModes:
+    - FullAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+
+
+- type: entity
+  name: dust troopers operator
+  parent: MobScrapTechBase
+  id: MobScrapTechDT2AS55
+  suffix: AI, Hostile, Uncommon, T2
+  description: Dust operators-elite soldiers, using for storms, ambushing, and other violence operations in 91-st sector.
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedAST2
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      120: Critical
+      140: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      64: 0.7
+      98: 0.5
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+      color: "#b7865d" 
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: _NF/Clothing/Head/Hats/pilot.rsi
+      state: equipped-HELMET
+  - type: BasicEntityAmmoProvider
+    proto: CartridgePacked
+    capacity: 32
+    count: 32
+  - type: Gun
+    showExamineText: false
+    fireRate: 2.5
+    minAngle: 15
+    maxAngle: 20
+    angleIncrease: 2
+    angleDecay: 2
     selectedMode: FullAuto
     availableModes:
     - FullAuto

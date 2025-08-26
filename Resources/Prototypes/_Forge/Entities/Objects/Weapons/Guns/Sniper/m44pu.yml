@@ -1,7 +1,7 @@
 - type: entity
   name: M44-PU carbine
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseC2ContrabandUnredeemable]
-  id: WeaponSniperM44PU
+  id: WeaponScrapSniperM44PU
   description: Reconstructed version of M44-U carbine on marksman-like rifle, usualy using by Dust Infantry sniper. Use .22,5 packed ammo.
   components:
   - type: Sprite

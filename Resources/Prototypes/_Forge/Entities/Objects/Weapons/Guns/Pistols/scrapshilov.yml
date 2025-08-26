@@ -1,7 +1,7 @@
 - type: entity
   name: Shilov,s pistol
   parent: [BaseWeaponPistol, BaseC2ContrabandUnredeemable]
-  id: WeaponPistolScrapShilov
+  id: WeaponScrapPistolShilov
   description: The good old Shilov pistol comes from the distant, deserted 91-st sector. Use .22,5 packed ammo.
   components:
   - type: Sprite

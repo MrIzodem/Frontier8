@@ -2,8 +2,8 @@
   parent: ClothingHandsGlovesCombat
   id: ClothingHandsRepeater
   name: Repeater
-  suffix: repeater
-  description: ...
+  suffix: Repeater
+  description: Repeater
   categories: [ HideSpawnMenu ]
   components:
   - type: Unremoveable
@@ -58,9 +58,9 @@
 - type: entity
   parent: ClothingHandsGlovesCombat
   id: ClothingHandsTypewriter
-  name: Machete
-  suffix: Machete
-  description: Machete
+  name: Typewriter
+  suffix: Typewriter
+  description: Typewriter
   categories: [ HideSpawnMenu ]
   components:
   - type: Unremoveable
@@ -79,9 +79,9 @@
 - type: entity
   parent: ClothingHandsGlovesCombat
   id: ClothingHandsM44PU
-  name: Machete
-  suffix: Machete
-  description: Machete
+  name: M44PU
+  suffix: M44PU
+  description: M44PU
   categories: [ HideSpawnMenu ]
   components:
   - type: Unremoveable
@@ -100,9 +100,9 @@
 - type: entity
   parent: ClothingHandsGlovesCombat
   id: ClothingHandsShilov
-  name: Machete
-  suffix: Machete
-  description: Machete
+  name: Shilov
+  suffix: Shilov
+  description: Shilov
   categories: [ HideSpawnMenu ]
   components:
   - type: Unremoveable
@@ -121,9 +121,9 @@
 - type: entity
   parent: ClothingHandsGlovesCombat
   id: ClothingHandsM44U
-  name: Machete
-  suffix: Machete
-  description: Machete
+  name: M44U
+  suffix: M44U
+  description: M44U
   categories: [ HideSpawnMenu ]
   components:
   - type: Unremoveable
@@ -138,3 +138,45 @@
         state: equipped-HAND
       - sprite: Forge/Objects/Weapons/Guns/Rifles/m44u.rsi
         state: wielded-inhand-right
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsASU
+  name: AS-55U
+  suffix: AS-55U
+  description: AS-55U
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Rifles/as-55u_icon_40x.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/combat.rsi
+        state: equipped-HAND
+      - sprite: Forge/Objects/Weapons/Guns/Rifles/as-55u.rsi
+        state: inhand-right
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsAS
+  name: AS-55
+  suffix: AS-55
+  description: AS-55
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Rifles/as-55_icon_40x.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/combat.rsi
+        state: equipped-HAND
+      - sprite: Forge/Objects/Weapons/Guns/Rifles/as-55.rsi
+        state: wielded-inhand-left

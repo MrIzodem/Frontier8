@@ -1,8 +1,8 @@
 - type: entity
   parent: [ NFClothingBeltStorageBase, BaseC1Contraband ]
   id: ClothingBeltScrapRaiderWebbing
-  name: Scrap Tech Raider webbing
-  description: Armor plate carrier with belts and pockets. Very popular rig for ST raiders. And dont even try-radio broke long ago.
+  name: Dust Troopers webbing
+  description: Armor plate carrier with belts and pockets.
   components:
   - type: Sprite
     sprite: Forge/Clothing/Belt/scrap.rsi

@@ -106,18 +106,6 @@
     - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
       state: equipped-INNERCLOTHING
       color: "#3d5c87"
-    - sprite: Clothing/Shoes/Boots/combatboots.rsi
-      state: equipped-FEET
-    - sprite: Clothing/Hands/Gloves/fingerless.rsi
-      state: equipped-HAND
-    - sprite: Clothing/OuterClothing/Armor/security_slim.rsi
-      state: equipped-OUTERCLOTHING
-    - sprite: Clothing/Mask/gas.rsi
-      state: equipped-MASK
-    - sprite: Clothing/Head/Helmets/security.rsi
-      state: equipped-HELMET
-    - sprite: Objects/Weapons/Guns/Shotguns/db_shotgun_inhands_64x.rsi
-      state: wielded-inhand-right
   - type: RandomSpawner
     prototypes:
     - MobMercenaryBreacherShotgun
@@ -144,20 +132,6 @@
     - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
       state: equipped-INNERCLOTHING
       color: "#2e687a"
-    - sprite: Clothing/Shoes/Boots/combatboots.rsi
-      state: equipped-FEET
-    - sprite: Clothing/Hands/Gloves/fingerless.rsi
-      state: equipped-HAND
-    - sprite: Clothing/OuterClothing/Armor/security_slim.rsi
-      state: equipped-OUTERCLOTHING
-    - sprite: Clothing/Mask/medicalsecurity.rsi
-      state: equipped-MASK
-    - sprite: Clothing/Head/Helmets/light_riot.rsi
-      state: equipped-HELMET
-    - sprite: Objects/Specific/Medical/Surgery/saw.rsi
-      state: electric-inhand-right
-    - sprite: Objects/Weapons/Guns/Battery/laser_retro.rsi
-      state: inhand-right-3
   - type: RandomSpawner
     prototypes:
     - MobMercenarySpecialistMedic
@@ -175,6 +149,15 @@
   parent: MarkerBase
   suffix: AI, Hostile, T2-Rare
   components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
+      color: "#2e687a"
   - type: RandomSpawner
     prototypes:
     - MobMercenarySoldierEVAKnife
@@ -187,11 +170,70 @@
     rareChance: 0.05
 
 - type: entity
+  name: dust trooper spawner
+  id: SpawnMobMScrapTechRareT2Withairborn
+  parent: MarkerBase
+  suffix: AI, Hostile, T2-Rare (Airborn)
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
+      color: "#2e687a"
+  - type: RandomSpawner
+    prototypes:
+    - MobMercenarySoldierEVAKnife
+    - MobMercenarySoldierEVAPistol
+    - MobMercenarySoldierEVANovalite
+    chance: 1
+    offset: 0.0
+    rarePrototypes:
+    - SpawnMobMercenaryEVAT2
+    rareChance: 0.05
+
+- type: entity
+  name: dust trooper spawner
+  id: SpawnMobMScrapTechRareT2Airborn
+  parent: MarkerBase
+  suffix: AI, Hostile, T2-Airborn
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
+      color: "#2e687a"
+  - type: RandomSpawner
+    prototypes:
+    - MobMercenarySoldierEVAKnife
+    - MobMercenarySoldierEVAPistol
+    - MobMercenarySoldierEVANovalite
+    chance: 1
+    offset: 0.0
+
+
+- type: entity
   name: dust trooper boss spawner
   id: SpawnMobMScrapTechRandomT3
   parent: MarkerBase
   suffix: AI, Hostile, T3-Random boss
   components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
+      color: "#2e687a"
   - type: RandomSpawner
     prototypes:
     - MobMercenaryBreacherEVAMachete
@@ -206,6 +248,15 @@
   parent: MarkerBase
   suffix: AI, Hostile, T3-Radio Agent
   components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
+      color: "#2e687a"
   - type: ConditionalSpawner
     prototypes:
     - MobMercenarySpecialistEVAMedic
@@ -218,6 +269,15 @@
   parent: MarkerBase
   suffix: AI, Hostile, T3-Maroon Operator
   components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
+      color: "#2e687a"
   - type: ConditionalSpawner
     prototypes:
     - MobMercenarySpecialistEVAMedic
@@ -230,6 +290,15 @@
   parent: MarkerBase
   suffix: AI, Hostile, T3-Dust Raider
   components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
+      color: "#2e687a"
   - type: ConditionalSpawner
     prototypes:
     - MobMercenarySpecialistEVAMedic
@@ -242,6 +311,15 @@
   parent: MarkerBase
   suffix: AI, Hostile, T3-Dust Raider (Deserter)
   components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
+      color: "#2e687a"
   - type: ConditionalSpawner
     prototypes:
     - MobMercenarySpecialistEVAMedic
@@ -254,6 +332,15 @@
   parent: MarkerBase
   suffix: AI, Hostile, T3-Airborn captain
   components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
+      color: "#2e687a"
   - type: ConditionalSpawner
     prototypes:
     - MobMercenarySpecialistEVAMedic
@@ -264,8 +351,17 @@
   name: dust trooper boss spawner
   id: SpawnMobMScrapTechAirbornrandomT3
   parent: MarkerBase
-  suffix: AI, Hostile, T3-Airborn captain 50%
+  suffix: AI, Hostile, T3-Airborn captain, 50%
   components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
+      color: "#2e687a"
   - type: ConditionalSpawner
     prototypes:
     - MobMercenarySpecialistEVAMedic
@@ -278,6 +374,14 @@
   parent: MarkerBase
   suffix: AI, Hostile, T3-Liwer addicted
   components:
+  - type: Sprite
+    layers:
+    - state: red
+    - state: ai
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Clothing/Uniforms/Jumpsuit/color.rsi
+      state: equipped-INNERCLOTHING
   - type: ConditionalSpawner
     prototypes:
     - MobMercenarySpecialistEVAMedic

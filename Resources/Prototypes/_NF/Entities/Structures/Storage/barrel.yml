@@ -1269,3 +1269,21 @@
   - type: Paper
     content: reagent-label-mead
 
+- type: entity # Forge-Frontier
+  parent: MetalBarrelBlack
+  id: ChemicalBarrelOilST
+  suffix: Oil
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      tank:
+        reagents:
+          - ReagentId: Oil
+            Quantity: 250
+  - type: ContainerFill
+    containers:
+      paper_label:
+      - LabelOil
+  - type: StaticPrice
+    price: 200
+

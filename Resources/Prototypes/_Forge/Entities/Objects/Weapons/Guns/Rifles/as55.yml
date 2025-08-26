@@ -1,8 +1,8 @@
 - type: entity
-  id: WeaponRifleAssaultAS55
-  parent: [NFBaseWeaponRifleAssaultChamber20, BaseGunWieldable, BaseC2ContrabandUnredeemable, NFBaseWeaponFrameRifleAssaultNanotrasen]
+  id: WeaponScrapRifleAssaultAS55
+  parent: [NFBaseWeaponRifleAssaultChamber, BaseGunWieldable, BaseC2ContrabandUnredeemable, NFBaseWeaponFrameRifleAssault ]
   name: AS-55 automatic rifle
-  description: An old, but classic automatic rifle for Dust Troopers.
+  description: An old, but classic automatic rifle for Dust Troopers. Use .22,5 packed ammo.
   components:
   - type: Sprite
     sprite: Forge/Objects/Weapons/Guns/Rifles/as-55_icon_40x.rsi
@@ -10,6 +10,9 @@
     sprite: Forge/Objects/Weapons/Guns/Rifles/as-55.rsi
   - type: Item
     sprite: Forge/Objects/Weapons/Guns/Rifles/as-55.rsi
+    size: Huge
+    shape:
+    - 0,0,5,1
   - type: MagazineVisuals
     magState: mag
     steps: 1

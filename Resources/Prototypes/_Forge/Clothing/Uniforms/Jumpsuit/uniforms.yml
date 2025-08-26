@@ -1,5 +1,5 @@
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ClothingUniformBase, BaseC1Contraband ]
   id: ClothingUniformrobeST
   name: Scrap desert robe
   description: A beige linen robe for protection from the scorching sun of the distant sector...
@@ -10,10 +10,10 @@
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ClothingUniformBase, BaseC1Contraband ]
   id: ClothingUniformberezkaST
   name: operator sand uniform
-  description: Light, sand-camo colored uniform, worn by elite dust troopers.
+  description: Light, sand-camo colored uniform, worn by elite Dust Troopers.
   components:
     - type: Sprite
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
@@ -21,10 +21,10 @@
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ClothingUniformBase, BaseC1Contraband ]
   id: ClothingUniformButanST
-  name: elite sand airborn uniform
-  description: Unique, dark-sand colored camo suit with telnyashka under it, used by the most elite airborn troopers from ST.
+  name: elite dust airborn uniform
+  description: Unique, dark-sand colored camo suit with telnyashka under it, used by Dust Troopers airborn officer,s.
   components:
     - type: Sprite
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapairbornuniform.rsi
@@ -32,12 +32,23 @@
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapairbornuniform.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: [ClothingUniformBase, BaseC1Contraband ]
   id: ClothingUniformM288ST
-  name: M288 infantry sand uniform
-  description: Old, dusty sand-colored uniform with pockets, worn by dust troopers infantry.
+  name: M288 infantry dust uniform
+  description: Old, dusty sand-colored uniform with pockets, worn by Dust Troopers infantry.
   components:
     - type: Sprite
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformb.rsi
     - type: Clothing
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformb.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseC1Contraband ]
+  id: ClothingUniformTelnyashkaST
+  name: dust airborn uniform
+  description: A basic, red-colored telnyashka and desert camo pants with belt and pockets.
+  components:
+    - type: Sprite
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformc.rsi
+    - type: Clothing
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformc.rsi

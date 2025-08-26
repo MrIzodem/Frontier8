@@ -1,7 +1,7 @@
 - type: entity
   name: ASSP
   parent: [BaseWeaponSubMachineGun, BaseC2ContrabandUnredeemable]
-  id: WeaponSubMachineGunScrapASSP
+  id: WeaponScrapSubMachineGunASSP
   description: Unique pocket-size automatic rifle, worn by Scrap Techs Dust Troopers radio-agents. Use .22,5 packed ammo.
   components:
   - type: Appearance

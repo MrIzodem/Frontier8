@@ -68,5 +68,17 @@
     shoes: ClothingShoesBootsCowboyBrown
     gloves: ClothingHandsTypewriter
 
+- type: startingGear
+  id: MobHumanoidDScrapGearRangedASUT2
+  equipment:
+    shoes: ClothingShoesBootsCowboyBrown
+    gloves: ClothingHandsASU
+
+- type: startingGear
+  id: MobHumanoidDScrapGearRangedAST2
+  equipment:
+    shoes: ClothingShoesBootsCowboyBrown
+    gloves: ClothingHandsAS
+
 
 

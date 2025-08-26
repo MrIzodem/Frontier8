@@ -1,0 +1,14 @@
+- type: entity
+  parent: [ClothingHeadBase, BaseC1Contraband ]
+  id: ClothingHeadHatDustBeret
+  name: Dust Troopers airborn beret
+  description: A red-colored beret, worn by airborn officer,s.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Head/Hats/dtairbornberet.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Head/Hats/dtairbornberet.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon

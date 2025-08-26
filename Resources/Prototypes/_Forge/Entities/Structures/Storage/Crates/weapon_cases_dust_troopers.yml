@@ -1,0 +1,172 @@
+- type: entity
+  parent: ToolboxBase
+  name: Dust Troopers armory crate
+  id: WeaponCaseDustLong
+  description: An old, wooden armory crate, he covered with dust...
+  suffix: Long
+  components:
+  - type: Sprite
+    sprite: Forge/Objects/Storage/guncasewoodlong.rsi
+    layers:
+    - map: [ base ]
+      state: icon
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        base:
+          True: { state: icon-open }
+          False: { state: icon }
+  - type: Item
+    sprite: Forge/Objects/Storage/guncasewoodlong.rsi
+    size: Large
+    shape:
+    - 0,0,5,3
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,7,3
+    whitelist:
+      components:
+      - Gun
+      - BallisticAmmoProvider
+      - Projectile
+      - CartridgeAmmo
+      - PowerCell
+      - MeleeWeapon
+      - Blocking
+      - WeaponCaseInsertable
+      tags:
+      - Cartridge
+
+- type: entity
+  parent: ToolboxBase
+  name: Dust Troopers armory crate
+  id: WeaponCaseDustShort
+  description: An old, wooden armory crate, he covered with dust...
+  suffix: Short
+  components:
+  - type: Sprite
+    sprite: Forge/Objects/Storage/guncasewoodshort.rsi
+    layers:
+    - map: [ base ]
+      state: icon
+  - type: GenericVisualizer
+    visuals:
+      enum.StorageVisuals.Open:
+        base:
+          True: { state: icon-open }
+          False: { state: icon }
+  - type: Item
+    sprite: Forge/Objects/Storage/guncasewoodshort.rsi
+    size: Large
+    shape:
+    - 0,0,5,3
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,4,2
+    whitelist:
+      components:
+      - Gun
+      - BallisticAmmoProvider
+      - Projectile
+      - CartridgeAmmo
+      - PowerCell
+      - MeleeWeapon
+      - Blocking
+      - WeaponCaseInsertable
+      tags:
+      - Cartridge
+
+# Common
+
+- type: entity
+  parent: WeaponCaseDustLong
+  id: WeaponCaseDustAS55
+  suffix: Long, AS-55
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponScrapRifleAssaultAS55
+      amount: 1
+    - id: MagazinePackedRiflefilled
+      amount: 3
+    - id: AmmunitionBoxPackedFilled
+      amount: 1
+
+- type: entity
+  parent: WeaponCaseDustShort
+  id: WeaponCaseDustAS55U
+  suffix: Short, AS-55U
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponScrapRifleAssaultAS55U
+      amount: 1
+    - id: MagazinePackedRiflefilled
+      amount: 2
+
+- type: entity
+  parent: WeaponCaseDustLong
+  id: WeaponCaseDustAS55S
+  suffix: Long, AS-55S
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponScrapRifleAssaultAS55S
+      amount: 1
+    - id: MagazinePackedRiflefilled
+      amount: 2
+    - id: AmmunitionBoxPackedFilled
+      amount: 1
+
+- type: entity
+  parent: WeaponCaseDustShort
+  id: WeaponCaseDustShilov
+  suffix: Short, Shilov,s pistol
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponScrapPistolShilov
+      amount: 1
+    - id: MagazinePackedPistolfilled
+      amount: 4
+
+
+- type: entity
+  parent: WeaponCaseDustLong
+  id: WeaponCaseDustM44U
+  suffix: Long, M44-U
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponScrapRifleM44
+      amount: 1
+    - id: AmmunitionBoxPackedFilled
+      amount: 2
+
+# Special (Debug-like)
+
+- type: entity
+  parent: WeaponCaseDustLong
+  id: WeaponCaseDustM44PU
+  suffix: Long, M44-PU
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponScrapSniperM44PU
+      amount: 1
+    - id: AmmunitionBoxPackedFilled
+      amount: 3
+
+- type: entity
+  parent: WeaponCaseDustShort
+  id: WeaponCaseDustASSP
+  suffix: Short, ASSP
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponScrapSubMachineGunASSP
+      amount: 1
+    - id: MagazinePackedHighPistolfilled
+      amount: 3

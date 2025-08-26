@@ -1,0 +1,64 @@
+- type: entity
+  id: WeaponScrapRifleAssaultAS55S
+  parent: [NFBaseWeaponRifleAssaultChamber, BaseGunWieldable, BaseC2ContrabandUnredeemable, NFBaseWeaponFrameRifleAssault ]
+  name: AS-55S marksman rifle
+  description: Uncommon modification of AS-55 for airborn military, have integral supressor and burst-fire. Use .22,5 packed ammo
+  components:
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Rifles/as-55s_icon_40x.rsi
+  - type: Clothing
+    sprite: Forge/Objects/Weapons/Guns/Rifles/as-55s.rsi
+  - type: Item
+    sprite: Forge/Objects/Weapons/Guns/Rifles/as-55s.rsi
+    size: Huge
+    shape:
+    - 0,0,6,1
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Gun
+    fireRate: 3
+    projectileSpeed: 30
+    minAngle: 15
+    maxAngle: 20
+    shotsPerBurst: 4
+    burstCooldown: 0.5
+    selectedMode: Burst
+    availableModes:
+    - Burst
+    - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+  - type: GunWieldBonus
+    minAngle: -10
+    maxAngle: -15
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePackedRiflefilled
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePackedRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePacked
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePacked
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 10
+    pvsIncrease: 1.1
+  - type: StaticPrice
+    price: 1500

@@ -1,0 +1,32 @@
+#- type: entity
+#  abstract: true
+#  parent: ClothingHeadset
+#  id: ClothingHeadsetScrapAgent
+#  name: Dust Troopers agent radioset
+#  description: An updated, modular intercom that fits over the head. Takes encryption keys.
+#  components:
+#  - type: EncryptionKeyHolder
+#    keySlots: 15
+#  - type: Sprite
+#    state: icon
+#  - type: Item
+#    size: Normal
+#  - type: Clothing
+#    slots:
+#    - ears
+#    sprite: Forge/Clothing/Ears/Headsets/scrapagent.rsi
+#  - type: GuideHelp
+#    guides:
+#    - Radio
+
+- type: entity
+  parent: ClothingHeadset
+  id: ClothingHeadsetScrapAgentTest
+  name: passenger headset
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Ears/Headsets/scrapagent.rsi
+  - type: EncryptionKeyHolder
+    keySlots: 15
+  - type: Item
+    size: Normal
