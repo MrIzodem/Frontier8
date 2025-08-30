@@ -12,7 +12,7 @@
 - type: entity
   parent: [ClothingUniformBase, BaseC1Contraband ]
   id: ClothingUniformberezkaST
-  name: operator sand uniform
+  name: operator dust uniform
   description: Light, sand-camo colored uniform, worn by elite Dust Troopers.
   components:
     - type: Sprite
@@ -52,3 +52,14 @@
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformc.rsi
     - type: Clothing
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformc.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseC2ContrabandUnredeemable ]
+  id: ClothingUniformRaiderST
+  name: dust raider uniform
+  description: Unique, dust-brown colored uniform-suit, worn by the most elite and single Dust Troopers soldiers.
+  components:
+    - type: Sprite
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformraider.rsi
+    - type: Clothing
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformraider.rsi

@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ ClothingMaskGas, BaseC1Contraband ]
-  id: ClothingMaskGasScrap
-  name: Scrap Tech raider respirator
-  description: Stell mask and goggles with dense veil and respirator under she, just what you need for privacy and looting.
+  parent: [ ClothingMaskGas, BaseC2ContrabandUnredeemable ]
+  id: ClothingMaskGasDustRaider
+  name: Dust Troopers raider respirator
+  description: Stell mask and lenses with dense veil and respirator under she... Rest In Piece, old friend...
   components:
   - type: Sprite
     sprite: Forge/Clothing/Masks/scrapmask.rsi

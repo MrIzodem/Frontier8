@@ -42730,7 +42730,7 @@ entities:
     - type: Transform
       pos: -15.3810215,11.23417
       parent: 1
-- proto: ChemicalBarrelOilST
+- proto: MetalBarrelBlack
   entities:
   - uid: 51
     components:

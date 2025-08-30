@@ -1,0 +1,23 @@
+- type: entity
+  parent: [ ClothingOuterStorageBase, BaseC1Contraband ]
+  id: ClothingBeltScrapWebbing
+  name: Dust Troopers webbing
+  description: Armor plate carrier with belts and pockets.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/OuterClothing/Vests/scrap.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/OuterClothing/Vests/scrap.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.85
+        Slash: 0.9
+        Piercing: 0.9
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.90
+  - type: HeldSpeedModifier
+  - type: Storage
+    grid:
+    - 0,0,3,1

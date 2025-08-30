@@ -56,9 +56,5 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
-  - type: CursorOffsetRequiresWield
-  - type: EyeCursorOffset
-    maxOffset: 10
-    pvsIncrease: 1.1
   - type: StaticPrice
     price: 1500

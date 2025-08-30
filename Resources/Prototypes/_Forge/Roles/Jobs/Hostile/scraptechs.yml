@@ -80,5 +80,48 @@
     shoes: ClothingShoesBootsCowboyBrown
     gloves: ClothingHandsAS
 
+# Special T2
+
+- type: startingGear
+  id: MobHumanoidDScrapGearRangedASUT2Air
+  equipment:
+    shoes: ClothingShoesBootsJack
+    gloves: ClothingHandsASUAlt
+    pocket2: MagazinePackedRiflefilled
+
+
+- type: startingGear
+  id: MobHumanoidDScrapGearRangedASSAir
+  equipment:
+    shoes: ClothingShoesBootsJack
+    gloves: ClothingHandsASS
+    pocket2: MagazinePackedRiflefilled
+
+# Tier 3
+
+- type: startingGear
+  id: MobHumanoidDScrapAirbornCaptainT3
+  equipment:
+    head: ClothingHeadHatDustBeret
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesGlassesSunglasses
+    gloves: ClothingHandsGlovesCombat
+    pocket1: MagazinePackedDrumRifleEmpty
+    pocket2: MagazinePackedDrumRiflelUranium
+    outerClothing: ClothingOuterArmorBasicSlim
+    suitstorage: WeaponScrapLightMachineGunRPS55
+  inhand:
+    - CombatKnife
+
+- type: startingGear
+  id: MobHumanoidDScrapAirbornCaptainT3Alt
+  equipment:
+    head: ClothingHeadHatDustBeret
+    shoes: ClothingShoesBootsJack
+    eyes: ClothingEyesEyepatch
+    gloves: ClothingHandsRPS
+    pocket1: MagazinePackedDrumRiflelUranium
+    pocket2: MagazinePackedDrumRiflelUranium
+    outerClothing: ClothingOuterArmorBasicSlim
 
 

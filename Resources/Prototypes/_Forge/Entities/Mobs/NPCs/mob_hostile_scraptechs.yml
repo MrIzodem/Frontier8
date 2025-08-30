@@ -2,24 +2,21 @@
 - type: entity
   name: ST infantry
   abstract: true
+  categories: [ HideSpawnMenu ]
   parent:
   - NFMobNoEquipmentOnGib
-  - MobMovementSpeedModifierMelee
   - MobStaminaFodder
-  - BaseC3MobHuman
   - MobNonHumanHostileBase
-  - MobHumanoidInvetorySimplified
+  - MobHumanoidInvetory
   - MobHumanoidHostileAISimpleRanged
   id: MobScrapTechBase
   description: ...
   components:
-  - type: RandomHumanoidAppearance
-    randomizeName: true
   - type: Damageable
     damageModifierSet: MobMercenaryDamageModifierSet
   - type: NpcFactionMember
     factions:
-    - MercenariesExpeditionNF
+    - ScrapTechsTroopers
   - type: MobThresholds
     thresholds:
       0: Alive
@@ -39,19 +36,19 @@
     - id: FoodMeatRotten
       amount: 2
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 2
+    rechargeCooldown: 1.5
     rechargeSound:
       path: /Audio/_NF/Effects/silence.ogg
   - type: Speech
     speechSounds: Bass
   - type: MeleeWeapon
-    attackRate: 1.0
+    attackRate: 2
     altDisarm: false
     angle: 0
     animation: WeaponArcPunch
     damage:
       types:
-        Slash: 12
+        Slash: 10
         Structural: 20
     soundHit:
       path: /Audio/Weapons/bladeslice.ogg
@@ -84,7 +81,6 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
       state: equipped-INNERCLOTHING
     - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
@@ -122,7 +118,6 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
       state: equipped-INNERCLOTHING
     - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
@@ -147,7 +142,7 @@
 
 - type: entity
   name: scrap tech vagabound
-  parent: MobScrapTechBase
+  parent: [ MobScrapTechBase, MobHumanoidHostileAISimpleMelee ]
   id: MobScrapTechDT1Machete
   suffix: AI, Hostile, Common, T1
   description: Basic "dust trooper", grabbed from civilians of 91-st sector.
@@ -160,7 +155,6 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scraprobe.rsi
       state: equipped-INNERCLOTHING
     - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
@@ -195,7 +189,6 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformb.rsi
       state: equipped-INNERCLOTHING
     - sprite: Clothing/Head/Bandanas/black.rsi
@@ -231,7 +224,6 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformb.rsi
       state: equipped-INNERCLOTHING
     - sprite: Clothing/Head/Bandanas/black.rsi
@@ -290,7 +282,6 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformb.rsi
       state: equipped-INNERCLOTHING
     - sprite: Forge/Clothing/Neck/Cloaks/scrapghillie.rsi
@@ -345,9 +336,10 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
       state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/OuterClothing/Vests/scrap.rsi
+      state: equipped-OUTERCLOTHING
     - sprite: _NF/Clothing/Head/Hats/pilot.rsi
       state: equipped-HELMET
   - type: BasicEntityAmmoProvider
@@ -390,13 +382,12 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
       state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/OuterClothing/Vests/scrap.rsi
+      state: equipped-OUTERCLOTHING
     - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
       state: equipped-NECK
-    - sprite: Forge/Clothing/Head/Hoods/scrapcloak.rsi
-      state: equipped-HELMET
   - type: BasicEntityAmmoProvider
     proto: CartridgePacked
     capacity: 32
@@ -437,13 +428,12 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
       state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/OuterClothing/Vests/scrap.rsi
+      state: equipped-OUTERCLOTHING
     - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
       state: equipped-NECK
-    - sprite: Forge/Clothing/Head/Hoods/scrapcloak.rsi
-      state: equipped-HELMET
   - type: BasicEntityAmmoProvider
     proto: CartridgePackedShotgun
     capacity: 7
@@ -485,9 +475,10 @@
     layers:
     - sprite: _NF/Mobs/Species/Templates/human.rsi
       state: human
-      color: "#b7865d" 
     - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniforma.rsi
       state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/OuterClothing/Vests/scrap.rsi
+      state: equipped-OUTERCLOTHING
     - sprite: _NF/Clothing/Head/Hats/pilot.rsi
       state: equipped-HELMET
   - type: BasicEntityAmmoProvider
@@ -505,3 +496,153 @@
     availableModes:
     - FullAuto
     soundGunshot: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+
+# Special T2 Troopers (Airborns only, yup...)
+
+- type: entity
+  name: dust troopers airborn
+  parent: MobScrapTechBase
+  id: MobScrapTechDT2AS55UAir
+  suffix: AI, Hostile, Airborn, T2
+  description: Airborns soldiers, using for special operations and storms from the skyes. What are they doing in space?!
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedASUT2Air
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      140: Critical
+      160: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      90: 0.7
+      120: 0.5
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformc.rsi
+      state: equipped-INNERCLOTHING
+  - type: BasicEntityAmmoProvider
+    proto: CartridgePacked
+    capacity: 32
+    count: 32
+  - type: Gun
+    showExamineText: false
+    fireRate: 3.2
+    minAngle: 10
+    maxAngle: 25
+    angleIncrease: 3.5
+    angleDecay: 3.5
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
+
+- type: entity
+  name: dust troopers airborn
+  parent: MobScrapTechBase
+  id: MobScrapTechDT2AS55SAir
+  suffix: AI, Hostile, Airborn, T2
+  description: Airborns soldiers, using for special operations and storms from the skyes. What are they doing in space?!
+  components:
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapGearRangedASSAir
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      140: Critical
+      160: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      90: 0.7
+      120: 0.5
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformc.rsi
+      state: equipped-INNERCLOTHING
+  - type: BasicEntityAmmoProvider
+    proto: CartridgePackedUranium
+    capacity: 32
+    count: 32
+  - type: Gun
+    showExamineText: false
+    fireRate: 3
+    projectileSpeed: 30
+    minAngle: 5
+    maxAngle: 15
+    shotsPerBurst: 4
+    burstCooldown: 0.5
+    selectedMode: Burst
+    availableModes:
+    - Burst
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/silenced.ogg
+
+# Tier 3 (bosses)
+
+- type: entity
+  name: dust troopers airborn captain
+  parent: MobScrapTechBase
+  id: MobScrapTechDT3AirbornCaptain
+  suffix: AI, Hostile, T3
+  description: An elite, veteran airborn who rose to the rank of Captain in the Airborne Forces. He is probably one of the best marksmans in the Dust Troopers officer ranks.
+  components:
+  - type: RandomHumanoidAppearance
+  - type: RandomMetadata
+  - type: Body
+    prototype: HumanSyntheticOrgans
+    requiredLegs: 2
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapAirbornCaptainT3
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      280: Critical
+      310: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      150: 1.4
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapairbornuniform.rsi
+      state: equipped-INNERCLOTHING
+
+- type: entity
+  name: dust troopers airborn captain
+  parent: MobScrapTechDT3AirbornCaptain
+  id: MobScrapTechDT3AirbornCaptainAlt
+  components:
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 0.5
+  - type: BasicEntityAmmoProvider
+    proto: CartridgePackedUranium
+    capacity: 128
+    count: 128
+  - type: Gun
+    fireRate: 7
+    angleIncrease: 3.5
+    angleDecay: 20
+    projectileSpeed: 25
+    minAngle: 25
+    maxAngle: 30
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+      params:
+        volume: -2
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapAirbornCaptainT3Alt

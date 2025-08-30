@@ -1,0 +1,69 @@
+- type: entity
+  id: WeaponScrapLightMachineGunRPS55
+  parent: [NFBaseWeaponRifleAssaultChamber, BaseGunWieldable, BaseC2ContrabandUnredeemable, NFBaseWeaponFrameRifleAssault ]
+  name: RPS-55
+  description: Light Machine Gun, maded in base AS-55, famous for its quality and use in elite troops, also can accept drum magazines on 64-st bullets. Use .22,5 packed ammo.
+  components:
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/LMGs/rps-55_icon_45x.rsi
+  - type: Clothing
+    sprite: Forge/Objects/Weapons/Guns/LMGs/rps-55.rsi
+  - type: Item
+    sprite: Forge/Objects/Weapons/Guns/LMGs/rps-55.rsi
+    size: Huge
+    shape:
+    - 0,0,7,1
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Gun
+    fireRate: 7
+    angleIncrease: 3.5
+    angleDecay: 20
+    projectileSpeed: 25
+    minAngle: 25
+    maxAngle: 30
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+      params:
+        volume: -2
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -15
+  - type: HeldSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.7
+    sprintModifier: 0.7
+  - type: ClothingSpeedModifier
+    walkModifier: 0.95
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazinePackedDrumRiflefilled
+        insertSound: /Audio/Weapons/Guns/MagIn/lmg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/lmg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazinePackedDrumRifle
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        startingItem: CartridgePacked
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgePacked
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: StaticPrice
+    price: 15000

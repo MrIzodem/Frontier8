@@ -145,12 +145,12 @@
     - id: AmmunitionBoxPackedFilled
       amount: 2
 
-# Special (Debug-like)
+# Special (Debug-like, u can,t see these in basic game)
 
 - type: entity
   parent: WeaponCaseDustLong
   id: WeaponCaseDustM44PU
-  suffix: Long, M44-PU
+  suffix: Long, M44-PU, DO NOT MAP
   components:
   - type: StorageFill
     contents:
@@ -162,11 +162,23 @@
 - type: entity
   parent: WeaponCaseDustShort
   id: WeaponCaseDustASSP
-  suffix: Short, ASSP
+  suffix: Short, ASSP, DO NOT MAP
   components:
   - type: StorageFill
     contents:
     - id: WeaponScrapSubMachineGunASSP
       amount: 1
     - id: MagazinePackedHighPistolfilled
+      amount: 3
+
+- type: entity
+  parent: WeaponCaseDustLong
+  id: WeaponCaseDustRPS55
+  suffix: Long, RPS-55, DO NOT MAP
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponScrapLightMachineGunRPS55
+      amount: 1
+    - id: MagazinePackedDrumRiflefilled
       amount: 3

@@ -180,3 +180,66 @@
         state: equipped-HAND
       - sprite: Forge/Objects/Weapons/Guns/Rifles/as-55.rsi
         state: wielded-inhand-left
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsASUAlt
+  name: AS-55U
+  suffix: AS-55U
+  description: AS-55U
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Rifles/as-55u_icon_40x.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/combat.rsi
+        state: equipped-HAND
+      - sprite: Forge/Objects/Weapons/Guns/Rifles/as-55u.rsi
+        state: wielded-inhand-left
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsASS
+  name: AS-55S
+  suffix: AS-55S
+  description: AS-55S
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Rifles/as-55s_icon_40x.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/combat.rsi
+        state: equipped-HAND
+      - sprite: Forge/Objects/Weapons/Guns/Rifles/as-55s.rsi
+        state: wielded-inhand-left
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsRPS
+  name: RPS-55
+  suffix: RPS-55
+  description: RPS-55
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/LMGs/rps-55_icon_45x.rsi
+    layers:
+    - state: icon
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: Clothing/Hands/Gloves/combat.rsi
+        state: equipped-HAND
+      - sprite: Forge/Objects/Weapons/Guns/LMGs/rps-55.rsi
+        state: wielded-inhand-left

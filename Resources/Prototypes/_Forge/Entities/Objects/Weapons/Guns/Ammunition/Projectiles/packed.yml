@@ -106,7 +106,7 @@
     damage:
       types:
         Piercing: 3
-        Heat: 6
+        Heat: 6.5
         Structural: 3
 
 - type: entity
@@ -118,7 +118,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 3
-        Radiation: 14.4
+        Piercing: 6
+        Radiation: 8.5
         Structural: 3
 

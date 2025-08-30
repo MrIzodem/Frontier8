@@ -195,9 +195,6 @@
     - state: pellet
       color: "#ff8d00FF"
       shader: unshaded
-    - state: pellet-trace
-      color: "#ff8d00BB"
-      shader: unshaded
 
 - type: entity
   id: NFBasePelletIncendiary
@@ -208,9 +205,6 @@
     layers:
     - state: pellet
       color: "#ff0000FF"
-      shader: unshaded
-    - state: pellet-trace
-      color: "#ff0000BB"
       shader: unshaded
   - type: PointLight
     enabled: true
@@ -232,9 +226,6 @@
     - state: pellet
       color: "#00ff00FF"
       shader: unshaded
-    - state: pellet-trace
-      color: "#9BE792BB"
-      shader: unshaded
   - type: PointLight
     enabled: true
     color: "#9BE792"
@@ -249,7 +240,4 @@
     layers:
     - state: pellet
       color: "#ddddddFF"
-      shader: unshaded
-    - state: pellet-trace
-      color: "#ddddddBB"
       shader: unshaded
