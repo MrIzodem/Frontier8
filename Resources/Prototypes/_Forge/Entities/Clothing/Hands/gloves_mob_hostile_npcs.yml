@@ -243,3 +243,45 @@
         state: equipped-HAND
       - sprite: Forge/Objects/Weapons/Guns/LMGs/rps-55.rsi
         state: wielded-inhand-left
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsShilovRaider
+  name: Shilov
+  suffix: Shilov
+  description: Shilov
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Pistols/scrapshilov.rsi
+    layers:
+    - state: base
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: _NF/Clothing/Hands/Gloves/nfsd_brown.rsi
+        state: equipped-HAND
+      - sprite: Forge/Objects/Weapons/Guns/Pistols/scrapshilov.rsi
+        state: inhand-left
+
+- type: entity
+  parent: ClothingHandsGlovesCombat
+  id: ClothingHandsDeserterRaider
+  name: Deserter
+  suffix: Deserter
+  description: Deserter
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Unremoveable
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/LMGs/Deserter_icon_45x.rsi
+    layers:
+    - state: base
+  - type: Clothing
+    clothingVisuals:
+      gloves:
+      - sprite: _NF/Clothing/Hands/Gloves/nfsd_brown.rsi
+        state: equipped-HAND
+      - sprite: Forge/Objects/Weapons/Guns/LMGs/Deserter.rsi
+        state: inhand-left

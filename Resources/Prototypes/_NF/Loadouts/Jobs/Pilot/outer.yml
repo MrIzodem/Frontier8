@@ -24,12 +24,3 @@
   price: 0
   equipment:
     outerClothing: ClothingOuterCoatBomber
-
-- type: loadout
-  id: PilotClothingOuterCoatScrapBomber
-  hideEffects:
-  - !type:GroupLoadoutEffect
-    proto: NFCoatCapable
-  price: 1901
-  equipment:
-    outerClothing: ClothingOuterCoatScrapBomber

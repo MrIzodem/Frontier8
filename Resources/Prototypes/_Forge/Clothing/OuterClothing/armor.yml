@@ -1,0 +1,29 @@
+- type: entity
+  parent: [ClothingOuterArmorBase, BaseC2ContrabandUnredeemable ]
+  id: ClothingOuterArmorHeavyScrapRaider
+  categories: [ HideSpawnMenu ] # Maybe, some day...
+  name: dust raider plate-armor
+  description: It can look old and rusty, but looks can be deceiving...
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/OuterClothing/Armor/scrapraider.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/OuterClothing/Armor/scrapraider.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.7
+        Slash: 0.8
+        Piercing: 0.6
+        Heat: 0.95
+  - type: ExplosionResistance
+    damageCoefficient: 0.60
+  - type: Reflect
+    reflectProb: 0.5
+    reflects:
+      - Energy
+    reflectingInHands: false
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier

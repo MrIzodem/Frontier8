@@ -627,8 +627,6 @@
     rechargeCooldown: 0.5
   - type: BasicEntityAmmoProvider
     proto: CartridgePackedUranium
-    capacity: 128
-    count: 128
   - type: Gun
     fireRate: 7
     angleIncrease: 3.5
@@ -646,3 +644,96 @@
   - type: Loadout
     prototypes:
     - MobHumanoidDScrapAirbornCaptainT3Alt
+
+- type: entity
+  name: dust troopers raider
+  parent: MobScrapTechBase
+  id: MobScrapTechDT3RaiderAlt
+  suffix: AI, Hostile, T3
+  description: 
+  components:
+  - type: Body
+    prototype: HumanSyntheticOrgans
+    requiredLegs: 2
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapRaiderT3Alt
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      300: Critical
+      350: Dead
+  - type: Gun
+    showExamineText: false
+    fireRate: 3
+    minAngle: 0
+    maxAngle: 5
+    angleIncrease: 3
+    angleDecay: 2
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    soundGunshot: /Audio/Weapons/Guns/Gunshots/pistol.ogg
+  - type: BasicEntityAmmoProvider
+    proto: CartridgePackedExplosive
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      250: 0.80
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformraider.rsi
+      state: equipped-INNERCLOTHING
+    - sprite: Forge/Clothing/Neck/Cloaks/scrapcloak.rsi
+      state: equipped-NECK
+  - type: Speech
+    enabled: false
+
+- type: entity
+  name: dust troopers raider
+  parent: MobScrapTechBase
+  id: MobScrapTechDT3Raider
+  suffix: AI, Hostile, T3
+  description: 
+  components:
+  - type: Body
+    prototype: HumanSyntheticOrgans
+    requiredLegs: 2
+  - type: Loadout
+    prototypes:
+    - MobHumanoidDScrapRaiderT3
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      350: Critical
+      390: Dead
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      300: 0.60
+  - type: Sprite
+    drawdepth: Mobs
+    layers:
+    - sprite: _NF/Mobs/Species/Templates/human.rsi
+      state: human
+    - sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapuniformraider.rsi
+      state: equipped-INNERCLOTHING
+  - type: Speech
+    enabled: false
+  - type: Gun
+    fireRate: 9
+    angleIncrease: 0.5
+    angleDecay: 20
+    projectileSpeed: 26
+    minAngle: 9
+    maxAngle: 15
+    selectedMode: FullAuto
+    availableModes:
+    - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/c-20r.ogg
+      params:
+        volume: -2
+  - type: BasicEntityAmmoProvider
+    proto: CartridgePackedIncendiary

@@ -124,4 +124,24 @@
     pocket2: MagazinePackedDrumRiflelUranium
     outerClothing: ClothingOuterArmorBasicSlim
 
+- type: startingGear
+  id: MobHumanoidDScrapRaiderT3Alt
+  equipment:
+    head: ClothingHeadHatHoodScrapCloak
+    shoes: ClothingShoesBootsPilot
+    mask: ClothingMaskGasDustRaider
+    gloves: ClothingHandsShilovRaider
+
+- type: startingGear
+  id: MobHumanoidDScrapRaiderT3
+  equipment:
+    head: ClothingHeadHatHoodScrapCloak
+    shoes: ClothingShoesBootsPilot
+    mask: ClothingMaskGasDustRaider
+    gloves: ClothingHandsDeserterRaider
+    pocket1: MagazinePackedLMGIncendiary
+    outerClothing: ClothingOuterArmorHeavyScrapRaider
+    suitstorage: WeaponScrapLightMachineGunDeserter
+
+
 

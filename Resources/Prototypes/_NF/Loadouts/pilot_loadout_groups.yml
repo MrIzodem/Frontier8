@@ -32,7 +32,6 @@
   loadouts:
   - PilotClothingOuterCoatBomber
   - PilotClothingOuterHardsuitPilot
-  - PilotClothingOuterCoatScrapBomber
   subgroups:
   - ContractorOuterClothing
 

@@ -1,0 +1,110 @@
+- type: entity
+  id: MagazinePackedLMG
+  name: rifle magazine (.22,5 packed)
+  parent: [ BaseItem, BaseC2ContrabandUnredeemable, RecyclableItemSteelTiny ]
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - MagazinePackedLMG
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgePacked
+    capacity: 160
+  - type: Item
+    size: normal
+    shape:
+    - 0,0,2,1
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Magazine/Packed/packed_lmg_box_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazinePackedLMGEmpty
+  name: box magazine (.22,5 packed)
+  suffix: empty
+  parent: MagazinePackedLMG
+  description: 160-round belt-box magazine for light machine guns.
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      right:
+      - state: inhand-right-mag
+
+- type: entity
+  id: MagazinePackedLMGfilled
+  name: box magazine (.22,5 packed)
+  parent: MagazinePackedLMG
+  description: 160-round belt-box magazine for light machine guns. Intended to hold .22,5 packed ammo.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePacked
+
+- type: entity
+  id: MagazinePackedLMGShotgun
+  name: box magazine (.22,5 packed, shotgun)
+  parent: MagazinePackedLMG
+  description: 160-round belt-box magazine for light machine guns. Intended to hold special .22,5 ammo with shotgun-pellets instead of bullet.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedShotgun
+
+- type: entity
+  id: MagazinePackedLMGExplosive
+  name: box magazine (.22,5 packed, explosive)
+  parent: MagazinePackedLMG
+  description: 160-round belt-box magazine for light machine guns. Intended to hold special anti-structure (and frightening) explosive .22,5 ammo.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedExplosive
+
+- type: entity
+  id: MagazinePackedLMGUranium
+  name: box magazine (.22,5 packed, uranium)
+  parent: MagazinePackedLMG
+  description: 160-round belt-box magazine for light machine guns. Intended to hold radioacrive, deplect uranium .22,5 ammo.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedUranium
+
+- type: entity
+  id: MagazinePackedLMGProtokinetic
+  name: box magazine (.22,5 packed, proto-kinetic)
+  parent: MagazinePackedLMG
+  description: 160-round belt-box magazine for light machine guns. Intended to hold special proto-kinetic .22,5 ammo... How this thing even work?
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedKinetic
+
+- type: entity
+  id: MagazinePackedLMGIncendiary
+  name: box magazine (.22,5 packed, incendiary)
+  parent: MagazinePackedLMG
+  description: 160-round belt-box magazine for light machine guns. Intended to hold self-igniting incendiary ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedIncendiary

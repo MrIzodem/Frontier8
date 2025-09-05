@@ -19,7 +19,7 @@
   damagePerIntensity:
     types:
       Heat: 0.5
-      Blunt: 0.1
+      Blunt: 0.3
       Structural: 0.5
   tileBreakChance: [ 0, 0.1 ]
   tileBreakIntensity: [ 2, 10, 15 ]
