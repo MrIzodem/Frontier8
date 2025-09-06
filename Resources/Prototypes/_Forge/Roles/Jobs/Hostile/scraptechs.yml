@@ -8,6 +8,7 @@
     shoes: ClothingShoesLinenwrap
     gloves: ClothingHandsRepeater
     pocket2: DrinkMREFlask
+    back: ClothingBackpackDT1Vagabound
 
 - type: startingGear
   id: MobHumanoidDScrapGearRangedST1
@@ -15,6 +16,7 @@
     shoes: ClothingShoesLinenwrap
     gloves: ClothingHandsSVS42
     pocket2: DrinkMREFlask
+    back: ClothingBackpackDT1Vagabound
 
 - type: startingGear
   id: MobHumanoidDScrapGearMeleeST1
@@ -22,6 +24,7 @@
     shoes: ClothingShoesLinenwrap
     gloves: ClothingHandsMachete
     pocket2: DrinkMREFlask
+    back: ClothingBackpackDT1Vagabound
 
 - type: startingGear
   id: MobHumanoidDScrapGearRangedShilovPistolT1
@@ -29,6 +32,7 @@
     shoes: ClothingShoesBootsCowboyBrown
     gloves: ClothingHandsShilov
     pocket2: DrinkMREFlask
+    back: ClothingBackpackDT1Infantry
 
 - type: startingGear
   id: MobHumanoidDScrapGearRangedM44UT1
@@ -36,6 +40,7 @@
     shoes: ClothingShoesBootsCowboyBrown
     gloves: ClothingHandsM44U
     pocket2: DrinkMREFlask
+    back: ClothingBackpackDT1Infantry
 
 # Special T1
 
@@ -45,6 +50,7 @@
     shoes: ClothingShoesLinenwrap
     gloves: ClothingHandsRepeater
     pocket2: DrinkLiwerBottleFull
+    back: ClothingBackpackDT1VagaboundLiw
 
 - type: startingGear
   id: MobHumanoidDScrapGearRangedSLiwT1
@@ -52,6 +58,7 @@
     shoes: ClothingShoesLinenwrap
     gloves: ClothingHandsSVS42
     pocket2: DrinkLiwerBottleFull
+    back: ClothingBackpackDT1VagaboundLiw
 
 - type: startingGear
   id: MobHumanoidDScrapGearRangedM44PUT1
@@ -59,6 +66,7 @@
     shoes: ClothingShoesBootsCowboyBrown
     gloves: ClothingHandsM44PU
     pocket2: DrinkMREFlask
+    back: ClothingBackpackDT1Marksman
 
 # Tier 2
 
@@ -67,18 +75,21 @@
   equipment:
     shoes: ClothingShoesBootsCowboyBrown
     gloves: ClothingHandsTypewriter
+    back: ClothingBackpackDT2OperatorLow
 
 - type: startingGear
   id: MobHumanoidDScrapGearRangedASUT2
   equipment:
     shoes: ClothingShoesBootsCowboyBrown
     gloves: ClothingHandsASU
+    back: ClothingBackpackDT2OperatorLow
 
 - type: startingGear
   id: MobHumanoidDScrapGearRangedAST2
   equipment:
     shoes: ClothingShoesBootsCowboyBrown
     gloves: ClothingHandsAS
+    back: ClothingBackpackDT2Operator
 
 # Special T2
 
@@ -88,6 +99,7 @@
     shoes: ClothingShoesBootsJack
     gloves: ClothingHandsASUAlt
     pocket2: MagazinePackedRiflefilled
+    back: ClothingBackpackDT2Airborn
 
 
 - type: startingGear
@@ -96,6 +108,7 @@
     shoes: ClothingShoesBootsJack
     gloves: ClothingHandsASS
     pocket2: MagazinePackedRiflefilled
+    back: ClothingBackpackDT2Airborn
 
 # Tier 3
 
@@ -110,6 +123,7 @@
     pocket2: MagazinePackedDrumRiflelUranium
     outerClothing: ClothingOuterArmorBasicSlim
     suitstorage: WeaponScrapLightMachineGunRPS55
+    back: ClothingBackpackDT3AirbornCaptain
   inhand:
     - CombatKnife
 
@@ -123,6 +137,7 @@
     pocket1: MagazinePackedDrumRiflelUranium
     pocket2: MagazinePackedDrumRiflelUranium
     outerClothing: ClothingOuterArmorBasicSlim
+    back: ClothingBackpackDT3AirbornCaptain
 
 - type: startingGear
   id: MobHumanoidDScrapRaiderT3Alt
@@ -131,6 +146,7 @@
     shoes: ClothingShoesBootsPilot
     mask: ClothingMaskGasDustRaider
     gloves: ClothingHandsShilovRaider
+    back: ClothingBackpackDT3RaiderAlt
 
 - type: startingGear
   id: MobHumanoidDScrapRaiderT3
@@ -142,6 +158,7 @@
     pocket1: MagazinePackedLMGIncendiary
     outerClothing: ClothingOuterArmorHeavyScrapRaider
     suitstorage: WeaponScrapLightMachineGunDeserter
+    back: ClothingBackpackDT3Raider
 
 
 

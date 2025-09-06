@@ -1,10 +1,15 @@
 - type: entity
-  parent: ClothingShoesBase
+  parent: [ClothingShoesBase, ClothingHandsBase, ClothingMaskBaseButcherable, ClothingHeadBaseButcherable ]
   id: ClothingShoesLinenwrap
-  name: linen footwraps
-  description: A rolls of treated veil and other cloth used for wrapping feet or paws from dust and sand.
+  name: linen wraps
+  description: A rolls of treated veil and other cloth used for wrapping any part of you body from dust and sand.
   components:
   - type: Sprite
     sprite: Forge/Clothing/Shoes/Mics/linenwrap.rsi
   - type: Clothing
     sprite: Forge/Clothing/Shoes/Mics/linenwrap.rsi
+    slots:
+    - HEAD
+    - gloves
+    - FEET
+    - mask

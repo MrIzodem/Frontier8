@@ -83,7 +83,7 @@
     whitelist:
       tags:
         - CartridgePacked
-    capacity: 800
+    capacity: 896
   - type: Sprite
     sprite: Forge/Objects/Weapons/Guns/Ammunition/Boxes/packedcan.rsi
     layers:

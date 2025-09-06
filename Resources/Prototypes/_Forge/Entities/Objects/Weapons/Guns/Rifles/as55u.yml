@@ -1,6 +1,7 @@
 - type: entity
   id: WeaponScrapRifleAssaultAS55U
-  parent: [NFBaseWeaponRifleAssaultChamber, BaseC2ContrabandUnredeemable, NFBaseWeaponFrameRifleAssault ]
+  parent: [NFBaseWeaponRifleAssaultChamber, BaseC2ContrabandUnredeemable, NFBaseWeaponEncumbranceRifleAssault, NFBaseItemWeaponGunMagazineFed ]
+  suffix: Scrap
   name: AS-55-U automatic carbine
   description: Modified version of AS-55, more firerate, low accuracy. Use .22,5 packed ammo.
   components:
@@ -20,14 +21,18 @@
   - type: Gun
     fireRate: 4.5
     projectileSpeed: 25
-    minAngle: 15
+    minAngle: 20
     maxAngle: 35
     selectedMode: FullAuto
     availableModes:
     - FullAuto
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: NFWeaponDetails
+    class: weapon-details-class-assault-rifle
   - type: GunWieldBonus
-    minAngle: -5
-    maxAngle: -20
+    minAngle: -10
+    maxAngle: -15
   - type: ItemSlots
     slots:
       gun_magazine:

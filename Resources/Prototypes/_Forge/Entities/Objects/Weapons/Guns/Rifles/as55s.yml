@@ -1,6 +1,7 @@
 - type: entity
   id: WeaponScrapRifleAssaultAS55S
   parent: [NFBaseWeaponRifleAssaultChamber, BaseGunWieldable, BaseC2ContrabandUnredeemable, NFBaseWeaponFrameRifleAssault ]
+  suffix: Scrap
   name: AS-55S marksman rifle
   description: Uncommon modification of AS-55 for airborn military, have integral supressor and burst-fire. Use .22,5 packed ammo
   components:

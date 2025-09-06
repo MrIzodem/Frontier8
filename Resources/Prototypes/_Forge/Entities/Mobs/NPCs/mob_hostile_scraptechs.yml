@@ -12,6 +12,9 @@
   id: MobScrapTechBase
   description: ...
   components:
+  - type: RandomHumanoidAppearance
+    randomizeName: false
+  - type: RandomMetadata
   - type: Damageable
     damageModifierSet: MobMercenaryDamageModifierSet
   - type: NpcFactionMember
@@ -447,7 +450,7 @@
     angleDecay: 4
     selectedMode: SemiAuto
     availableModes:
-    - FullAuto
+    - SemiAuto
     soundGunshot: /Audio/Weapons/Guns/Gunshots/ltrifle.ogg
 
 
@@ -594,8 +597,6 @@
   suffix: AI, Hostile, T3
   description: An elite, veteran airborn who rose to the rank of Captain in the Airborne Forces. He is probably one of the best marksmans in the Dust Troopers officer ranks.
   components:
-  - type: RandomHumanoidAppearance
-  - type: RandomMetadata
   - type: Body
     prototype: HumanSyntheticOrgans
     requiredLegs: 2

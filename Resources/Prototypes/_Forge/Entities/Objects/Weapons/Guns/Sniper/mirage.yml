@@ -2,7 +2,8 @@
   id: WeaponScrapSniperMirage
   parent: [ BaseWeaponSniper,  BaseGunWieldable, BaseC3Contraband ]
   name: AS-2 Mirage
-  description: A heavy anti-shuttle rifle used by ST raiders to kill shuttles in ambushes. Uses .80 caliber anti-aircraft rounds.
+  suffix: Scrap
+  description: A heavy anti-shuttle rifle used by ST raiders to kill shuttles in ambushes. Uses .80 anti-aircraft rounds.
   components:
   - type: Sprite
     sprite: Forge/Objects/Weapons/Guns/Snipers/mirage.rsi

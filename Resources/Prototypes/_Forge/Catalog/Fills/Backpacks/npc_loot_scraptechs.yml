@@ -1,0 +1,445 @@
+- type: entity
+  parent: SyndieDuffelGiftBox
+  id: ScraptechsGiftBox
+  abstract: true
+  suffix: NPC Loot
+  components:
+  - type: Sprite
+    sprite: Clothing/Back/Satchels/leather.rsi
+    state: icon
+
+# Tier 1 DT
+
+- type: entity
+  parent: ScraptechsGiftBox
+  id: ClothingBackpackDT1Vagabound
+  name: dust troopers vagabound satchel
+  description: an old, leather satchel, contain some helpful things... Maybe...
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    # Weapons/ammo
+    - id: NFWeaponRifleRepeater
+      prob: 0.1
+    - id: NFWeaponRifleSVS
+      prob: 0.05
+    - id: NFMagazineLowCapacityRifle30
+      prob: 0.1
+    - id: Machete
+      prob: 0.2
+    - id: NFBaseAmmunitionBoxRifle20
+      prob: 0.3
+    - id: NFBaseAmmunitionBoxRifle30
+      prob: 0.1
+    - id: Pickaxe
+      prob: 0.3
+    # Clothes
+    - id: ClothingUniformrobeST
+      prob: 0.5
+    - id: ClothingShoesLinenwrap
+      prob: 0.9
+    - id: ClothingNeckScrapCloak
+      prob: 0.05
+    - id: ClothingMaskBandGreen
+      prob: 0.2
+    - id: ClothingMaskGas
+      prob: 0.3
+    # Items
+    - id: SpawnDungeonLootMaterialsBasicFull
+      prob: 0.1
+    - id: DrinkMREFlask
+    - id: FoodTinMRE
+      prob: 0.4
+    - id: MetalFuelCanDieselFuel
+      prob: 0.2
+    - id: CrowbarYellow
+      prob: 0.4
+    - id: Lantern
+      prob: 0.5
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: ScraptechsGiftBox
+  id: ClothingBackpackDT1Infantry
+  name: dust troopers infantry satchel
+  description: an old, leather satchel, contain some helpful things... Maybe...
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    # Weapons/ammo
+    - id: Machete
+      prob: 0.1
+    - id: WeaponScrapPistolShilov
+      prob: 0.5
+    - id: WeaponScrapRifleM44
+      prob: 0.4
+    - id: AmmunitionBoxPackedFilled
+      prob: 0.07
+    - id: MagazinePackedPistolShotgun
+      prob: 0.1
+    - id: MagazinePackedPistolProtokinetic
+      prob: 0.09
+    - id: AmmunitionBoxPackedFilled
+      prob: 0.3
+    - id: MagazinePackedRifleEmpty
+      prob: 0.5
+    # Clothes
+    - id: ClothingUniformM288ST
+      prob: 0.6
+    - id: ClothingMaskBandGreen
+      prob: 0.4
+    - id: ClothingMaskGasExplorer
+      prob: 0.4
+    # Items
+    - id: BoxMRE
+      prob: 0.1
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+# Tier 1 DT Special
+
+- type: entity
+  parent: ScraptechsGiftBox
+  id: ClothingBackpackDT1VagaboundLiw
+  name: dust troopers vagabound satchel
+  description: an old, leather satchel, contain some helpful things... Maybe...
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    # Weapons/ammo
+    - id: NFWeaponRifleRepeater
+      prob: 0.1
+    - id: Machete
+      prob: 0.1
+    - id: NFBaseAmmunitionBoxRifle20
+      prob: 0.2
+    - id: Pickaxe
+      prob: 0.4
+    - id: MagazinePackedPistolProtokinetic
+      prob: 0.1
+    # Clothes
+    - id: ClothingUniformrobeST
+      prob: 0.5
+    - id: ClothingShoesLinenwrap
+      prob: 0.9
+    - id: ClothingNeckScrapCloak
+      prob: 0.05
+    # Items
+    - id: DrinkLiwerBottleFull
+      prob: 0.2
+    - id: DrinkLiwerBottleFull
+    - id: DrinkBottleLiwerEmpty
+      prob: 0.4
+    - id: Blunt
+    - id: Blunt
+      prob: 0.5
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: ScraptechsGiftBox
+  id: ClothingBackpackDT1Marksman
+  name: dust troopers infantry satchel
+  description: an old, leather satchel, contain some helpful things... Maybe...
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    # Weapons/ammo
+    - id: CombatKnife
+      prob: 0.2
+    - id: WeaponScrapSniperM44PU
+      prob: 0.3
+    - id: WeaponScrapRifleM44
+      prob: 0.1
+    - id: AmmunitionBoxPackedFilled
+    - id: AmmunitionBoxPackedUranium
+      prob: 0.05
+    - id: AmmunitionBoxPackedKinetic
+      prob: 0.1
+    # Clothes
+    - id: ClothingUniformM288ST
+      prob: 0.6
+    - id: ClothingNeckScrapGhillie
+      prob: 0.8
+    - id: CDDogtags
+    - id: ClothingEyesSunglasses
+      prob: 0.7
+    # Items
+    - id: BoxMRE
+      prob: 0.2
+    - id: Brutepack1
+      prob: 0.4
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+# Tier 2 DT
+
+- type: entity
+  parent: ScraptechsGiftBox
+  id: ClothingBackpackDT2OperatorLow
+  name: dust troopers operator satchel
+  description: an old, leather satchel, contain some helpful things... Maybe...
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    # Weapons/ammo
+    - id: Machete
+      prob: 0.1
+    - id: WeaponScrapPistolShilov
+      prob: 0.5
+    - id: WeaponScrapRifleM44
+      prob: 0.4
+    - id: WeaponScrapRifleAssaultAS55U
+      prob: 0.3
+    - id: AmmunitionBoxPackedFilled
+      prob: 0.3
+    - id: MagazinePackedRifleEmpty
+      prob: 0.5
+    - id: MagazinePackedRifleShotgun
+      prob: 0.6
+    - id: MagazinePackedPistolfilled
+      prob: 0.8
+    - id: MagazinePackedPistolProtokinetic
+      prob: 0.1
+    - id: Pickaxe
+      prob: 0.5
+    # Clothes
+    - id: ClothingUniformM288ST
+      prob: 0.7
+    - id: ClothingMaskGasExplorer
+      prob: 0.4
+    - id: ClothingUniformberezkaST
+      prob: 0.3
+    - id: CDDogtags
+      prob: 0.1
+    - id: ClothingNeckScrapCloak
+      prob: 0.1
+    - id: ClothingBeltScrapWebbing
+      prob: 0.2
+    # Items
+    - id: BoxMRE
+      prob: 0.1
+    - id: MetalFuelCanDieselFuel
+      prob: 0.3
+    - id: OreProcessorFlatpack
+      prob: 0.2
+    - id: Lantern
+      prob: 0.4
+    - id: WelderMini
+      prob: 0.5
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: ScraptechsGiftBox
+  id: ClothingBackpackDT2Operator
+  name: dust troopers operator satchel
+  description: an old, leather satchel, contain some helpful things... Maybe...
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    # Weapons/ammo
+    - id: CombatKnife
+      prob: 0.1
+    - id: WeaponScrapPistolShilov
+      prob: 0.5
+    - id: WeaponScrapRifleM44
+      prob: 0.4
+    - id: WeaponScrapRifleAssaultAS55
+      prob: 0.2
+    - id: WeaponScrapRifleAssaultAS55U
+      prob: 0.3
+    - id: AmmunitionBoxPackedFilled
+      prob: 0.3
+    - id: MagazinePackedRifleEmpty
+      prob: 0.8
+    - id: MagazinePackedRifleEmpty
+      prob: 0.7
+    - id: MagazinePackedRiflefilled
+      prob: 0.6
+    - id: MagazinePackedRifleShotgun
+      prob: 0.5
+    - id: MagazinePackedPistolfilled
+      prob: 0.8
+    - id: MagazinePackedPistolProtokinetic
+      prob: 0.05
+    # Clothes
+    - id: ClothingUniformM288ST
+      prob: 0.6
+    - id: ClothingMaskGasExplorer
+      prob: 0.6
+    - id: ClothingUniformberezkaST
+      prob: 0.4
+    - id: CDDogtags
+      prob: 0.3
+    - id: ClothingBeltScrapWebbing
+      prob: 0.3
+    # Items
+    - id: BoxMRE
+      prob: 0.1
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+# Tier 2 DT Special
+
+- type: entity
+  parent: ScraptechsGiftBox
+  id: ClothingBackpackDT2Airborn
+  name: dust troopers airborn satchel
+  description: an old, leather satchel, contain some helpful things... Maybe...
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    # Weapons/ammo
+    - id: CombatKnife
+      prob: 0.2
+    - id: WeaponScrapPistolShilov
+      prob: 0.3
+    - id: WeaponScrapRifleAssaultAS55U
+      prob: 0.5
+    - id: WeaponScrapRifleAssaultAS55S
+      prob: 0.05
+    - id: AmmunitionBoxPackedFilled
+      prob: 0.4
+    - id: AmmunitionBoxPackedUranium
+      prob: 0.4
+    - id: MagazinePackedRifleEmpty
+    - id: MagazinePackedRiflefilled
+    - id: MagazinePackedRiflelUranium
+      prob: 0.8
+    - id: MagazinePackedRiflelUranium
+      prob: 0.3
+    - id: MagazinePackedRifleShotgun
+      prob: 0.5
+    - id: MagazinePackedPistolfilled
+      prob: 0.3
+    - id: MagazinePackedPistolUranium
+      prob: 0.2
+    # Clothes
+    - id: ClothingMaskGasExplorer
+      prob: 0.7
+    - id: CDDogtags
+    - id: ClothingBeltScrapWebbing
+      prob: 0.1
+    - id: ClothingUniformTelnyashkaST
+      prob: 0.4
+    # Items
+    - id: BoxMRE
+      prob: 0.7
+    - id: MetalFuelCanDieselFuel
+      prob: 0.4
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+# Tier 3 DT
+
+- type: entity
+  parent: ScraptechsGiftBox
+  id: ClothingBackpackDT3AirbornCaptain
+  name: dust troopers officer satchel
+  description: an old, leather satchel, contain some helpful things... Maybe...
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    # Weapons/ammo
+    - id: WeaponScrapPistolShilov
+      prob: 0.5
+    - id: MagazinePackedPistolUranium
+      prob: 0.5
+    - id: MagazinePackedPistolUranium
+      prob: 0.5
+    - id: AmmunitionCanPackedUranium
+      prob: 0.2
+    - id: AmmunitionBoxPackedUranium
+    - id: AmmunitionCanPackedShotgun
+      prob: 0.4
+    - id: AmmunitionBoxPackedUranium
+      prob: 0.6
+    - id: MagazinePackedDrumRiflefilled
+      prob: 0.2
+    - id: MagazinePackedDrumRifleShotgun
+      prob: 0.4
+    - id: MagazinePackedDrumRiflelUranium
+      prob: 0.5
+    # Clothes
+    - id: ClothingMaskGasExplorer
+      prob: 0.9
+    - id: CDDogtags
+    - id: ClothingBeltScrapWebbing
+      prob: 0.3
+    - id: ClothingUniformTelnyashkaST
+      prob: 0.2
+    - id: ClothingUniformButanST
+      prob: 0.8
+    - id: ClothingHeadHatDustBeret
+    # Items
+    - id: BoxMRE
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: ScraptechsGiftBox
+  id: ClothingBackpackDT3Raider
+  name: dust troopers officer satchel
+  description: an old, leather satchel, contain some helpful things... Maybe...
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    # Weapons/ammo
+    - id: WeaponScrapPistolShilov
+      prob: 0.7
+    - id: MagazinePackedPistolIncendiary
+      prob: 0.5
+    - id: MagazinePackedPistolIncendiary
+      prob: 0.5
+    - id: AmmunitionCanPackedIncendiary
+      prob: 0.05
+    - id: MagazinePackedLMGIncendiary
+    - id: MagazinePackedLMGIncendiary
+      prob: 0.7
+    # Clothes
+    - id: ClothingMaskGasDustRaider
+      prob: 0.4
+    - id: ClothingUniformRaiderST
+      prob: 0.9
+    - id: ClothingShoesLinenwrap
+      prob: 0.7
+    # Items
+    - id: BoxMRE
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg
+
+- type: entity
+  parent: ScraptechsGiftBox
+  id: ClothingBackpackDT3RaiderAlt
+  name: dust troopers officer satchel
+  description: an old, leather satchel, contain some helpful things... Maybe...
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    # Weapons/ammo
+    - id: WeaponScrapPistolShilov
+    - id: MagazinePackedPistolExplosive
+    - id: MagazinePackedPistolExplosive
+      prob: 0.5
+    - id: AmmunitionBoxPackedExplosive
+      prob: 0.7
+    - id: AmmunitionBoxAircraft80
+      prob: 0.1
+    - id: CartridgeMirage
+      prob: 0.9
+    - id: CartridgeMirage
+      prob: 0.5
+    # Clothes
+    - id: ClothingMaskGasDustRaider
+      prob: 0.4
+    - id: ClothingUniformRaiderST
+      prob: 0.9
+    - id: ClothingShoesLinenwrap
+      prob: 0.7
+    - id: ClothingNeckScrapCloak
+    # Items
+    - id: BoxMRE
+    sound:
+      path: /Audio/Items/jumpsuit_equip.ogg

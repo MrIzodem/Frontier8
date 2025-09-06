@@ -2,6 +2,7 @@
   name: Shilov,s pistol
   parent: [BaseWeaponPistol, BaseC2ContrabandUnredeemable]
   id: WeaponScrapPistolShilov
+  suffix: Scrap
   description: The good old Shilov pistol comes from the distant, deserted 91-st sector. Use .22,5 packed ammo.
   components:
   - type: Sprite

@@ -1,0 +1,87 @@
+- type: entity
+  name: metal fuel can
+  parent: BaseItem
+  id: MetalFuelCan
+  description: An old, maroon-colored fuel can maden from metal.
+  components:
+  - type: Sprite
+    sprite: Forge/Objects/Specific/Chemistry/dieselcan.rsi
+    layers:
+    - state: icon
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        maxVol: 150
+  - type: Item
+    size: Normal
+    sprite: Forge/Objects/Specific/Chemistry/dieselcan.rsi
+  - type: MixableSolution
+    solution: beaker
+  - type: RefillableSolution
+    solution: beaker
+  - type: DrainableSolution
+    solution: beaker
+  - type: ExaminableSolution
+    solution: beaker
+  - type: DrawableSolution
+    solution: beaker
+  - type: InjectableSolution
+    solution: beaker
+  - type: SolutionTransfer
+    canChangeTransferAmount: true
+  - type: SolutionItemStatus
+    solution: beaker
+  - type: UserInterface
+    interfaces:
+      enum.TransferAmountUiKey.Key:
+        type: TransferAmountBoundUserInterface
+  - type: Drink
+    solution: beaker
+    delay: 1.5
+    forceFeedDelay: 5
+  - type: Appearance
+  - type: StaticPrice
+    price: 20
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+        - !type:DoActsBehavior
+          acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 20
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+          params:
+            volume: -4
+      - !type:SpillBehavior { }
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 0
+            max: 2
+        transferForensics: true
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+
+- type: entity
+  parent: MetalFuelCan
+  suffix: diesel fuel
+  id: MetalFuelCanDieselFuel
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        reagents:
+        - ReagentId: DieselFuel
+          Quantity: 150
+  - type: StaticPrice
+    vendPrice: 170
+  - type: NFFuel

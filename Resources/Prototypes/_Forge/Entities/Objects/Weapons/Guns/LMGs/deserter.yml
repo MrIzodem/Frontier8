@@ -1,8 +1,9 @@
 - type: entity
   id: WeaponScrapLightMachineGunDeserter
   parent: [BaseC3Contraband, NFBaseWeaponEncumbranceSniper, NFBaseItemWeaponGunMagazineFed ]
+  suffix: Scrap
   name: Deserter LMG
-  description: Light Machine Gun, maded in base AS-55, famous for its quality and use in elite troops, also can accept drum magazines on 64-st bullets. Use .22,5 packed ammo.
+  description: A truly terrifying weapon in the right hands... Use .22.5 packed box magazines.
   components:
   - type: Sprite
     sprite: Forge/Objects/Weapons/Guns/LMGs/Deserter_icon_45x.rsi
@@ -14,7 +15,7 @@
     - suitStorage
   - type: Item
     sprite: Forge/Objects/Weapons/Guns/LMGs/Deserter.rsi
-    size: Large
+    size: Huge
     shape:
     - 0,0,6,2
   - type: Armor
@@ -32,8 +33,8 @@
     angleIncrease: 1.5
     angleDecay: 15
     projectileSpeed: 26
-    minAngle: 10
-    maxAngle: 20
+    minAngle: 5.5
+    maxAngle: 15
     selectedMode: FullAuto
     availableModes:
     - FullAuto

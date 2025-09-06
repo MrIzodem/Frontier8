@@ -2,6 +2,7 @@
   name: ASSP
   parent: [BaseWeaponSubMachineGun, BaseC2ContrabandUnredeemable]
   id: WeaponScrapSubMachineGunASSP
+  suffix: Scrap
   description: Unique pocket-size automatic rifle, worn by Scrap Techs Dust Troopers radio-agents. Use .22,5 packed ammo.
   components:
   - type: Appearance
@@ -29,7 +30,7 @@
     minAngle: 4
     maxAngle: 5
     angleDecay: 6
-    fireRate: 5
+    fireRate: 4.3
     selectedMode: FullAuto
     availableModes:
     - SemiAuto
