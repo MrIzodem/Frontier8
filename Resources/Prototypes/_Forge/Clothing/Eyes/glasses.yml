@@ -11,3 +11,16 @@
   - type: FlashImmunity
   - type: StaticPrice
     price: 50
+
+- type: entity
+  parent: ClothingEyesBase
+  id: ClothingSandglasses
+  name: sand glasses
+  description: An makeshift pair of glasses what can cover u from desert storm or dazzing sun.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Eyes/Glasses/sand_glasses.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Eyes/Glasses/sand_glasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection

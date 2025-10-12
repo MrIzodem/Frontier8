@@ -1,0 +1,8 @@
+- type: entity
+  parent: [ ClothingNeckBase, BaseC1Contraband ]
+  id: ClothingNeckScrapScarf
+  name: Linen scarf
+  description: Linen scarf from rags and cloth, can cover u neck and top from sun and dust.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Neck/Cloaks/linenscarf.rsi

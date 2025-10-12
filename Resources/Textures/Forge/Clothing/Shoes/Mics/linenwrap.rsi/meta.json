@@ -25,6 +25,10 @@
             "directions": 4
         },
         {
+            "name": "equipped-HELMET-vox",
+            "directions": 4
+        },
+        {
             "name": "equipped-MASK",
             "directions": 4
         },
@@ -38,6 +42,38 @@
         },
         {
             "name": "equipped-MASK-vox",
+            "directions": 4
+        },
+        {
+            "name": "equipped-NECK",
+            "directions": 4
+        },
+        {
+            "name": "equipped-OUTERCLOTHING",
+            "directions": 4
+        },
+        {
+            "name": "equipped-EARS",
+            "directions": 4
+        },
+        {
+            "name": "equipped-EARS-vox",
+            "directions": 4
+        },
+        {
+            "name": "equipped-EYES",
+            "directions": 4
+        },
+        {
+            "name": "equipped-EYES-vox",
+            "directions": 4
+        },
+        {
+            "name": "equipped-NECK-vox",
+            "directions": 4
+        },
+        {
+            "name": "equipped-OUTERCLOTHING-vox",
             "directions": 4
         }
     ]

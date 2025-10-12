@@ -119,3 +119,14 @@
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scraptech.rsi
     - type: Clothing
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scraptech.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitflightST
+  name: Scrap Tech Airflight jumpsuit
+  description: An old, black-colored flight jumpsuit-uniform, usually worn under a hardsuit. Also have an internal pockets on zips and inserts with orange leather. On a back u can see a number nine.
+  components:
+    - type: Sprite
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapflight.rsi
+    - type: Clothing
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapflight.rsi

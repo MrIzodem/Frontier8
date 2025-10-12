@@ -10,3 +10,26 @@
     sprite: Forge/Clothing/Masks/scrapmask.rsi
   - type: FlashImmunity
   - type: EyeProtection
+
+- type: entity
+  parent: [ ClothingMaskGas, BaseC1Contraband ]
+  id: ClothingMaskGasDust
+  name: dust respirator
+  description: An old, makeshift respirator, what can be used with air tanks.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Masks/dustmask.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Masks/dustmask.rsi
+
+- type: entity
+  parent: [ ClothingMaskGas, BaseC1Contraband ]
+  id: ClothingMaskGasSand
+  name: dust gasmask
+  description: An old, military-grade antique gasmask used in aviation is now used in scorching deserts during particularly hard sandstorms... Can be used with air tanks.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Masks/sandmask.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Masks/sandmask.rsi
+  - type: EyeProtection

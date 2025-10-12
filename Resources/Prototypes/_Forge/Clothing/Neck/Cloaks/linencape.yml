@@ -1,0 +1,8 @@
+- type: entity
+  parent: [ ClothingNeckBase, BaseC1Contraband ]
+  id: ClothingNeckScrapCape
+  name: linen cape
+  description: Shoulder cape from linen, what can cover u in scorching summers.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Neck/Cloaks/scrapcape.rsi

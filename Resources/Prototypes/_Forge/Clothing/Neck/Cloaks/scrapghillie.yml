@@ -1,7 +1,7 @@
 - type: entity
   parent: [ ClothingNeckBase, BaseC1Contraband ]
   id: ClothingNeckScrapGhillie
-  name: Scrap Tech ghillie mantle
+  name: sand ghillie mantle
   description: A camouflage mantle in desert camo color and with attached leaves, looking noticeably worn.
   components:
   - type: Sprite

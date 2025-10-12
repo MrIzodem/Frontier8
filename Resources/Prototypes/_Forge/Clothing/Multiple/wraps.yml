@@ -1,0 +1,19 @@
+- type: entity
+  parent: [ClothingShoesBase, ClothingHandsBase, ClothingMaskBaseButcherable, ClothingHeadBaseButcherable, ClothingOuterBase, ClothingNeckBase, ClothingEyesBase ]
+  id: ClothingShoesLinenwrap
+  name: linen wraps
+  description: A rolls of treated veil, rags, and other cloth used for wrapping any part of you body from dust and sand.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Shoes/Mics/linenwrap.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Shoes/Mics/linenwrap.rsi
+    slots:
+    - HEAD
+    - gloves
+    - FEET
+    - mask
+    - outerClothing
+    - neck
+    - ears
+    - eyes
