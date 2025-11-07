@@ -113,7 +113,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitST
   name: Scrap Tech jumpsuit
-  description: Old and dirty orange salvage jumpsuit bandaged with yellow duct tape.
+  description: Old and dirty orange salvage jumpsuit with belts and harness system, belong to some crappy company named Scrap Tech.
   components:
     - type: Sprite
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scraptech.rsi
@@ -130,3 +130,14 @@
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapflight.rsi
     - type: Clothing
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scrapflight.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitSTofficial
+  name: Scrap Tech official jumpsuit
+  description: An orange sweater and beige pants-perfect outfit for Scrap Tech employees, from a far, far away sector...
+  components:
+    - type: Sprite
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scraptech_official.rsi
+    - type: Clothing
+      sprite: Forge/Clothing/Uniforms/Jumpsuits/scraptech_official.rsi

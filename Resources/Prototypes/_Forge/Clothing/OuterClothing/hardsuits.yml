@@ -67,3 +67,41 @@
     coolingCoefficient: 0.001
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitMaxim
+
+- type: entity
+  parent: [ClothingOuterHardsuitBase, BaseC1Contraband]
+  id: ClothingOuterHardsuitScrapTechHeavy
+  name: Scrap Tech deep space hardsuit
+  description: An old, brown and orange-colored hardsuit what have advanced thermal and physical damage protection for exploring deep space.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/OuterClothing/Hardsuits/scraptech.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/OuterClothing/Hardsuits/scraptech.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.6
+        Piercing: 0.85
+        Heat: 0.2
+        Cold: 0.2
+        Shock: 0.8
+        Radiation: 0.8
+        Caustic: 0.8
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: TemperatureProtection
+    heatingCoefficient: 0.001
+    coolingCoefficient: 0.001
+  - type: ExplosionResistance
+    damageCoefficient: 0.6
+  - type: FireProtection
+    reduction: 0.8
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitScrapTechHeavy

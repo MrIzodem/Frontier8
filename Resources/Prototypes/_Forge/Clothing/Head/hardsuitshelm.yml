@@ -28,3 +28,34 @@
   - type: PointLight
     radius: 7
     energy: 3
+
+- type: entity
+  parent: NFClothingHeadHardsuitWithLightBase
+  id: ClothingHeadHelmetHardsuitScrapTechHeavy
+  name: Heavy Scrap Tech Hardsuit helmet
+  description: An old spacesuit helmet with two visors and a flashlight. It has a great frame, but also has problems against piercing damage.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: Forge/Clothing/Head/Hardsuits/scraptechelmet.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Head/Hardsuits/scraptechelmet.rsi
+  - type: PressureProtection
+    highPressureMultiplier: 0.08
+    lowPressureMultiplier: 1500
+  - type: TemperatureProtection
+    heatingCoefficient: 0.005
+    coolingCoefficient: 0.005
+  - type: FireProtection
+    reduction: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.8
+        Slash: 0.9
+        Heat: 0.8
+  - type: PointLight
+    color: "#EEE8AA"
+    radius: 14
+    energy: 4
