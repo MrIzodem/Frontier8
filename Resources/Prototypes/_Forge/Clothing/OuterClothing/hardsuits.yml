@@ -107,7 +107,7 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitScrapTechHeavy
 
-
+- type: entity
   parent: [ ClothingOuterHardsuitBase, BaseC3SyndicateContraband, ContrabandClothing ]
   id: ClothingOuterHardsuitSyndieSST
   name: кроваво-чёрный скафандр

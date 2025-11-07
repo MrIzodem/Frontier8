@@ -59,6 +59,7 @@
     radius: 14
     energy: 4
 
+- type: entity
   parent: [ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase, BaseC3SyndicateContraband]
   id: ClothingHeadHelmetHardsuitSyndieSST
   name: шлем кроваво-чёрного скафандра

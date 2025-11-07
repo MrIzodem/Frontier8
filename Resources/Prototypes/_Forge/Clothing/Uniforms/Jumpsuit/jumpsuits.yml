@@ -142,6 +142,7 @@
     - type: Clothing
       sprite: Forge/Clothing/Uniforms/Jumpsuits/scraptech_official.rsi
 
+- type: entity
   parent: [ ClothingUniformBase, BaseCentcommContraband ]
   id: ClothingUniformJumpsuitFormalSpecOper
   name: special operations officer formal uniform

@@ -28,6 +28,7 @@
     sprintModifier: 0.8
   - type: HeldSpeedModifier
 
+- type: entity
   parent: [ClothingOuterStorageBase, AllowSuitStorageClothing, BaseC3Contraband, ContrabandClothing]
   id: ClothingOuterVestWebContractor
   name: тактический жилет DCN™

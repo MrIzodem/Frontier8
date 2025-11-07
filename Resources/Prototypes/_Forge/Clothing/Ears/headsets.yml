@@ -15,6 +15,7 @@
   - type: Item
     size: Normal
 
+- type: entity
   abstract: true
   parent: ClothingHeadsetAlt
   id: ClothingHeadsetAltLoudspeaker
