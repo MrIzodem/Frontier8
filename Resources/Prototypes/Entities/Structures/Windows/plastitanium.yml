@@ -80,7 +80,7 @@
   # Frontier: colored indestructible windows
   description: Skub knows this window is too hard to destroy.
   components:
-  - type: Sprite 
+  - type: Sprite
 #    color: "#cdf3cd" #CorvaxFrontier
   # End Frontier
 
@@ -93,13 +93,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000
+        damage: 2000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 500
+        damage: 1000
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -181,7 +181,7 @@
   # Frontier: colored indestructible windows
   description: Skub knows this window is too hard to destroy.
   components:
-  - type: Sprite 
+  - type: Sprite
     color: "#cdf3cd"
   # End Frontier
 
@@ -195,13 +195,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000
+        damage: 2000
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 500
+        damage: 1000
       behaviors:
       - !type:PlaySoundBehavior
         sound:

@@ -37,5 +37,17 @@
     back:
     - Flash
     - BoxFolderPalBrown
-    - BoxFolderNfsdForms
+    - ForgeBoxFolderNfsdForms
     - RubberStampPal
+
+- type: chameleonOutfit
+  id: PublicAffairsLiaisonChameleonOutfit
+  job: PublicAffairsLiaison
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatBowlerHat
+    eyes: ClothingEyesGlassesCheapSunglasses
+    mask: ClothingMaskBreath
+    neck: ClothingNeckLawyerbadge
+    outerClothing: ClothingOuterWinterColorBlack
+    gloves: ClothingHandsGlovesColorBlack

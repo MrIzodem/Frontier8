@@ -49,7 +49,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 150 #excess damage (nuke?). avoid computational cost of spawning entities.
+        damage: 300 #excess damage (nuke?). avoid computational cost of spawning entities.
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -58,7 +58,7 @@
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 50
+        damage: 100
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -235,7 +235,7 @@
   - type: Sprite
     sprite: Forge/Structures/Windows/directional.rsi # Forge-Change
     state: frosted_window
-  - type: Icon 
+  - type: Icon
     sprite: Forge/Structures/Windows/directional.rsi # Forge-Change
     state: frosted_window
   # - type: StaticPrice # Frontier

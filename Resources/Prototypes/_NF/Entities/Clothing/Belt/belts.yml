@@ -1,7 +1,7 @@
 - type: entity
   id: ClothingBeltArcadia
   name: arcadia webbing
-  parent: [ NFClothingBeltStorageBase, BaseC3ContrabandNoValue, ContrabandClothing ]
+  parent: [ NFClothingBeltStorageBase, BaseC1Contraband ]
   description: A webbing created by Arcadia Industries. Seems very capable of fitting many items.
   components:
   - type: Sprite
@@ -63,7 +63,7 @@
     sprite: _NF/Clothing/Belt/pilot.rsi
 
 - type: entity
-  parent: [ BaseC2ContrabandUnredeemable, ClothingBeltAssault ]
+  parent: [ BaseC2ContrabandUnredeemable, ClothingBeltAssault, ContentsExplosionResistanceBase ]
   id: ClothingBeltNfsd
   name: NFSD belt
   description: A tactical assault belt.
@@ -72,9 +72,15 @@
     sprite: _NF/Clothing/Belt/nfsd_belt.rsi
   - type: Clothing
     sprite: _NF/Clothing/Belt/nfsd_belt.rsi
+  # Corvax-Forge
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+  - type: Storage
+    grid:
+    - 0,0,10,1
 
 - type: entity
-  parent: [ BaseC2ContrabandUnredeemable, ClothingBeltSecurityWebbing ]
+  parent: [ BaseC2ContrabandUnredeemable, ClothingBeltSecurityWebbing, ContentsExplosionResistanceBase ]
   id: ClothingBeltNfsdWebbing
   name: NFSD webbing
   description: A tactical assault webbing.
@@ -84,6 +90,12 @@
   - type: Clothing
     sprite: _NF/Clothing/Belt/nfsd_webbing.rsi
   - type: CatWearable
+  # Corvax-Forge
+  - type: ExplosionResistance
+    damageCoefficient: 0.1
+  - type: Storage
+    grid:
+    - 0,0,10,1
 
 # Ported from Nyano
 - type: entity

@@ -174,6 +174,7 @@
   # IndustrialMedicine
   - MedicalAssemblerMachineCircuitboard
   - HotplateMachineCircuitboard
+  - DefibrillatorCompact
   # SyringeGun
   - LauncherSyringe
   - MiniSyringe
@@ -299,6 +300,8 @@
   - JetpackCaptain
   # AdvancedPersonalPropulsion
   - JetpackVoid
+  # BluespaceGasTanks
+  - BluespaceAirTank
   # SalvageEquipment
   - MiningDrill
   - WeaponGrapplingGun
@@ -426,6 +429,7 @@
   - ElectricGrillMachineCircuitboard
   - BoozeDispenserMachineCircuitboard
   - SodaDispenserMachineCircuitboard
+  - ImpCoffeeMachineCircuitboard
   # MiscellaneousItemsOrganization
   - NFPouchUtility
   - NFPouchEngineering
@@ -476,6 +480,7 @@
   - NFAmmunitionBoxShellShotgunBuckshot
   - NFAmmunitionBoxShellShotgunSlug
   - NFAmmunitionBoxRifle20
+  - NFAmmunitionBoxRifle25
   - NFAmmunitionBoxRifle30
   - NFAmmunitionBoxPistol35
   - NFAmmunitionBoxPistol45
@@ -487,6 +492,7 @@
   # NonlethalAmmunition
   - NFAmmunitionBoxShellShotgunBeanbag
   - NFAmmunitionBoxRifle20Rubber
+  - NFAmmunitionBoxRifle25Rubber
   - NFAmmunitionBoxRifle30Rubber
   - NFAmmunitionBoxPistol35Rubber
   - NFAmmunitionBoxPistol45Rubber
@@ -500,6 +506,8 @@
   - ClothingEyesHudBountyHunter
   - NFForensicPad
   - ClothingOuterHardsuitMercenaryElite #CorvaxFrontier
+  - ClothingOuterHardsuitAAMr # Forge-change
+  - ClothingOuterHardsuitAAMrAdv # Forge-change
   # ImprovedPistolAmmo
   - NFAmmunitionBoxPistol35Overpressure
   - NFAmmunitionBoxPistol45Overpressure
@@ -520,6 +528,8 @@
   - NFAmmunitionBoxBigRifle20Overpressure
   - NFAmmunitionBoxBigRifle30
   - NFAmmunitionBoxBigRifle30Overpressure
+  - NFAmmunitionBoxBigRifle25
+  - NFAmmunitionBoxBigRifle25Overpressure
   # NFAdvancedRiotControl
   - NFTelescopicShield
   # NFExplosiveTechnology
@@ -568,6 +578,7 @@
   # PortableFission
   - PowerCellMicroreactor
   # HardsuitsBasic
-  - ClothingOuterHardsuitBasic
+  - ClothingOuterHardsuitSpatio
+  - ClothingOuterHardsuitPilot
   # HardsuitsAdvanced
   - ClothingOuterHardsuitCap

@@ -6,11 +6,41 @@
 - type: latheRecipePack
   id: SyndicateTechfabStatic
   recipes:
+  - NFAmmunitionBoxPistol35IncendiaryRecipe
+  - NFAmmunitionBoxPistol35OverpressureRecipe
+  - NFAmmunitionBoxPistol35UraniumRecipe
+  - NFAmmunitionBoxShellShotgunOverpressureRecipe
+  - NFAmmunitionBoxPistol45EmpRecipe
+  - NFAmmunitionBoxPistol45OverpressureRecipe
+  - NFAmmunitionBoxPistol45RubberRecipe
+  - NFAmmunitionBoxRifle30OverpressureRecipe
+  - NFAmmunitionBoxRifle30RubberRecipe
+  - NFAmmunitionBoxBigRifle30Recipe
+  - NFAmmunitionBoxBigRifle30RubberRecipe
+  - NFAmmunitionBoxBigRifle30OverpressureRecipe
+  - NFAmmunitionBoxBigRifle30IncendiaryRecipe
+  - NFAmmunitionBoxBigRifle30UraniumRecipe
+  - NFAmmunitionBoxRifle20OverpressureRecipe
+  - NFAmmunitionBoxBigRifle20Recipe
+  - NFAmmunitionBoxBigRifle20OverpressureRecipe
+  - NFAmmunitionBoxBigRifle20RubberRecipe
+  - NFAmmunitionBoxBigRifle20IncendiaryRecipe
+  - NFAmmunitionBoxBigRifle20UraniumRecipe
+  - NFMagazineBoxRifle20Recipe
+  - NFMagazineRifle20EmptyRecipe
+  - NFMagazineDrumRifle20EmptyRecipe
+  - NFAmmunitionBoxRifle25OverpressureRecipe
+  - NFAmmunitionBoxBigRifle25OverpressureRecipe
+  - NFAmmunitionBoxBigRifle25UraniumRecipe
+  - NFAmmunitionBoxBigRifle25IncendiaryRecipe
+  - NFAmmunitionBoxBigRifle25Recipe
+  - NFAmmunitionBoxBigRifle25RubberRecipe
   - NFAmmunitionBoxShellShotgunBeanbagRecipe
   - NFAmmunitionBoxPistol35RubberRecipe
   - NFAmmunitionBoxRifle20RubberRecipe
   - NFAmmunitionBoxRifle30Recipe
   - NFAmmunitionBoxPistol45Recipe
+  - NFAmmunitionBoxPistol45APRecipe
   - NFAmmunitionBoxShellShotgunSlugRecipe
   - NFAmmunitionBoxShellShotgunTranquilizerRecipe
   - NFAmmunitionBoxShellShotgunBuckshotRecipe
@@ -25,6 +55,10 @@
   - NFAmmunitionBoxPistol45IncendiaryRecipe
   - NFAmmunitionBoxRifle30IncendiaryRecipe
   - NFAmmunitionBoxPistol35EmpRecipe
+  - NFAmmunitionBoxRifle25Recipe
+  - NFAmmunitionBoxRifle25UraniumRecipe
+  - NFAmmunitionBoxRifle25IncendiaryRecipe
+  - NFAmmunitionBoxRifle25RubberRecipe
   - GrenadeEMPRecipe
   - GrenadeFlashRecipe
   - GrenadeFragRecipe
@@ -41,6 +75,7 @@
   - NFMagazineSubMachineGunTopMounted35EmptyRecipe
   - NFMagazineSubMachineGun35EmptyRecipe
   - NFSpeedLoaderPistol45EmptyRecipe
+  - ClothingBackpackDuffelSyndicateAmmoRecipe
   - WeaponMechCombatFiredartLaserRecipe
   - WeaponMechCombatSolarisLaserRecipe
   - WeaponMechCombatImmolationGunRecipe

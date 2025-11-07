@@ -12,7 +12,7 @@
   whitelisted: true
   startingGear: SrGear
   alwaysUseSpawner: true
-  icon: "JobIconHeadOfPersonnel"
+  icon: "JobIconStrep" # Forge-change: JobIconStrep
   requireAdminNotify: true
   supervisors: job-supervisors-centcom
   weight: 170
@@ -26,6 +26,7 @@
   - !type:AddComponentSpecial
     components:
       - type: CommandStaff
+      - type: PreventShipyardTitleOverwrite
   - !type:GiveItemOnHolidaySpecial
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift
@@ -39,4 +40,17 @@
     - Flash
     - RubberStampSr
     - DoorRemoteCommand
-    - EncryptionKeyStationMaster
+    - ClothingEyesGlassesCommand
+  encryptionKeys:
+  - EncryptionKeyStationMaster
+
+- type: chameleonOutfit
+  id: StationRepresentativeChameleonOutfit
+  job: StationRepresentative
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatSrBeret
+    mask: ClothingMaskBreath
+    neck: ClothingNeckMantleSr
+    outerClothing: ClothingOuterJacketSr
+    gloves: ClothingHandsGlovesHop

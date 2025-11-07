@@ -39,6 +39,7 @@
   minLimit: 1
   loadouts:
   - CommanderClothingHandsGloves1
+  - CommanderClothingHandsGloves2
   fallbacks:
   - CommanderClothingHandsGloves1
 
@@ -74,6 +75,7 @@
   - CommanderNeck2
   - CommanderNeck3
   - CommanderNeck4
+  - StormtrooperNeck5
   fallbacks:
   - CommanderNeck1
 
@@ -88,3 +90,4 @@
   - CommanderOuterclothing4
   - CommanderOuterclothing5
   - CommanderOuterclothing6
+  - CommanderOuterclothing7

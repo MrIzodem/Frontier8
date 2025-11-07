@@ -18,10 +18,17 @@
   - Brig
   - Maintenance
   - Service
+  - Theatre
+  - Kitchen
+  - Hydroponics
+  - Bar
+  - Medical
   - External
   - Mercenary
   - Captain
   - Frontier
+  - Armory
+  - Atmospherics
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant, TrackingImplant ]
@@ -37,9 +44,19 @@
     pocket2: NFMagazineHighCapacityPistol35
   storage:
     back:
-    - EncryptionKeyService
-    - EncryptionKeySecurity
     - Flash
     - NFMagazineHighCapacityPistol35
     - NFMagazineHighCapacityPistol35Rubber
     - ShipVoucherFrontierGuard
+  encryptionKeys:
+  - EncryptionKeyService
+  - EncryptionKeySecurity
+
+- type: chameleonOutfit
+  id: SecurityGuardChameleonOutfit
+  job: SecurityGuard
+  hasMindShield: true
+  equipment:
+    head: ClothingHeadHatBeretSecurity
+    mask: ClothingMaskGasSecurity
+    gloves: ClothingHandsGlovesColorBlack

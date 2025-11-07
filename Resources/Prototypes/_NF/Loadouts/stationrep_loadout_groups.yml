@@ -3,7 +3,7 @@
   name: loadout-group-contractor-jumpsuit
   loadouts:
   - StationRepClothingUniformJumpsuitSr
-  - StationRepClothingUniformJumpskirtSr 
+  - StationRepClothingUniformJumpskirtSr
   - StationRepClothingUniformJumpskitSrALT #Corvax-Frontier
   - StationRepClothingUniformJumpsuitSrALT #Corvax-Frontier
   - StationRepClothingUniformJumpsuitMilitarySr
@@ -50,10 +50,6 @@
   maxLimit: 1
   loadouts:
   - StationRepClothingHeadsetAltCentComCommon
-  subgroups:
-  - MercenaryEars
-  - PilotEars
-  - ContractorEars
   fallbacks:
   - StationRepClothingHeadsetAltCentComCommon
 

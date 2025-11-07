@@ -27,6 +27,7 @@
       Frezon: danger
       Respiron: ignore # Frontier
       Exhaust: stationExhaust # Forge
+      Helium: stationHe # Frontier
   - type: Tag
     tags:
       - AirSensor
