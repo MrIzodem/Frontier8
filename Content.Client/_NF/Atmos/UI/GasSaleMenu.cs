@@ -25,11 +25,8 @@ public sealed partial class GasSaleMenu : FancyWindow
         "gases-n2o", // 7
         "gases-frezon", // 8
         "gases-respiron", // 9
-<<<<<<< HEAD
-		"gases-exhaust", // 10
-=======
         "gases-helium", // 10
->>>>>>> master
+		"gases-exhaust", // 11
     ];
 
     public string FallbackGasString = "gas-fallback";
