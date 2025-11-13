@@ -56,7 +56,7 @@
         Heat: 0.8
   - type: PointLight
     color: "#EEE8AA"
-    radius: 14
+    radius: 10
     energy: 4
 
 - type: entity

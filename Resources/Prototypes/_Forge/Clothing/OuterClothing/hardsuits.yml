@@ -100,6 +100,8 @@
     damageCoefficient: 0.6
   - type: FireProtection
     reduction: 0.8
+  - type: StaminaResistance
+    damageCoefficient: 0.8
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8

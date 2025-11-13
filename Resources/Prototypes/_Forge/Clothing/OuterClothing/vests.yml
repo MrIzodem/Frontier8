@@ -20,4 +20,4 @@
   - type: HeldSpeedModifier
   - type: Storage
     grid:
-    - 0,0,4,2
+    - 0,0,7,2
