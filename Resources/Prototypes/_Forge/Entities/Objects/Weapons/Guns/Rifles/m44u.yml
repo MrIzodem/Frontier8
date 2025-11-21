@@ -1,15 +1,15 @@
 - type: entity
   name: M44-U carbine
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseC2ContrabandUnredeemable]
-  suffix: Scrap
+  suffix: DT/ST
   id: WeaponScrapRifleM44
-  description: An old, modified Barlows rifle by gunsmith,s from 91-st sector. Use .22,5 packed ammo.
+  description: An old, modified Barlows rifle by gunsmith,s from 91-st sector. Use .33,5 packed ammo.
   components:
   - type: Sprite
     sprite: Forge/Objects/Weapons/Guns/Rifles/m44u.rsi
   - type: Gun
     fireRate: 1.5
-    projectileSpeed: 35
+    projectileSpeed: 40
     minAngle: 18
     maxAngle: 25
   - type: GunWieldBonus
@@ -22,8 +22,8 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - CartridgePacked
+        - CartridgePackedHigh
     capacity: 7
-    proto: CartridgePacked
+    proto: CartridgePackedHigh
   - type: StaticPrice
     price: 1000

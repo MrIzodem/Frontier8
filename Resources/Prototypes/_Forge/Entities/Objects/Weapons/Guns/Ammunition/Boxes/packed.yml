@@ -1,7 +1,8 @@
 - type: entity
   id: BaseAmmunitionBoxPacked
   parent: [ NFBaseAmmunitionBox, BaseC2ContrabandUnredeemable ]
-  name: ammunition box (.22,5 packed)
+  name: ammunition box (.25,5 packed)
+  suffix: DT/ST
   abstract: true
   components:
   - type: BallisticAmmoProvider
@@ -14,14 +15,14 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: decal-calibre-22.5
+    - state: decal-calibre-25.5
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
 
 - type: entity
   id: AmmunitionBoxPackedFilled
   parent: BaseAmmunitionBoxPacked
-  name: ammunition box (.22,5 packed)
+  name: ammunition box (.25,5 packed)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePacked
@@ -29,7 +30,7 @@
 - type: entity
   id: AmmunitionBoxPackedShotgun
   parent: BaseAmmunitionBoxPacked
-  name: ammunition box (.22,5 packed, shotgun)
+  name: ammunition box (.25,5 packed, shotgun)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedShotgun
@@ -37,7 +38,7 @@
 - type: entity
   id: AmmunitionBoxPackedExplosive
   parent: BaseAmmunitionBoxPacked
-  name: ammunition box (.22,5 packed, explosive)
+  name: ammunition box (.25,5 packed, explosive)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedExplosive
@@ -45,7 +46,7 @@
 - type: entity
   id: AmmunitionBoxPackedKinetic
   parent: BaseAmmunitionBoxPacked
-  name: ammunition box (.22,5 packed, proto-kinetic)
+  name: ammunition box (.25,5 packed, proto-kinetic)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedKinetic
@@ -53,7 +54,7 @@
 - type: entity
   id: AmmunitionBoxPackedUranium
   parent: BaseAmmunitionBoxPacked
-  name: ammunition box (.22,5 packed, uranium)
+  name: ammunition box (.25,5 packed, uranium)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedUranium
@@ -61,15 +62,18 @@
 - type: entity
   id: AmmunitionBoxPackedIncendiary
   parent: BaseAmmunitionBoxPacked
-  name: ammunition box (.22,5 packed, incendiary)
+  name: ammunition box (.25,5 packed, incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedIncendiary
 
+# 25.5 Packed can
+
 - type: entity
   id: BaseAmmunitionCanPacked
   parent: [ NFBaseAmmunitionBox, BaseC2ContrabandUnredeemable ]
-  name: ammunition can (.22,5 packed)
+  name: ammunition can (.25,5 packed)
+  suffix: DT/ST
   abstract: true
   components:
   - type: Item
@@ -89,7 +93,7 @@
     layers:
     - state: basecan
       map: ["enum.GunVisualLayers.Base"]
-    - state: decal-can-calibre-22.5
+    - state: decal-can-calibre-25.5
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
@@ -100,7 +104,7 @@
 - type: entity
   id: AmmunitionCanPackedFilled
   parent: BaseAmmunitionCanPacked
-  name: ammunition can (.22,5 packed)
+  name: ammunition can (.25,5 packed)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePacked
@@ -108,7 +112,7 @@
 - type: entity
   id: AmmunitionCanPackedShotgun
   parent: BaseAmmunitionCanPacked
-  name: ammunition can (.22,5 packed, shotgun)
+  name: ammunition can (.25,5 packed, shotgun)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedShotgun
@@ -116,7 +120,7 @@
 - type: entity
   id: AmmunitionCanPackedExplosive
   parent: BaseAmmunitionCanPacked
-  name: ammunition can (.22,5 packed, explosive)
+  name: ammunition can (.25,5 packed, explosive)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedExplosive
@@ -124,7 +128,7 @@
 - type: entity
   id: AmmunitionCanPackedKinetic
   parent: BaseAmmunitionCanPacked
-  name: ammunition can (.22,5 packed, proto-kinetic)
+  name: ammunition can (.25,5 packed, proto-kinetic)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedKinetic
@@ -132,7 +136,7 @@
 - type: entity
   id: AmmunitionCanPackedUranium
   parent: BaseAmmunitionCanPacked
-  name: ammunition can (.22,5 packed, uranium)
+  name: ammunition can (.25,5 packed, uranium)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedUranium
@@ -140,7 +144,79 @@
 - type: entity
   id: AmmunitionCanPackedIncendiary
   parent: BaseAmmunitionCanPacked
-  name: ammunition can (.22,5 packed, incendiary)
+  name: ammunition can (.25,5 packed, incendiary)
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedIncendiary
+
+# 33.5 Packed
+
+- type: entity
+  id: BaseAmmunitionBoxPackedHigh
+  parent: [ NFBaseAmmunitionBox, BaseC2ContrabandUnredeemable ]
+  name: ammunition box (.33,5 packed)
+  suffix: DT/ST
+  abstract: true
+  components:
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgePacked
+    capacity: 46
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Boxes/packed.rsi
+    layers:
+    - state: basedark
+      map: ["enum.GunVisualLayers.Base"]
+    - state: decal-calibre-33.5
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  id: AmmunitionBoxPackedHighFilled
+  parent: BaseAmmunitionBoxPackedHigh
+  name: ammunition box (.33,5 packed)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedHigh
+
+# 33.5 packed can
+
+- type: entity
+  id: BaseAmmunitionCanPackedHigh
+  parent: [ NFBaseAmmunitionBox, BaseC2ContrabandUnredeemable ]
+  name: ammunition can (.33,5 packed)
+  suffix: DT/ST
+  abstract: true
+  components:
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,4,3
+  - type: HeldSpeedModifier
+    walkModifier: 0.80
+    sprintModifier: 0.80
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgePackedHigh
+    capacity: 598
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Ammunition/Boxes/packedcan.rsi
+    layers:
+    - state: basecandark
+      map: ["enum.GunVisualLayers.Base"]
+    - state: decal-can-calibre-33.5
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+  - type: MultiHandedItem
+
+- type: entity
+  id: AmmunitionCanPackedHighFilled
+  parent: BaseAmmunitionCanPackedHigh
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedHigh

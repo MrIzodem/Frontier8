@@ -11,13 +11,19 @@
       "name": "basecan"
     },
     {
+      "name": "basecandark"
+    },
+    {
       "name": "mag-0"
     },
     {
       "name": "mag-1"
     },
     {
-      "name": "decal-can-calibre-22.5"
+      "name": "decal-can-calibre-25.5"
+    },
+    {
+      "name": "decal-can-calibre-33.5"
     },
     {
       "name": "inhand-left",

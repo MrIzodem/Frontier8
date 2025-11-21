@@ -73,6 +73,7 @@
   parent: [ClothingOuterHardsuitBase, BaseC1Contraband]
   id: ClothingOuterHardsuitScrapTechHeavy
   name: Scrap Tech deep space hardsuit
+  suffix: DT/ST
   description: An old, brown and orange-colored hardsuit what have advanced thermal and physical damage protection for exploring deep space.
   components:
   - type: Sprite

@@ -2,6 +2,7 @@
   parent: [ ClothingHeadBase, BaseC1Contraband ]
   id: ClothingHeadHatHoodScrapGhillie
   name: sand ghillie hood
+  suffix: DT/ST
   description: Old camouflage hood in desert camo color and attached leaves.
   components:
   - type: Sprite
@@ -19,6 +20,7 @@
   parent: [ ClothingHeadBase, BaseC1Contraband ]
   id: ClothingHeadHatHoodScrapCloak
   name: linen cloak hood
+  suffix: DT/ST
   description: Linen hood, can help you in desert storm.
   components:
   - type: Sprite

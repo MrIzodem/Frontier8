@@ -1,9 +1,9 @@
 - type: entity
   name: Shilov,s pistol
-  parent: [BaseWeaponPistol, BaseC2ContrabandUnredeemable]
+  parent: [BaseWeaponPistol, BaseC1Contraband ]
   id: WeaponScrapPistolShilov
-  suffix: Scrap
-  description: The good old Shilov pistol comes from the distant, deserted 91-st sector. Use .22,5 packed ammo.
+  suffix: DT/ST
+  description: The good old Shilov pistol comes from the distant, deserted 91-st sector. Use .25,5 packed ammo.
   components:
   - type: Sprite
     sprite: Forge/Objects/Weapons/Guns/Pistols/scrapshilov.rsi
@@ -17,6 +17,7 @@
     slots:
     - Belt
   - type: Gun
+    projectileSpeed: 30
     minAngle: 3
     maxAngle: 15
     angleIncrease: 10

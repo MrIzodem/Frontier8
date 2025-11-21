@@ -2,6 +2,7 @@
   parent: [ ClothingNeckBase, BaseC1Contraband ]
   id: ClothingNeckScrapCloak
   name: Linen cloak
+  suffix: DT/ST
   description: Old, light cloak from linen for protect u shoulders and neck from sand, dust, and sun.
   components:
   - type: Sprite

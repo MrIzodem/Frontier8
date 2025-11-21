@@ -2,6 +2,7 @@
   parent: [ ClothingOuterStorageBase, BaseC1Contraband ]
   id: ClothingBeltScrapWebbing
   name: Dust Troopers webbing
+  suffix: DT/ST
   description: Armor plate carrier with belts and pockets.
   components:
   - type: Sprite

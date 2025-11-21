@@ -1,7 +1,8 @@
 - type: entity
   id: MagazinePackedPistol
-  name: pistol magazine (.22,5 packed)
-  parent: [ BaseItem, BaseC2ContrabandUnredeemable, RecyclableItemSteelTiny ]
+  name: pistol magazine (.25,5 packed)
+  suffix: DT/ST
+  parent: [ BaseItem, BaseC1Contraband, RecyclableItemSteelTiny ]
   abstract: true
   components:
   - type: Tag
@@ -32,86 +33,9 @@
   - type: Appearance
 
 - type: entity
-  id: MagazinePackedPistolEmpty
-  name: pistol magazine (.22,5 packed)
-  suffix: empty
-  parent: MagazinePackedPistol
-  description: 12-round single-stack magazine for pistols.
-  components:
-  - type: BallisticAmmoProvider
-    proto: null
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-  - type: Item
-    inhandVisuals:
-      left:
-      - state: inhand-left-mag
-      right:
-      - state: inhand-right-mag
-
-- type: entity
-  id: MagazinePackedPistolfilled
-  name: pistol magazine (.22,5 packed)
-  parent: MagazinePackedPistol
-  description: 12-round single-stack magazine for pistols. Intended to hold .22,5 packed ammo.
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePacked
-
-- type: entity
-  id: MagazinePackedPistolShotgun
-  name: pistol magazine (.22,5 packed, shotgun)
-  parent: MagazinePackedPistol
-  description: 12-round single-stack magazine for pistols. Intended to hold special .22,5 ammo with shotgun-pellets instead of bullet.
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePackedShotgun
-
-- type: entity
-  id: MagazinePackedPistolExplosive
-  name: pistol magazine (.22,5 packed, explosive)
-  parent: MagazinePackedPistol
-  description: 12-round single-stack magazine for pistols. Intended to hold special anti-structure (and frightening) explosive .22,5 ammo.
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePackedExplosive
-
-- type: entity
-  id: MagazinePackedPistolUranium
-  name: pistol magazine (.22,5 packed, uranium)
-  parent: MagazinePackedPistol
-  description: 12-round single-stack magazine for pistols. Intended to hold radioacrive, deplect uranium .22,5 ammo.
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePackedUranium
-
-- type: entity
-  id: MagazinePackedPistolProtokinetic
-  name: pistol magazine (.22,5 packed, proto-kinetic)
-  parent: MagazinePackedPistol
-  description: 12-round single-stack magazine for pistols. Intended to hold special proto-kinetic .22,5 ammo... How this thing even work?
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePackedKinetic
-
-- type: entity
-  id: MagazinePackedPistolIncendiary
-  name: pistol magazine (.22,5 packed, incendiary)
-  parent: MagazinePackedPistol
-  description: 12-round single-stack magazine for pistols. Intended to hold self-igniting incendiary ammunition.
-  components:
-  - type: BallisticAmmoProvider
-    proto: CartridgePackedIncendiary
-
-# High capacity mags
-
-- type: entity
   id: MagazinePackedHighPistol
-  name: extended pistol magazine (.22,5 packed)
+  name: extended pistol magazine (.25,5 packed)
+  suffix: DT/ST
   parent: [ BaseItem, BaseC2ContrabandUnredeemable, RecyclableItemSteelTiny ]
   abstract: true
   components:
@@ -143,9 +67,85 @@
   - type: Appearance
 
 - type: entity
+  id: MagazinePackedPistolEmpty
+  suffix: DT/ST, empty
+  parent: MagazinePackedPistol
+  description: 12-round single-stack magazine for pistols.
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      right:
+      - state: inhand-right-mag
+
+- type: entity
+  id: MagazinePackedPistolfilled
+  suffix: DT/ST, filled
+  parent: MagazinePackedPistol
+  description: 12-round single-stack magazine for pistols. Intended to hold .25,5 packed ammo.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePacked
+
+- type: entity
+  id: MagazinePackedPistolShotgun
+  suffix: DT/ST, shotgun
+  parent: MagazinePackedPistol
+  description: 12-round single-stack magazine for pistols. Intended to hold special ammunition with shotgun-pellets instead of bullet.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedShotgun
+
+- type: entity
+  id: MagazinePackedPistolExplosive
+  suffix: DT/ST, explosive
+  parent: MagazinePackedPistol
+  description: 12-round single-stack magazine for pistols. Intended to hold special anti-structure (and frightening) explosive ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedExplosive
+
+- type: entity
+  id: MagazinePackedPistolUranium
+  suffix: DT/ST, uranium
+  parent: MagazinePackedPistol
+  description: 12-round single-stack magazine for pistols. Intended to hold radioacrive, deplect uranium ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedUranium
+
+- type: entity
+  id: MagazinePackedPistolProtokinetic
+  suffix: DT/ST, proto-kinetic
+  parent: MagazinePackedPistol
+  description: 12-round single-stack magazine for pistols. Intended to hold special proto-kinetic .25,5 ammo... How this thing even work?
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedKinetic
+
+- type: entity
+  id: MagazinePackedPistolIncendiary
+  suffix: DT/ST, incendiary
+  parent: MagazinePackedPistol
+  description: 12-round single-stack magazine for pistols. Intended to hold self-igniting incendiary ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgePackedIncendiary
+
+# High capacity mags
+
+- type: entity
   id: MagazinePackedHighPistolEmpty
-  name: extended pistol magazine (.22,5 packed)
-  suffix: empty
+  suffix: DT/ST, empty
   parent: MagazinePackedHighPistol
   description: 21-round single-stack magazine for ASSP.
   components:
@@ -166,52 +166,52 @@
 
 - type: entity
   id: MagazinePackedHighPistolfilled
-  name: extended pistol magazine (.22,5 packed)
+  suffix: DT/ST, filled
   parent: MagazinePackedHighPistol
-  description: 21-round single-stack magazine for ASSP. Intended to hold .22,5 packed ammo.
+  description: 21-round single-stack magazine for ASSP. Intended to hold .25,5 packed ammo.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePacked
 
 - type: entity
   id: MagazinePackedHighPistolShotgun
-  name: extended pistol magazine (.22,5 packed, shotgun)
+  suffix: DT/ST, shotgun
   parent: MagazinePackedHighPistol
-  description: 21-round single-stack magazine for ASSP. Intended to hold special .22,5 ammo with shotgun-pellets instead of bullet.
+  description: 21-round single-stack magazine for ASSP. Intended to hold special ammunition with shotgun-pellets instead of bullet.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedShotgun
 
 - type: entity
   id: MagazinePackedHighPistolExplosive
-  name: extended pistol magazine (.22,5 packed, explosive)
+  suffix: DT/ST, explosive
   parent: MagazinePackedHighPistol
-  description: 12-round single-stack magazine for ASSP. Intended to hold special anti-structure (and frightening) explosive .22,5 ammo.
+  description: 12-round single-stack magazine for ASSP. Intended to hold special anti-structure (and frightening) explosive ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedExplosive
 
 - type: entity
   id: MagazinePackedHighPistolUranium
-  name: extended pistol magazine (.22,5 packed, uranium)
+  suffix: DT/ST, uranium
   parent: MagazinePackedHighPistol
-  description: 12-round single-stack magazine for ASSP. Intended to hold radioacrive, deplect uranium .22,5 ammo.
+  description: 12-round single-stack magazine for ASSP. Intended to hold radioacrive, deplect uranium ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedUranium
 
 - type: entity
   id: MagazinePackedHighPistolProtokinetic
-  name: extended pistol magazine (.22,5 packed, proto-kinetic)
+  suffix: DT/ST, proto-kinetic
   parent: MagazinePackedHighPistol
-  description: 12-round single-stack magazine for ASSP. Intended to hold special proto-kinetic .22,5 ammo... How this thing even work?
+  description: 12-round single-stack magazine for ASSP. Intended to hold special proto-kinetic .25,5 ammo... How this thing even work?
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePackedKinetic
 
 - type: entity
   id: MagazinePackedHighPistolIncendiary
-  name: extended pistol magazine (.22,5 packed, incendiary)
+  suffix: DT/ST, incendiary
   parent: MagazinePackedHighPistol
   description: 12-round single-stack magazine for ASSP. Intended to hold self-igniting incendiary ammunition.
   components:

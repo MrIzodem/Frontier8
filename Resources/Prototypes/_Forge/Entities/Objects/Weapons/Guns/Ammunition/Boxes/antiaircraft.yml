@@ -2,6 +2,7 @@
   id: BaseAmmunitionBoxAircraft80
   parent: [ NFBaseAmmunitionBox, BaseC2ContrabandUnredeemable ]
   name: ammunition box (.80 anti-aircraft)
+  suffix: DT/ST
   abstract: true
   components:
   - type: BallisticAmmoProvider

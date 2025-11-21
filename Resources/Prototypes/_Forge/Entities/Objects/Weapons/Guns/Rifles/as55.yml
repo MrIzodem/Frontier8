@@ -1,9 +1,9 @@
 - type: entity
   id: WeaponScrapRifleAssaultAS55
   parent: [NFBaseWeaponRifleAssaultChamber, BaseGunWieldable, BaseC2ContrabandUnredeemable, NFBaseWeaponFrameRifleAssault ]
-  suffix: Scrap
+  suffix: DT/ST
   name: AS-55 automatic rifle
-  description: An old, but classic automatic rifle for Dust Troopers. Use .22,5 packed ammo.
+  description: An old, but classic automatic rifle for Dust Troopers. Use .25,5 packed ammo.
   components:
   - type: Sprite
     sprite: Forge/Objects/Weapons/Guns/Rifles/as-55_icon_40x.rsi
@@ -20,7 +20,7 @@
     zeroVisible: true
   - type: Gun
     fireRate: 3.5
-    projectileSpeed: 25
+    projectileSpeed: 35
     minAngle: 20
     maxAngle: 26
     selectedMode: FullAuto

@@ -1,0 +1,15 @@
+- type: entity
+  parent: [ClothingHeadBase, BaseC1Contraband ]
+  id: ClothingHeadHatDustCap
+  name: Dust Troopers officer cap
+  suffix: DT/ST
+  description: An sand-colored cap, worn by Dust Troopers infantry officers.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Head/Hats/dtscrapcap.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Head/Hats/dtscrapcap.rsi
+  - type: Tag
+    tags:
+    - ClothMade
+    - WhitelistChameleon

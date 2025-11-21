@@ -113,6 +113,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitST
   name: Scrap Tech jumpsuit
+  suffix: DT/ST
   description: Old and dirty orange salvage jumpsuit with belts and harness system, belong to some crappy company named Scrap Tech.
   components:
     - type: Sprite
@@ -124,6 +125,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitflightST
   name: Scrap Tech Airflight jumpsuit
+  suffix: DT/ST
   description: An old, black-colored flight jumpsuit-uniform, usually worn under a hardsuit. Also have an internal pockets on zips and inserts with orange leather. On a back u can see a number nine.
   components:
     - type: Sprite
@@ -135,6 +137,7 @@
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitSTofficial
   name: Scrap Tech official jumpsuit
+  suffix: DT/ST
   description: An orange sweater and beige pants-perfect outfit for Scrap Tech employees, from a far, far away sector...
   components:
     - type: Sprite

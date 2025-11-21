@@ -11,6 +11,12 @@
             "name": "base"
         },
         {
+            "name": "basehigh"
+        },
+        {
+            "name": "basehigh-spent"
+        },
+        {
             "name": "base-spent"
         },
         {
@@ -38,10 +44,22 @@
             "name": "uranium-spent"
         },
         {
+            "name": "uraniumhigh"
+        },
+        {
+            "name": "uraniumhigh-spent"
+        },
+        {
             "name": "incendiary"
         },
         {
             "name": "incendiary-spent"
+        },
+        {
+            "name": "incendiaryhigh"
+        },
+        {
+            "name": "incendiaryhigh-spent"
         }
     ]
 }

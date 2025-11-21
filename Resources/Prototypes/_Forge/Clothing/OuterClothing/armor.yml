@@ -3,6 +3,7 @@
   id: ClothingOuterArmorHeavyScrapRaider
   categories: [ HideSpawnMenu ] # Maybe, some day...
   name: dust raider plate-armor
+  suffix: DT/ST
   description: It can look old and rusty, but looks can be deceiving...
   components:
   - type: Sprite

@@ -2,6 +2,7 @@
   parent: [ ClothingNeckBase, BaseC1Contraband ]
   id: ClothingNeckScrapScarf
   name: Linen scarf
+  suffix: DT/ST
   description: Linen scarf from rags and cloth, can cover u neck and top from sun and dust.
   components:
   - type: Sprite

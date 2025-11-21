@@ -2,14 +2,14 @@
   name: M44-PU carbine
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseC2ContrabandUnredeemable]
   id: WeaponScrapSniperM44PU
-  suffix: Scrap
-  description: Reconstructed version of M44-U carbine on marksman-like rifle, usualy using by Dust Infantry sniper. Use .22,5 packed ammo.
+  suffix: DT/ST
+  description: Reconstructed version of M44-U carbine on marksman-like rifle, usualy using by Dust Troopers marksman. Use .33,5 packed ammo.
   components:
   - type: Sprite
     sprite: Forge/Objects/Weapons/Guns/Snipers/m44pu.rsi
   - type: Gun
     fireRate: 0.9
-    projectileSpeed: 45
+    projectileSpeed: 55
     minAngle: 25
     maxAngle: 50
   - type: GunWieldBonus
@@ -22,9 +22,9 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - CartridgePacked
+        - CartridgePackedHigh
     capacity: 5
-    proto: CartridgePacked
+    proto: CartridgePackedHigh
   - type: StaticPrice
     price: 2000
   - type: ClothingSpeedModifier

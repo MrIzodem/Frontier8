@@ -59,10 +59,11 @@
     sprite: Forge/Clothing/Belt/syndicatewebbingcom.rsi
 
 - type: entity
-  parent: NFClothingBeltStorageBase, NFBaseClothingBeltStorageBag
+  parent: [ NFClothingBeltStorageBase, NFBaseClothingBeltStorageBag ]
   id: ClothingBeltScrapTechSalvage
   name: Scrap Tech Salvage webbing
-  description: An old, heavy leather belt system with pockets who can carry ore and salvage instruments.
+  suffix: DT/ST
+  description: An old, heavy leather belt system with pockets who can carry ore and salvage instruments. This one have a broken magnet, so he attracts anything.
   components:
   - type: Sprite
     sprite: Forge/Clothing/Belt/scrap_webbing.rsi
@@ -71,16 +72,20 @@
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: ClothingSpeedModifier
-    walkModifier: 0.85
-    sprintModifier: 0.85
+    walkModifier: 0.95
+    sprintModifier: 0.95
   - type: Storage
+    defaultStorageOrientation: Vertical
     grid:
-    - 0,0,8,1
-    - 0,3,6,1
+    - 0,0,1,5
+    - 3,0,8,3
     quickInsert: true
     areaInsert: true
   - type: Dumpable
   - type: NFOreBag
+  - type: MagnetPickup
+    magnetEnabled: false # Frontier
+    magnetCanBeEnabled: false # Frontier
   - type: ItemToggle
     soundActivate: &soundActivate
       collection: sparks

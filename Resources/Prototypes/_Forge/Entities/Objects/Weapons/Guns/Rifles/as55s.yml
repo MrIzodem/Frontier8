@@ -1,9 +1,9 @@
 - type: entity
   id: WeaponScrapRifleAssaultAS55S
   parent: [NFBaseWeaponRifleAssaultChamber, BaseGunWieldable, BaseC2ContrabandUnredeemable, NFBaseWeaponFrameRifleAssault ]
-  suffix: Scrap
+  suffix: DT/ST
   name: AS-55S marksman rifle
-  description: Uncommon modification of AS-55 for airborn military, have integral supressor and burst-fire. Use .22,5 packed ammo
+  description: Uncommon modification of AS-55 for airborn military, have integral supressor and burst-fire. Use .25,5 packed ammo
   components:
   - type: Sprite
     sprite: Forge/Objects/Weapons/Guns/Rifles/as-55s_icon_40x.rsi
@@ -20,7 +20,7 @@
     zeroVisible: true
   - type: Gun
     fireRate: 3
-    projectileSpeed: 30
+    projectileSpeed: 39
     minAngle: 15
     maxAngle: 20
     shotsPerBurst: 4

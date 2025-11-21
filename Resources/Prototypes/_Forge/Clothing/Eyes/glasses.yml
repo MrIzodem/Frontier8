@@ -2,6 +2,7 @@
   parent: ClothingEyesBase
   id: ClothingWarmglasses
   name: warm sunglasses
+  suffix: DT/ST
   description: Special sunglasses with warm orange-colored holographic lenses and a raspberry metal frame.
   components:
   - type: Sprite
@@ -16,6 +17,7 @@
   parent: ClothingEyesBase
   id: ClothingSandglasses
   name: sand glasses
+  suffix: DT/ST
   description: An makeshift pair of glasses what can cover u from desert storm or dazzing sun.
   components:
   - type: Sprite

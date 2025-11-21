@@ -1,0 +1,43 @@
+- type: entity
+  name: Obrez M44 carbine
+  parent: [BaseWeaponSniper, BaseC1Contraband ]
+  id: WeaponScrapPistolM44Obrez
+  suffix: DT/ST
+  description: Cursed modification of M44 carbine with extended magazine and faster reciever. Uses .33,5 packed ammo.
+  components:
+  - type: Sprite
+    sprite: Forge/Objects/Weapons/Guns/Pistols/m44uu.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Clothing
+    sprite: Forge/Objects/Weapons/Guns/Pistols/m44uu.rsi
+  - type: AmmoCounter
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,3,0
+  - type: Gun
+    projectileSpeed: 45
+    minAngle: 20
+    maxAngle: 40
+    angleIncrease: 20
+    angleDecay: 15
+    fireRate: 3
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/sniper.ogg
+  - type: BallisticAmmoProvider
+    capacity: 10
+    proto: CartridgePackedHigh
+    whitelist:
+      tags:
+      - CartridgePackedHigh
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: StaticPrice
+    price: 10

@@ -2,6 +2,7 @@
   parent: [ClothingShoesBase, ClothingHandsBase, ClothingMaskBaseButcherable, ClothingHeadBaseButcherable, ClothingOuterBase, ClothingNeckBase, ClothingEyesBase ]
   id: ClothingShoesLinenwrap
   name: linen wraps
+  suffix: DT/ST
   description: A rolls of treated veil, rags, and other cloth used for wrapping any part of you body from dust and sand.
   components:
   - type: Sprite

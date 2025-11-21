@@ -1,9 +1,9 @@
 - type: entity
   id: WeaponScrapLightMachineGunDeserter
   parent: [BaseC3Contraband, NFBaseWeaponEncumbranceSniper, NFBaseItemWeaponGunMagazineFed ]
-  suffix: Scrap
+  suffix: DT/ST
   name: Deserter LMG
-  description: A truly terrifying weapon in the right hands... Use .22.5 packed box magazines.
+  description: A truly terrifying weapon in the right hands... Use .25.5 packed box magazines.
   components:
   - type: Sprite
     sprite: Forge/Objects/Weapons/Guns/LMGs/Deserter_icon_45x.rsi
@@ -30,9 +30,9 @@
     zeroVisible: true
   - type: Gun
     fireRate: 10
-    angleIncrease: 1.5
+    angleIncrease: -0.5
     angleDecay: 15
-    projectileSpeed: 26
+    projectileSpeed: 30
     minAngle: 5.5
     maxAngle: 15
     selectedMode: FullAuto

@@ -1,5 +1,6 @@
 - type: entity
   name: metal fuel can
+  suffix: DT/ST
   parent: BaseItem
   id: MetalFuelCan
   description: An old, maroon-colored fuel can maden from metal.
@@ -73,7 +74,7 @@
 
 - type: entity
   parent: MetalFuelCan
-  suffix: diesel fuel
+  suffix: DT/ST, diesel fuel
   id: MetalFuelCanDieselFuel
   components:
   - type: SolutionContainerManager

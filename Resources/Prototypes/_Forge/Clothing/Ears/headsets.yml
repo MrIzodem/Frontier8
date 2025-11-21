@@ -2,6 +2,7 @@
   parent: ClothingHeadset
   id: ClothingHeadsetScrapAgentTest
   name: Dust Troopers agent radioset
+  suffix: DT/ST
   description: Radio headphones with antenna and wire, connected to signal communicator on shoulder. Takes encryption keys.
   components:
   - type: Sprite

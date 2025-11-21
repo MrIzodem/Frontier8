@@ -2,7 +2,8 @@
   parent: [ClothingHeadBase, BaseC1Contraband ]
   id: ClothingHeadHatDustBeret
   name: Dust Troopers airborn beret
-  description: A red-colored beret, worn by airborn officer,s.
+  suffix: DT/ST
+  description: A red-colored beret, worn by airborn officer,s from Dust Troopers.
   components:
   - type: Sprite
     sprite: Forge/Clothing/Head/Hats/dtairbornberet.rsi

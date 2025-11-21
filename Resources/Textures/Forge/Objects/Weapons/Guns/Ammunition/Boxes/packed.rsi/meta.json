@@ -11,6 +11,9 @@
       "name": "base"
     },
     {
+      "name": "basedark"
+    },
+    {
       "name": "mag-0"
     },
     {
@@ -29,7 +32,10 @@
       "name": "mag-5"
     },
     {
-      "name": "decal-calibre-22.5"
+      "name": "decal-calibre-25.5"
+    },
+    {
+      "name": "decal-calibre-33.5"
     },
     {
       "name": "inhand-left",

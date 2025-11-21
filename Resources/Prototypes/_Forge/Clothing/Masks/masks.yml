@@ -2,6 +2,7 @@
   parent: [ ClothingMaskGas, BaseC2ContrabandUnredeemable ]
   id: ClothingMaskGasDustRaider
   name: Dust Troopers raider respirator
+  suffix: DT/ST
   description: Stell mask and lenses with dense veil and respirator under she... Rest In Piece, old friend...
   components:
   - type: Sprite
@@ -15,6 +16,7 @@
   parent: [ ClothingMaskGas, BaseC1Contraband ]
   id: ClothingMaskGasDust
   name: dust respirator
+  suffix: DT/ST
   description: An old, makeshift respirator, what can be used with air tanks.
   components:
   - type: Sprite
@@ -26,6 +28,7 @@
   parent: [ ClothingMaskGas, BaseC1Contraband ]
   id: ClothingMaskGasSand
   name: dust gasmask
+  suffix: DT/ST
   description: An old, military-grade antique gasmask used in aviation is now used in scorching deserts during particularly hard sandstorms... Can be used with air tanks.
   components:
   - type: Sprite

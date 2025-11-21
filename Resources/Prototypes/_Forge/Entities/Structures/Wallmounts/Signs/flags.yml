@@ -2,6 +2,7 @@
   parent: BaseFlag
   id: DustFlag
   name: Dust Troopers Flag
+  suffix: DT/ST
   description: Some piece of old cloth, covered with dust and sand. It show a some not-soo-glad faction.
   components:
   - type: Sprite
@@ -12,7 +13,8 @@
   parent: BaseFlag
   id: ScrapFlag
   name: Scrap Tech Flag
-  description: Some piece of light-orange cloth with neon "S" and "T" letters, its covered with oil...
+  suffix: DT/ST
+  description: Some piece of light-orange cloth with gray lines, its covered with oil...
   components:
   - type: Sprite
     sprite: Forge/Structures/Wallmounts/flags.rsi
