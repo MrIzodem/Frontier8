@@ -2,7 +2,7 @@
   name: Obrez M44 carbine
   parent: [BaseWeaponSniper, BaseC1Contraband ]
   id: WeaponScrapPistolM44Obrez
-  suffix: DT/ST
+  suffix: Solarm
   description: Cursed modification of M44 carbine with extended magazine and faster reciever. Uses .33,5 packed ammo.
   components:
   - type: Sprite

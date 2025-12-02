@@ -5,7 +5,7 @@
     Runs off diesel fuel and is rated for up to 75 kW. 
   parent: [ PortableGeneratorBase, BaseC1Contraband ]
   id: PortableGeneratorMaroon
-  suffix: DT/ST, Diesel, 35 kW
+  suffix: Solarm, Diesel, 75 kW
   components:
     - type: AmbientSound
       range: 4
@@ -125,7 +125,7 @@
   - BaseGeneratorShuttle
   - PortableGeneratorMaroon
   id: PortableGeneratorMaroonShuttle
-  suffix: DT/ST, Diesel, 35 kW, Ship
+  suffix: Solarm, Diesel, 75 kW, Ship
   components:
     - type: SolutionContainerManager
       solutions:

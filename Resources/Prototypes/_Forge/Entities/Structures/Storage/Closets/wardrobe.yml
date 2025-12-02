@@ -1,0 +1,14 @@
+- type: entity
+  id: WardrobeScrapTechSalvage
+  parent: WardrobeBase
+  name: Scrap Tech salvager wardrobe
+  suffix: Solarm
+  description: Closet from a dark steel with orange strips, filled with old Scrap Tech salvage uniform.
+  components:
+  - type: Appearance
+  - type: Sprite
+    sprite: Forge/Structures/Storage/closet.rsi
+  - type: EntityStorageVisuals
+    stateBaseClosed: scraptech
+    stateDoorOpen: scraptech_door_open
+    stateDoorClosed: scraptech_door

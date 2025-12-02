@@ -2,7 +2,7 @@
   name: Shilov,s pistol
   parent: [BaseWeaponPistol, BaseC1Contraband ]
   id: WeaponScrapPistolShilov
-  suffix: DT/ST
+  suffix: Solarm
   description: The good old Shilov pistol comes from the distant, deserted 91-st sector. Use .25,5 packed ammo.
   components:
   - type: Sprite

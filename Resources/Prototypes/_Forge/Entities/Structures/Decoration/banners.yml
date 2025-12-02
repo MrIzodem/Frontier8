@@ -2,7 +2,7 @@
   id: BannerScrapTech
   parent: BannerBase
   name: Scrap Tech banner
-  suffix: DT/ST
+  suffix: Solarm
   description: A banner displaying some crappy company. He,s covered with dirt and engine fluid.
   components:
   - type: Sprite

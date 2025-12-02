@@ -1,0 +1,48 @@
+- type: entity
+  parent: ClothingHandsButcherable
+  id: ClothingHandsGlovesScrapCargo
+  name: scrap tech cargo gloves
+  suffix: Solarm
+  description: Gloves from thick leather, covered with scars and burns, developed for loader work. These gloves been through a lot things...
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Hands/Gloves/scrapcargo.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Hands/Gloves/scrapcargo.rsi
+  - type: Fiber
+    fiberMaterial: fibers-leather
+    fiberColor: fibers-brown
+  - type: FingerprintMask
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Blunt: 20
+
+- type: entity
+  parent: ClothingHandsBase
+  id: ClothingHandsGlovesScrapSalvage
+  name: scrap tech salvage gloves
+  suffix: Solarm
+  description: The main attribute of ST,s salvagers. Very expensive and quality gloves for salvage work. These gloves save much lives with they armored fingers and frame, and also a temperature-resistance material.
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/Hands/Gloves/scrapsalvage.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/Hands/Gloves/scrapsalvage.rsi
+  - type: Fiber
+    fiberMaterial: fibers-insulative
+    fiberColor: fibers-orange
+  - type: Insulated
+  - type: FingerprintMask
+  - type: DamageOnInteractProtection
+    damageProtection:
+      flatReductions:
+        Blunt: 30
+  - type: StaminaDamageOnHit
+    damage: 15
+  - type: MeleeWeapon
+    attackRate: 1
+    damage:
+      types:
+        Blunt: 10
+        Structure: 20

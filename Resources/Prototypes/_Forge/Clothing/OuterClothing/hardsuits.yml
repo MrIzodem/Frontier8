@@ -73,7 +73,7 @@
   parent: [ClothingOuterHardsuitBase, BaseC1Contraband]
   id: ClothingOuterHardsuitScrapTechHeavy
   name: Scrap Tech deep space hardsuit
-  suffix: DT/ST
+  suffix: Solarm
   description: An old, brown and orange-colored hardsuit what have advanced thermal and physical damage protection for exploring deep space.
   components:
   - type: Sprite
@@ -89,7 +89,7 @@
         Heat: 0.3
         Cold: 0.2
         Shock: 0.8
-        Radiation: 0.8
+        Radiation: 0.7
         Caustic: 0.8
   - type: PressureProtection
     highPressureMultiplier: 0.02

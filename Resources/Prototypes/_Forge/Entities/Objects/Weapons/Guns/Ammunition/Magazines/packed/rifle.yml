@@ -1,7 +1,7 @@
 - type: entity
   id: MagazinePackedRifle
   name: rifle magazine (.25,5 packed)
-  suffix: DT/ST
+  suffix: Solarm
   parent: [ BaseItem, BaseC2ContrabandUnredeemable, RecyclableItemSteelTiny ]
   abstract: true
   components:
@@ -34,7 +34,7 @@
 
 - type: entity
   id: MagazinePackedDrumRifle
-  suffix: DT/ST
+  suffix: Solarm
   name: drum magazine (.25,5 packed)
   parent: [ BaseItem, BaseC2ContrabandUnredeemable, RecyclableItemSteelTiny ]
   abstract: true
@@ -70,7 +70,7 @@
 
 - type: entity
   id: MagazinePackedRifleEmpty
-  suffix: DT/ST, empty
+  suffix: Solarm, empty
   parent: MagazinePackedRifle
   description: 32-round single-stack magazine for rifles.
   components:
@@ -91,7 +91,7 @@
 
 - type: entity
   id: MagazinePackedRiflefilled
-  suffix: DT/ST, filled
+  suffix: Solarm, filled
   parent: MagazinePackedRifle
   description: 32-round single-stack magazine for rifles. Intended to hold .22,5 packed ammo.
   components:
@@ -100,7 +100,7 @@
 
 - type: entity
   id: MagazinePackedRifleShotgun
-  suffix: DT/ST, shotgun
+  suffix: Solarm, shotgun
   parent: MagazinePackedRifle
   description: 32-round single-stack magazine for rifles. Intended to hold special .22,5 ammo with shotgun-pellets instead of bullet.
   components:
@@ -109,7 +109,7 @@
 
 - type: entity
   id: MagazinePackedRifleExplosive
-  suffix: DT/ST, explosive
+  suffix: Solarm, explosive
   parent: MagazinePackedRifle
   description: 32-round single-stack magazine for rifles. Intended to hold special anti-structure (and frightening) explosive .22,5 ammo.
   components:
@@ -118,7 +118,7 @@
 
 - type: entity
   id: MagazinePackedRiflelUranium
-  suffix: DT/ST, uranium
+  suffix: Solarm, uranium
   parent: MagazinePackedRifle
   description: 32-round single-stack magazine for rifles. Intended to hold radioacrive, deplect uranium .22,5 ammo.
   components:
@@ -127,7 +127,7 @@
 
 - type: entity
   id: MagazinePackedRifleProtokinetic
-  suffix: DT/ST, proto-kinetic
+  suffix: Solarm, proto-kinetic
   parent: MagazinePackedRifle
   description: 32-round single-stack magazine for rifles. Intended to hold special proto-kinetic .22,5 ammo... How this thing even work?
   components:
@@ -136,7 +136,7 @@
 
 - type: entity
   id: MagazinePackedRifleIncendiary
-  suffix: DT/ST, incendiary
+  suffix: Solarm, incendiary
   parent: MagazinePackedRifle
   description: 32-round single-stack magazine for rifles. Intended to hold self-igniting incendiary ammunition.
   components:
@@ -147,7 +147,7 @@
 
 - type: entity
   id: MagazinePackedDrumRifleEmpty
-  suffix: DT/ST, empty
+  suffix: Solarm, empty
   parent: MagazinePackedDrumRifle
   description: 64-round drum magazine for light machine guns.
   components:
@@ -168,7 +168,7 @@
 
 - type: entity
   id: MagazinePackedDrumRiflefilled
-  suffix: DT/ST, filled
+  suffix: Solarm, filled
   parent: MagazinePackedDrumRifle
   description: 64-round drum magazine for light machine guns. Intended to hold .22,5 packed ammo.
   components:
@@ -177,7 +177,7 @@
 
 - type: entity
   id: MagazinePackedDrumRifleShotgun
-  suffix: DT/ST, shotgun
+  suffix: Solarm, shotgun
   parent: MagazinePackedDrumRifle
   description: 64-round drum magazine for light machine guns. Intended to hold special .22,5 ammo with shotgun-pellets instead of bullet.
   components:
@@ -186,7 +186,7 @@
 
 - type: entity
   id: MagazinePackedDrumRifleExplosive
-  suffix: DT/ST, explosive
+  suffix: Solarm, explosive
   parent: MagazinePackedDrumRifle
   description: 64-round drum magazine for light machine guns. Intended to hold special anti-structure (and frightening) explosive .22,5 ammo.
   components:
@@ -195,7 +195,7 @@
 
 - type: entity
   id: MagazinePackedDrumRiflelUranium
-  suffix: DT/ST, uranium
+  suffix: Solarm, uranium
   parent: MagazinePackedDrumRifle
   description: 64-round drum magazine for light machine guns. Intended to hold radioacrive, deplect uranium .22,5 ammo.
   components:
@@ -204,7 +204,7 @@
 
 - type: entity
   id: MagazinePackedDrumRifleProtokinetic
-  suffix: DT/ST, proto-kinetic
+  suffix: Solarm, proto-kinetic
   parent: MagazinePackedDrumRifle
   description: 64-round drum magazine for light machine guns. Intended to hold special proto-kinetic .22,5 ammo... How this thing even work?
   components:
@@ -213,7 +213,7 @@
 
 - type: entity
   id: MagazinePackedDrumRifleIncendiary
-  suffix: DT/ST, incendiary
+  suffix: Solarm, incendiary
   parent: MagazinePackedDrumRifle
   description: 64-round drum magazine for light machine guns. Intended to hold self-igniting incendiary ammunition.
   components:

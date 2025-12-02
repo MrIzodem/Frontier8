@@ -2,7 +2,7 @@
   name: M44-PU carbine
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseC2ContrabandUnredeemable]
   id: WeaponScrapSniperM44PU
-  suffix: DT/ST
+  suffix: Solarm
   description: Reconstructed version of M44-U carbine on marksman-like rifle, usualy using by Dust Troopers marksman. Use .33,5 packed ammo.
   components:
   - type: Sprite

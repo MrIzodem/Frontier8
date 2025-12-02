@@ -1,7 +1,7 @@
 - type: entity
   id: WeaponScrapLightMachineGunDeserter
   parent: [BaseC3Contraband, NFBaseWeaponEncumbranceSniper, NFBaseItemWeaponGunMagazineFed ]
-  suffix: DT/ST
+  suffix: Solarm
   name: Deserter LMG
   description: A truly terrifying weapon in the right hands... Use .25.5 packed box magazines.
   components:

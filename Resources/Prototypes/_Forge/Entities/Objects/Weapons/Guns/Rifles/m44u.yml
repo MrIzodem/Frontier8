@@ -1,7 +1,7 @@
 - type: entity
   name: M44-U carbine
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseC2ContrabandUnredeemable]
-  suffix: DT/ST
+  suffix: Solarm
   id: WeaponScrapRifleM44
   description: An old, modified Barlows rifle by gunsmith,s from 91-st sector. Use .33,5 packed ammo.
   components:

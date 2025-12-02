@@ -1,0 +1,44 @@
+{
+    "version": 1,
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "copyright": "All sprites by MrIzo",
+    "license": "CC-BY-SA-3.0",
+    "states": [
+        {
+            "name": "scraptech"
+        },
+        {
+            "name": "scraptech_door"
+        },
+        {
+            "name": "scraptech_door_open"
+        },
+        {
+            "name": "scrapsalvage"
+        },
+        {
+            "name": "scrapsalvage_door"
+        },
+        {
+            "name": "scrapsalvage_door_open"
+        },
+        {
+            "name": "generic"
+        },
+        {
+            "name": "generic_door"
+        },
+        {
+            "name": "generic_open"
+        },
+        {
+            "name": "welded"
+        },
+        {
+            "name": "locked"
+        }
+    ]
+}

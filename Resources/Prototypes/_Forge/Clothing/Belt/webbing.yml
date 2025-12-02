@@ -61,9 +61,9 @@
 - type: entity
   parent: [ NFClothingBeltStorageBase, NFBaseClothingBeltStorageBag ]
   id: ClothingBeltScrapTechSalvage
-  name: Scrap Tech Salvage webbing
-  suffix: DT/ST
-  description: An old, heavy leather belt system with pockets who can carry ore and salvage instruments. This one have a broken magnet, so he attracts anything.
+  name: Scrap Tech mining webbing
+  suffix: Solarm
+  description: An old, heavy leather belt system with pockets who can carry ore and salvage instruments. Also have an ore and instruments magnet.
   components:
   - type: Sprite
     sprite: Forge/Clothing/Belt/scrap_webbing.rsi
@@ -77,7 +77,7 @@
   - type: Storage
     defaultStorageOrientation: Vertical
     grid:
-    - 0,0,1,5
+    - 0,0,1,7
     - 3,0,8,3
     quickInsert: true
     areaInsert: true

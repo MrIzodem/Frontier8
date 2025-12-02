@@ -2,7 +2,7 @@
   parent: [ClothingOuterStorageBase, BaseC1Contraband]
   id: ClothingOuterCoatScrapBomber
   name: bomber jacket of "Free 91-st sector"
-  suffix: DT/ST
+  suffix: Solarm
   description: Kinda old insulated bomber jacket, colored with some orange strips and number "9" and "1" on his back... You really wont remember how u got this jacket...
   components:
   - type: Sprite

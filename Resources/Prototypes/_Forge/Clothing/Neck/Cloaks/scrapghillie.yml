@@ -2,7 +2,7 @@
   parent: [ ClothingNeckBase, BaseC1Contraband ]
   id: ClothingNeckScrapGhillie
   name: sand ghillie mantle
-  suffix: DT/ST
+  suffix: Solarm
   description: A camouflage mantle in desert camo color and with attached leaves, looking noticeably worn.
   components:
   - type: Sprite

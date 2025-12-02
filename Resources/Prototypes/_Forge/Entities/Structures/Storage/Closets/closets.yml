@@ -1,0 +1,27 @@
+- type: entity
+  id: ClosetScrapSteel
+  name: scrap steel closet
+  suffix: Solarm
+  parent: ClosetSteelBase
+  description: "More comfortable than radiation poisioning."
+  components:
+  - type: Appearance
+  - type: EntityStorageVisuals
+    stateBaseClosed: generic
+    stateDoorOpen: generic_open
+    stateDoorClosed: generic_door
+  - type: Sprite
+    noRot: true
+    sprite: Forge/Structures/Storage/closet.rsi
+    layers:
+    - state: generic
+      map: ["enum.StorageVisualLayers.Base"]
+    - state: generic_door
+      map: ["enum.StorageVisualLayers.Door"]
+    - state: welded
+      visible: false
+      map: ["enum.WeldableLayers.BaseWelded"]
+    - state: paper
+      visible: false
+      sprite: Structures/Storage/closet_labels.rsi
+      map: ["enum.PaperLabelVisuals.Layer"]

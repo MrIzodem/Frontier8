@@ -1,0 +1,15 @@
+#- type: entity
+#  id: LockerScrapTechSalvager
+#  parent: LockerBase
+#  name: Scrap Tech salvager equipment
+#  suffix: Solarm
+#  description: Nevermind the pickaxe.
+#  components:
+#  - type: Appearance
+#  - type: Sprite
+#    sprite: Forge/Structures/Storage/closet.rsi
+#  - type: EntityStorageVisuals
+#    stateBaseClosed: scrapsalvage
+#    stateDoorOpen: scrapsalvage_door_open
+#    stateDoorClosed: scrapsalvage_door
+#  - type: AccessReader

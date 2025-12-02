@@ -154,7 +154,7 @@
   id: PortableGeneratorMaroonMachineCircuitboard
   parent: BaseMachineCircuitboard
   name: M.A.R.O.O.N portable generator machine board
-  suffix: DT/ST
+  suffix: Solarm
   components:
     - type: Sprite
       state: engineering

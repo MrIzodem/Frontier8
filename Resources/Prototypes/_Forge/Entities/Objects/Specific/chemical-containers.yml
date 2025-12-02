@@ -1,6 +1,6 @@
 - type: entity
   name: metal fuel can
-  suffix: DT/ST
+  suffix: Solarm
   parent: BaseItem
   id: MetalFuelCan
   description: An old, maroon-colored fuel can maden from metal.
@@ -74,7 +74,7 @@
 
 - type: entity
   parent: MetalFuelCan
-  suffix: DT/ST, diesel fuel
+  suffix: Solarm, diesel fuel
   id: MetalFuelCanDieselFuel
   components:
   - type: SolutionContainerManager
@@ -86,3 +86,17 @@
   - type: StaticPrice
     vendPrice: 170
   - type: NFFuel
+
+- type: entity
+  parent: MetalFuelCan
+  suffix: Solarm, liwer
+  id: MetalFuelCanLiwerFuel
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      beaker:
+        reagents:
+        - ReagentId: Liwer
+          Quantity: 150
+  - type: StaticPrice
+    vendPrice: 200

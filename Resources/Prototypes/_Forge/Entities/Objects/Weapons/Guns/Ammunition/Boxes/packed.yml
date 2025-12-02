@@ -2,7 +2,7 @@
   id: BaseAmmunitionBoxPacked
   parent: [ NFBaseAmmunitionBox, BaseC2ContrabandUnredeemable ]
   name: ammunition box (.25,5 packed)
-  suffix: DT/ST
+  suffix: Solarm
   abstract: true
   components:
   - type: BallisticAmmoProvider
@@ -73,7 +73,7 @@
   id: BaseAmmunitionCanPacked
   parent: [ NFBaseAmmunitionBox, BaseC2ContrabandUnredeemable ]
   name: ammunition can (.25,5 packed)
-  suffix: DT/ST
+  suffix: Solarm
   abstract: true
   components:
   - type: Item
@@ -155,7 +155,7 @@
   id: BaseAmmunitionBoxPackedHigh
   parent: [ NFBaseAmmunitionBox, BaseC2ContrabandUnredeemable ]
   name: ammunition box (.33,5 packed)
-  suffix: DT/ST
+  suffix: Solarm
   abstract: true
   components:
   - type: BallisticAmmoProvider
@@ -186,7 +186,7 @@
   id: BaseAmmunitionCanPackedHigh
   parent: [ NFBaseAmmunitionBox, BaseC2ContrabandUnredeemable ]
   name: ammunition can (.33,5 packed)
-  suffix: DT/ST
+  suffix: Solarm
   abstract: true
   components:
   - type: Item

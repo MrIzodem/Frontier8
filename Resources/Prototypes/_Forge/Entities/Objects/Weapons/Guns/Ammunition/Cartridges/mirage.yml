@@ -2,6 +2,7 @@
   parent: [ BaseCartridge, BaseC2ContrabandUnredeemable ]
   id: CartridgeMirage
   name: cartridge (.80 A-Aircraft)
+  suffix: Solarm
   components:
   - type: Tag
     tags:

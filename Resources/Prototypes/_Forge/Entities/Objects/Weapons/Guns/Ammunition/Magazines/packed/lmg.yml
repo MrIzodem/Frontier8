@@ -1,7 +1,7 @@
 - type: entity
   id: MagazinePackedLMG
   name: box magazine (.25,5 packed)
-  suffix: DT/ST
+  suffix: Solarm
   parent: [ BaseItem, BaseC2ContrabandUnredeemable, RecyclableItemSteelTiny ]
   abstract: true
   components:
@@ -36,7 +36,7 @@
 
 - type: entity
   id: MagazinePackedLMGEmpty
-  suffix: DT/ST, empty
+  suffix: Solarm, empty
   parent: MagazinePackedLMG
   description: 160-round belt-box magazine for light machine guns.
   components:
@@ -57,7 +57,7 @@
 
 - type: entity
   id: MagazinePackedLMGfilled
-  suffix: DT/ST, filled
+  suffix: Solarm, filled
   parent: MagazinePackedLMG
   description: 160-round belt-box magazine for light machine guns. Intended to hold .25,5 packed ammo.
   components:
@@ -66,7 +66,7 @@
 
 - type: entity
   id: MagazinePackedLMGShotgun
-  suffix: DT/ST, shotgun
+  suffix: Solarm, shotgun
   parent: MagazinePackedLMG
   description: 160-round belt-box magazine for light machine guns. Intended to hold special ammunition with shotgun-pellets instead of bullet.
   components:
@@ -75,7 +75,7 @@
 
 - type: entity
   id: MagazinePackedLMGExplosive
-  suffix: DT/ST, explosive
+  suffix: Solarm, explosive
   parent: MagazinePackedLMG
   description: 160-round belt-box magazine for light machine guns. Intended to hold special anti-structure (and frightening) explosive ammunition.
   components:
@@ -84,7 +84,7 @@
 
 - type: entity
   id: MagazinePackedLMGUranium
-  suffix: DT/ST, uranium
+  suffix: Solarm, uranium
   parent: MagazinePackedLMG
   description: 160-round belt-box magazine for light machine guns. Intended to hold radioacrive, deplect uranium ammunition.
   components:
@@ -93,7 +93,7 @@
 
 - type: entity
   id: MagazinePackedLMGProtokinetic
-  suffix: DT/ST, proto-kinetic
+  suffix: Solarm, proto-kinetic
   parent: MagazinePackedLMG
   description: 160-round belt-box magazine for light machine guns. Intended to hold special proto-kinetic .25,5 ammo... How this thing even work?
   components:
@@ -102,7 +102,7 @@
 
 - type: entity
   id: MagazinePackedLMGIncendiary
-  suffix: DT/ST, incendiary
+  suffix: Solarm, incendiary
   parent: MagazinePackedLMG
   description: 160-round belt-box magazine for light machine guns. Intended to hold self-igniting incendiary ammunition.
   components:

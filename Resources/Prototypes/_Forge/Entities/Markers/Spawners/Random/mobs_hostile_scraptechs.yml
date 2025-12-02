@@ -2,7 +2,7 @@
   name: dust trooper spawner
   id: SpawnMobScrapTechCommonT1
   parent: MarkerBase
-  suffix: AI, Hostile, T1-Common
+  suffix: AI, Hostile, T1-Common, Solarm
   components:
   - type: Sprite
     layers:
@@ -30,7 +30,7 @@
   name: dust trooper spawner
   id: SpawnMobScrapTechUncommonT1
   parent: MarkerBase
-  suffix: AI, Hostile, T1-Uncommon
+  suffix: AI, Hostile, T1-Uncommon, Solarm
   components:
   - type: Sprite
     layers:
@@ -61,7 +61,7 @@
   name: dust trooper spawner
   id: SpawnMobScrapTechRareT1
   parent: MarkerBase
-  suffix: AI, Hostile, T1-Rare
+  suffix: AI, Hostile, T1-Rare, Solarm
   components:
   - type: Sprite
     layers:
@@ -92,7 +92,7 @@
   name: dust trooper spawner
   id: SpawnMobScrapTechCommonT2
   parent: MarkerBase
-  suffix: AI, Hostile, T2-Common
+  suffix: AI, Hostile, T2-Common, Solarm
   components:
   - type: Sprite
     layers:
@@ -122,7 +122,7 @@
   name: dust trooper spawner
   id: SpawnMobScrapTechUncommonT2
   parent: MarkerBase
-  suffix: AI, Hostile, T2-Uncommon
+  suffix: AI, Hostile, T2-Uncommon, Solarm
   components:
   - type: Sprite
     layers:
@@ -151,7 +151,7 @@
 #  name: dust trooper spawner
 #  id: SpawnMobScrapTechRareT2
 #  parent: MarkerBase
-#  suffix: AI, Hostile, T2-Rare
+#  suffix: AI, Hostile, T2-Rare, Solarm
 #  components:
 #  - type: Sprite
 #    layers:
@@ -171,7 +171,7 @@
 #  name: dust trooper spawner
 #  id: SpawnMobScrapTechRareT2Withairborn
 #  parent: MarkerBase
-#  suffix: AI, Hostile, T2-Rare (airborn)
+#  suffix: AI, Hostile, T2-Rare (airborn), Solarm
 #  components:
 #  - type: Sprite
 #    layers:
@@ -203,7 +203,7 @@
   name: dust trooper spawner
   id: SpawnMobScrapTechRareT2Airborn
   parent: MarkerBase
-  suffix: AI, Hostile, T2-Airborn
+  suffix: AI, Hostile, T2-Airborn, Solarm
   components:
   - type: Sprite
     layers:
@@ -229,7 +229,7 @@
   name: dust trooper boss spawner
   id: SpawnMobScrapTechRandomT3
   parent: MarkerBase
-  suffix: AI, Hostile, T3-Random boss
+  suffix: AI, Hostile, T3-Random boss, Solarm
   components:
   - type: Sprite
     layers:
@@ -248,7 +248,7 @@
   name: dust trooper boss spawner
   id: SpawnMobScrapTechAgentT3Alt
   parent: MarkerBase
-  suffix: AI, Hostile, T3-Radio Agent
+  suffix: AI, Hostile, T3-Radio Agent, Solarm
   components:
   - type: Sprite
     layers:
@@ -269,7 +269,7 @@
   name: dust trooper boss spawner
   id: SpawnMobScrapTechAgentT3
   parent: MarkerBase
-  suffix: AI, Hostile, T3-Radio Agent (ASSP)
+  suffix: AI, Hostile, T3-Radio Agent (ASSP), Solarm
   components:
   - type: Sprite
     layers:
@@ -290,7 +290,7 @@
 #  name: dust trooper boss spawner
 #  id: SpawnMobScrapTechMaroonT3
 #  parent: MarkerBase
-#  suffix: AI, Hostile, T3-Maroon Operator
+#  suffix: AI, Hostile, T3-Rusty Operator, Solarm
 #  components:
 #  - type: Sprite
 #    layers:
@@ -308,7 +308,7 @@
   name: dust trooper boss spawner
   id: SpawnMobScrapTechRaideraltT3
   parent: MarkerBase
-  suffix: AI, Hostile, T3-Dust Raider
+  suffix: AI, Hostile, T3-Dust Raider, Solarm
   components:
   - type: Sprite
     layers:
@@ -338,7 +338,7 @@
   name: dust trooper boss spawner
   id: SpawnMobScrapTechRaiderT3
   parent: MarkerBase
-  suffix: AI, Hostile, T3-Dust Raider (Deserter)
+  suffix: AI, Hostile, T3-Dust Raider (Deserter), Solarm
   components:
   - type: Sprite
     layers:
@@ -368,7 +368,7 @@
   name: dust trooper boss spawner
   id: SpawnMobScrapTechAirbornT3Alt
   parent: MarkerBase
-  suffix: AI, Hostile, T3-Airborn captain
+  suffix: AI, Hostile, T3-Airborn captain, Solarm
   components:
   - type: Sprite
     layers:
@@ -400,7 +400,7 @@
   name: dust trooper boss spawner
   id: SpawnMobScrapTechAirbornT3
   parent: MarkerBase
-  suffix: AI, Hostile, T3-Airborn captain, 50%
+  suffix: AI, Hostile, T3-Airborn captain, 50%, Solarm
   components:
   - type: Sprite
     layers:
@@ -430,7 +430,7 @@
   name: dust trooper boss spawner
   id: SpawnMobScrapTechAddictedT3
   parent: MarkerBase
-  suffix: AI, Hostile, T3-Liwer addicted
+  suffix: AI, Hostile, T3-Liwer addicted, Solarm
   components:
   - type: Sprite
     layers:

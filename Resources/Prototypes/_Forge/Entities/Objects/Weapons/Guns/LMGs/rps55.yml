@@ -1,8 +1,8 @@
 - type: entity
   id: WeaponScrapLightMachineGunRPS55
   parent: [NFBaseWeaponRifleAssaultChamber, BaseC2ContrabandUnredeemable, NFBaseWeaponFrameLightMachineGun ]
-  suffix: DT/ST
-  name: RPS-55
+  suffix: Solarm
+  name: RPS-55m
   description: Light Machine Gun, maded in base AS-55, famous for its quality and use in elite troops, also can accept drum magazines on 64-st bullets. Use .25,5 packed ammo.
   components:
   - type: Sprite

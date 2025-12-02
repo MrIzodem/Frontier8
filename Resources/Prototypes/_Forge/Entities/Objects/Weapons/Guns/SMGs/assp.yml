@@ -2,7 +2,7 @@
   name: ASSP
   parent: [BaseWeaponSubMachineGun, BaseC2ContrabandUnredeemable]
   id: WeaponScrapSubMachineGunASSP
-  suffix: DT/ST
+  suffix: Solarm
   description: Unique pocket-size automatic rifle, worn by Scrap Techs Dust Troopers radio-agents. Use .25,5 packed ammo.
   components:
   - type: Appearance

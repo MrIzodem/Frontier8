@@ -1,5 +1,6 @@
 - type: entity
   name: Liwer bottle
+  suffix: Solarm
   parent: DrinkBottleBaseSmallEmpty
   id: DrinkBottleLiwerEmpty
   components:

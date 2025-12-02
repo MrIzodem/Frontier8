@@ -1,7 +1,7 @@
 - type: entity
   id: WeaponScrapRifleAssaultAS55
   parent: [NFBaseWeaponRifleAssaultChamber, BaseGunWieldable, BaseC2ContrabandUnredeemable, NFBaseWeaponFrameRifleAssault ]
-  suffix: DT/ST
+  suffix: Solarm
   name: AS-55 automatic rifle
   description: An old, but classic automatic rifle for Dust Troopers. Use .25,5 packed ammo.
   components:

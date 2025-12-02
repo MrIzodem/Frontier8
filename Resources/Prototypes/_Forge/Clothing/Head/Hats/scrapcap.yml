@@ -2,7 +2,7 @@
   parent: [ClothingHeadBase, BaseC1Contraband ]
   id: ClothingHeadHatDustCap
   name: Dust Troopers officer cap
-  suffix: DT/ST
+  suffix: Solarm
   description: An sand-colored cap, worn by Dust Troopers infantry officers.
   components:
   - type: Sprite

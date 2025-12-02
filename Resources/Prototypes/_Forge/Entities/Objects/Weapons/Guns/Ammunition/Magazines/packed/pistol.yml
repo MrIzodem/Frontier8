@@ -1,7 +1,7 @@
 - type: entity
   id: MagazinePackedPistol
   name: pistol magazine (.25,5 packed)
-  suffix: DT/ST
+  suffix: Solarm
   parent: [ BaseItem, BaseC1Contraband, RecyclableItemSteelTiny ]
   abstract: true
   components:
@@ -35,7 +35,7 @@
 - type: entity
   id: MagazinePackedHighPistol
   name: extended pistol magazine (.25,5 packed)
-  suffix: DT/ST
+  suffix: Solarm
   parent: [ BaseItem, BaseC2ContrabandUnredeemable, RecyclableItemSteelTiny ]
   abstract: true
   components:
@@ -68,7 +68,7 @@
 
 - type: entity
   id: MagazinePackedPistolEmpty
-  suffix: DT/ST, empty
+  suffix: Solarm, empty
   parent: MagazinePackedPistol
   description: 12-round single-stack magazine for pistols.
   components:
@@ -89,7 +89,7 @@
 
 - type: entity
   id: MagazinePackedPistolfilled
-  suffix: DT/ST, filled
+  suffix: Solarm, filled
   parent: MagazinePackedPistol
   description: 12-round single-stack magazine for pistols. Intended to hold .25,5 packed ammo.
   components:
@@ -98,7 +98,7 @@
 
 - type: entity
   id: MagazinePackedPistolShotgun
-  suffix: DT/ST, shotgun
+  suffix: Solarm, shotgun
   parent: MagazinePackedPistol
   description: 12-round single-stack magazine for pistols. Intended to hold special ammunition with shotgun-pellets instead of bullet.
   components:
@@ -107,7 +107,7 @@
 
 - type: entity
   id: MagazinePackedPistolExplosive
-  suffix: DT/ST, explosive
+  suffix: Solarm, explosive
   parent: MagazinePackedPistol
   description: 12-round single-stack magazine for pistols. Intended to hold special anti-structure (and frightening) explosive ammunition.
   components:
@@ -116,7 +116,7 @@
 
 - type: entity
   id: MagazinePackedPistolUranium
-  suffix: DT/ST, uranium
+  suffix: Solarm, uranium
   parent: MagazinePackedPistol
   description: 12-round single-stack magazine for pistols. Intended to hold radioacrive, deplect uranium ammunition.
   components:
@@ -125,7 +125,7 @@
 
 - type: entity
   id: MagazinePackedPistolProtokinetic
-  suffix: DT/ST, proto-kinetic
+  suffix: Solarm, proto-kinetic
   parent: MagazinePackedPistol
   description: 12-round single-stack magazine for pistols. Intended to hold special proto-kinetic .25,5 ammo... How this thing even work?
   components:
@@ -134,7 +134,7 @@
 
 - type: entity
   id: MagazinePackedPistolIncendiary
-  suffix: DT/ST, incendiary
+  suffix: Solarm, incendiary
   parent: MagazinePackedPistol
   description: 12-round single-stack magazine for pistols. Intended to hold self-igniting incendiary ammunition.
   components:
@@ -145,7 +145,7 @@
 
 - type: entity
   id: MagazinePackedHighPistolEmpty
-  suffix: DT/ST, empty
+  suffix: Solarm, empty
   parent: MagazinePackedHighPistol
   description: 21-round single-stack magazine for ASSP.
   components:
@@ -166,7 +166,7 @@
 
 - type: entity
   id: MagazinePackedHighPistolfilled
-  suffix: DT/ST, filled
+  suffix: Solarm, filled
   parent: MagazinePackedHighPistol
   description: 21-round single-stack magazine for ASSP. Intended to hold .25,5 packed ammo.
   components:
@@ -175,7 +175,7 @@
 
 - type: entity
   id: MagazinePackedHighPistolShotgun
-  suffix: DT/ST, shotgun
+  suffix: Solarm, shotgun
   parent: MagazinePackedHighPistol
   description: 21-round single-stack magazine for ASSP. Intended to hold special ammunition with shotgun-pellets instead of bullet.
   components:
@@ -184,7 +184,7 @@
 
 - type: entity
   id: MagazinePackedHighPistolExplosive
-  suffix: DT/ST, explosive
+  suffix: Solarm, explosive
   parent: MagazinePackedHighPistol
   description: 12-round single-stack magazine for ASSP. Intended to hold special anti-structure (and frightening) explosive ammunition.
   components:
@@ -193,7 +193,7 @@
 
 - type: entity
   id: MagazinePackedHighPistolUranium
-  suffix: DT/ST, uranium
+  suffix: Solarm, uranium
   parent: MagazinePackedHighPistol
   description: 12-round single-stack magazine for ASSP. Intended to hold radioacrive, deplect uranium ammunition.
   components:
@@ -202,7 +202,7 @@
 
 - type: entity
   id: MagazinePackedHighPistolProtokinetic
-  suffix: DT/ST, proto-kinetic
+  suffix: Solarm, proto-kinetic
   parent: MagazinePackedHighPistol
   description: 12-round single-stack magazine for ASSP. Intended to hold special proto-kinetic .25,5 ammo... How this thing even work?
   components:
@@ -211,7 +211,7 @@
 
 - type: entity
   id: MagazinePackedHighPistolIncendiary
-  suffix: DT/ST, incendiary
+  suffix: Solarm, incendiary
   parent: MagazinePackedHighPistol
   description: 12-round single-stack magazine for ASSP. Intended to hold self-igniting incendiary ammunition.
   components:

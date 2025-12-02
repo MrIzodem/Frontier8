@@ -2,7 +2,7 @@
   id: WeaponScrapSniperMirage
   parent: [ BaseWeaponSniper,  BaseGunWieldable, BaseC3Contraband ]
   name: AS-2 Mirage
-  suffix: DT/ST
+  suffix: Solarm
   description: A heavy anti-shuttle rifle used by ST raiders to kill shuttles in ambushes. Uses .80 anti-aircraft rounds.
   components:
   - type: Sprite

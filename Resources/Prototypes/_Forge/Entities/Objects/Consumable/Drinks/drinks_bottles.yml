@@ -2,7 +2,7 @@
   parent: [DrinkBottleVisualsAll, DrinkBottleGlassBaseFull]
   id: DrinkLiwerBottleFull
   name: Liwer bottle
-  suffix: DT/ST
+  suffix: Solarm
   description: A unique hybrid of mead and soda, the drink contains a ton of sugar and even a little alcohol. "And remember, sugar is not bad for your health".
   components:
   - type: SolutionContainerManager

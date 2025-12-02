@@ -3,7 +3,7 @@
   id: ClothingOuterArmorHeavyScrapRaider
   categories: [ HideSpawnMenu ] # Maybe, some day...
   name: dust raider plate-armor
-  suffix: DT/ST
+  suffix: Solarm
   description: It can look old and rusty, but looks can be deceiving...
   components:
   - type: Sprite
