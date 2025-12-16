@@ -22,7 +22,6 @@
             - MachineMask
           layer:
             - MachineLayer
-
     - type: Sprite
       sprite: Forge/Structures/Power/Generation/portable_generator.rsi
       layers:
@@ -71,6 +70,7 @@
       group: Generator
       loadNodes:
         - output_hv
+        - output_mv
     - type: NodeContainer
       examinable: true
       nodes:

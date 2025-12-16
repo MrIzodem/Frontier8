@@ -11,27 +11,33 @@
       "name": "icon"
     },
     {
-      "name": "equipped-OUTERCLOTHING",
+      "name": "icon-flash"
+    },
+    {
+      "name": "light-overlay"
+    },
+    {
+      "name": "equipped-head",
       "directions": 4
     },
     {
-      "name": "equipped-OUTERCLOTHING-reptilian",
+      "name": "equipped-head-vulpkanin",
       "directions": 4
     },
     {
-      "name": "equipped-OUTERCLOTHING-harpy",
+      "name": "equipped-head-reptilian",
       "directions": 4
     },
     {
-      "name": "equipped-OUTERCLOTHING-vox",
+      "name": "equipped-head-vox",
       "directions": 4
     },
     {
-      "name": "inhand-left",
+      "name": "equipped-head-light",
       "directions": 4
     },
     {
-      "name": "inhand-right",
+      "name": "equipped-head-light-vox",
       "directions": 4
     }
   ]

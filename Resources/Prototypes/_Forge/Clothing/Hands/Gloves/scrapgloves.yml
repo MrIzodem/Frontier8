@@ -38,11 +38,9 @@
     damageProtection:
       flatReductions:
         Blunt: 30
-  - type: StaminaDamageOnHit
-    damage: 15
   - type: MeleeWeapon
     attackRate: 1
     damage:
       types:
-        Blunt: 10
+        Blunt: 5
         Structure: 20

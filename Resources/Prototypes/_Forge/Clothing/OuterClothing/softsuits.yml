@@ -1,0 +1,24 @@
+- type: entity
+  parent: NFClothingOuterEVASuitBase
+  id: ClothingOuterEVASuitST
+  suffix: Solarm
+  name: Scrap Tech vintage EVA suit
+  description: An old EVA, used by Scrap Tech in far past, then faction only was created, and then Solarm only was open. Has a lack of protection, but extended pockets
+  components:
+  - type: Sprite
+    sprite: Forge/Clothing/OuterClothing/Suits/scrapeva.rsi
+  - type: Clothing
+    sprite: Forge/Clothing/OuterClothing/Suits/scrapeva.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitScrapTechEVA
+    slot: head
+  - type: Storage
+    grid:
+    - 0,0,2,4
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.95
+        Heat: 0.95
+        Radiation: 0.30
