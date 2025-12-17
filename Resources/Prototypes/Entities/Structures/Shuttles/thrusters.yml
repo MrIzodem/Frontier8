@@ -332,6 +332,7 @@
     - type: Transform
       anchored: true
     - type: Physics
+    - type: InteractionOutline # Forge-Change
       bodyType: Static
     - type: Rotatable
       rotateWhileAnchored: true
