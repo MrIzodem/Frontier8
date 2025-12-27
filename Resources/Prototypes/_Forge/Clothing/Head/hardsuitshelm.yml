@@ -30,11 +30,11 @@
     energy: 3
 
 - type: entity
-  parent: NFClothingHeadHardsuitWithLightBase
+  parent: [ NFClothingHeadHardsuitWithLightBase, MineralScannerUnpowered ]
   id: ClothingHeadHelmetHardsuitScrapTechHeavy
   name: Heavy Scrap Tech Hardsuit helmet
   suffix: Solarm
-  description: An old spacesuit helmet with two visors and a flashlight. It has a great frame, but also has problems against piercing damage.
+  description: An old spacesuit helmet visor with ore scaner and a flashlight. It has a great frame, but also has problems against piercing damage.
   components:
   - type: BreathMask
   - type: Sprite
@@ -79,6 +79,7 @@
     modifiers:
       coefficients:
         Blunt: 0.8
+        Piercing: 0.7
         Slash: 0.9
         Heat: 0.8
   - type: PointLight
