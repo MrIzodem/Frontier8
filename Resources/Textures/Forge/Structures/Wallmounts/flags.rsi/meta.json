@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Scrap Tech and Dust Troopers flags sprites by MrIzo, TechicLogistic flag by Autsaider",
+  "copyright": "TechicLogistic flag by Autsaider, Scrap Tech and Dust Troopers flags by MrIzo",
   "size": {
     "x": 32,
     "y": 32
@@ -15,6 +15,9 @@
     },
     {
       "name": "TL_flag"
+    },
+    {
+      "name": "scrap_tech"
     }
   ]
 }
